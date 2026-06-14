@@ -46,7 +46,9 @@ let state = {
   practiceQuestions: [],
   practiceAnswers: {},
   practiceIndex: 0,
-  history: []
+  history: [],
+  subjectSelectState: { selected: [], difficulty: 'mixed', questionCount: 50, duration: 60 },
+  topicSelectState: { selected: [], questionCount: 50, duration: 60 }
 };
 
 try { state.history = JSON.parse(localStorage.getItem('ceExamHistory') || '[]'); } catch(_) { state.history = []; }
@@ -1000,36 +1002,102 @@ function practiceNav(dir) {
 function renderSubjectSelect() {
   const counts = {};
   state.allQuestions.forEach(q => { counts[q.subject] = (counts[q.subject]||0)+1; });
+  const ss = state.subjectSelectState;
+  const noSubject = ss.selected.length === 0;
+  const pool = buildPool(ss.selected, ss.difficulty, []);
+  const canStart = !noSubject && pool.length >= ss.questionCount;
+
+  const cards = Object.entries(SUBJECTS).map(([name, info]) => {
+    const checked = ss.selected.includes(name);
+    return `<button class="subject-card ${checked ? 'sc-selected' : ''}" style="--color:${info.color}" onclick="toggleSubjectSelectCard('${name}')">
+      <div class="sc-check-badge">${checked ? '✓' : ''}</div>
+      <div class="sc-header">
+        <span style="font-size:24px">${info.icon}</span>
+        <span class="sc-short">${info.short}</span>
+      </div>
+      <div class="sc-name">${name}</div>
+      <div class="sc-count">${counts[name]||0} questions available</div>
+      <div class="sc-bar"><div class="sc-fill" style="width:${info.weight}%"></div></div>
+      <div style="font-size:11px;color:var(--text3);margin-top:4px">${info.weight}% of exam weight</div>
+    </button>`;
+  }).join('');
 
   return `<div class="subject-select-screen">
     <div class="screen-header">
       <button class="btn btn-ghost btn-sm" onclick="nav('home')">← Back</button>
-      <h2>Practice by Subject</h2>
+      <h2>Select Subjects</h2>
       <button class="theme-toggle sm" onclick="toggleTheme()">${state.theme==='dark'?'☀️':'🌙'}</button>
     </div>
-    <div class="subject-list">
-      ${Object.entries(SUBJECTS).map(([name, info]) => `
-        <button class="subject-card" style="--color:${info.color}" onclick="startPractice({type:'subject',value:'${name}'})">
-          <div class="sc-header">
-            <span style="font-size:24px">${info.icon}</span>
-            <span class="sc-short">${info.short}</span>
-          </div>
-          <div class="sc-name">${name}</div>
-          <div class="sc-count">${counts[name]||0} questions available</div>
-          <div class="sc-bar"><div class="sc-fill" style="width:${info.weight}%"></div></div>
-          <div style="font-size:11px;color:var(--text3);margin-top:4px">${info.weight}% of exam weight</div>
-        </button>
-      `).join('')}
+    <p style="color:var(--text2);font-size:13px;text-align:center;margin:0 0 12px">Tap to select. Tap again to deselect.</p>
+    ${noSubject ? '<div class="config-warn" style="margin-bottom:10px">⚠️ Please select at least one subject.</div>' : ''}
+    <div class="subject-list">${cards}</div>
+
+    <div class="config-section" style="margin-top:16px">
+      <div class="config-section-title"><span>🎯 Difficulty</span></div>
+      <div class="config-options-row">
+        ${['mixed','easy','medium','hard'].map(d =>
+          `<div class="config-option ${ss.difficulty===d?'selected':''}" onclick="setSubjectSelectConfig('difficulty','${d}')">
+            <span class="option-label">${d==='mixed'?'Mixed ⭐':d.charAt(0).toUpperCase()+d.slice(1)}</span>
+          </div>`
+        ).join('')}
+      </div>
+    </div>
+
+    <div class="config-section">
+      <div class="config-section-title"><span>🔢 Questions</span></div>
+      <div class="config-options-row">
+        ${[25,50,75,100].map(n =>
+          `<div class="config-option ${ss.questionCount===n?'selected':''}" onclick="setSubjectSelectConfig('questionCount',${n})">
+            <span class="option-label">${n}</span>
+          </div>`
+        ).join('')}
+      </div>
+    </div>
+
+    <div class="config-section">
+      <div class="config-section-title"><span>⏱️ Duration</span></div>
+      <div class="config-options-row">
+        ${[30,60,90,120].map(m =>
+          `<div class="config-option ${ss.duration===m?'selected':''}" onclick="setSubjectSelectConfig('duration',${m})">
+            <span class="option-label">${m} min</span>
+          </div>`
+        ).join('')}
+      </div>
+    </div>
+
+    <div style="padding:0 0 32px">
+      ${!canStart && !noSubject ? `<div class="config-warn" style="margin-bottom:8px">⚠️ Not enough questions (${pool.length}) for ${ss.questionCount} requested.</div>` : ''}
+      <button class="btn btn-primary" style="width:100%;font-size:17px;padding:16px" onclick="startExamFromSubjectSelect()" ${!canStart?'disabled':''}>
+        🚀 Start Exam
+      </button>
     </div>
   </div>`;
 }
 
+function toggleSubjectSelectCard(name) {
+  const s = state.subjectSelectState.selected;
+  const i = s.indexOf(name);
+  if (i >= 0) s.splice(i, 1); else s.push(name);
+  render();
+}
+
+function setSubjectSelectConfig(key, val) {
+  state.subjectSelectState[key] = val;
+  render();
+}
+
+function startExamFromSubjectSelect() {
+  const ss = state.subjectSelectState;
+  if (ss.selected.length === 0) { alert('Please select at least one subject.'); return; }
+  state.examConfig = { subjects: [...ss.selected], topics: [], difficulty: ss.difficulty, questionCount: ss.questionCount, duration: ss.duration };
+  startExam();
+}
+
 // ── Topic Select ──────────────────────────────────────────
-function renderTopicSelect(filterSubject) {
+function renderTopicSelect() {
   const topics = {};
   state.allQuestions.forEach(q => {
-    if (filterSubject && q.subject !== filterSubject) return;
-    const key = q.subject + '||' + (q.topic || 'General');
+    const key = q.subject + '::' + (q.topic || 'General');
     if (!topics[key]) topics[key] = { subject: q.subject, topic: q.topic||'General', count: 0, color: SUBJECTS[q.subject]?.color||'#6366f1' };
     topics[key].count++;
   });
@@ -1040,28 +1108,91 @@ function renderTopicSelect(filterSubject) {
     grouped[t.subject].push(t);
   });
 
+  const ts = state.topicSelectState;
+  const noTopic = ts.selected.length === 0;
+
+  const pool = noTopic ? [] : state.allQuestions.filter(q => {
+    const key = q.subject + '::' + (q.topic || 'General');
+    return ts.selected.includes(key);
+  });
+  const canStart = !noTopic && pool.length >= ts.questionCount;
+
+  const groups = Object.entries(grouped).map(([sub, topicList]) => {
+    const info = SUBJECTS[sub];
+    const chips = topicList.sort((a,b) => a.topic.localeCompare(b.topic)).map(t => {
+      const key = sub + '::' + t.topic;
+      const checked = ts.selected.includes(key);
+      return `<button class="topic-chip ${checked?'topic-chip-selected':''}" onclick="toggleTopicSelectChip('${key.replace(/'/g,"\\'")}')">
+        ${checked ? '<span class="topic-check">✓</span>' : ''}
+        <span class="topic-chip-name">${t.topic}</span>
+        <span class="topic-chip-count">${t.count}</span>
+      </button>`;
+    }).join('');
+    return `<div class="topic-group">
+      <div class="topic-group-header" style="color:${info?.color||'#6366f1'}">${info?.icon||''} ${sub}</div>
+      <div class="topic-list">${chips}</div>
+    </div>`;
+  }).join('');
+
   return `<div class="subject-select-screen">
     <div class="screen-header">
       <button class="btn btn-ghost btn-sm" onclick="nav('home')">← Back</button>
-      <h2>Practice by Topic</h2>
+      <h2>Select Topics</h2>
       <button class="theme-toggle sm" onclick="toggleTheme()">${state.theme==='dark'?'☀️':'🌙'}</button>
     </div>
-    ${Object.entries(grouped).map(([sub, ts]) => `
-      <div class="topic-group">
-        <div class="topic-group-header" style="color:${SUBJECTS[sub]?.color||'#6366f1'}">
-          ${SUBJECTS[sub]?.icon||''} ${sub}
-        </div>
-        <div class="topic-list">
-          ${ts.sort((a,b) => a.topic.localeCompare(b.topic)).map(t => `
-            <button class="topic-chip" onclick="startPractice({type:'topic',value:'${t.topic.replace(/'/g,"\\'")}',subject:'${sub}'})" style="--tcolor:${t.color}">
-              <span class="topic-chip-name">${t.topic}</span>
-              <span class="topic-chip-count">${t.count}</span>
-            </button>
-          `).join('')}
-        </div>
+    <p style="color:var(--text2);font-size:13px;text-align:center;margin:0 0 12px">Tap to select. Tap again to deselect.</p>
+    ${noTopic ? '<div class="config-warn" style="margin-bottom:10px">⚠️ Please select at least one topic.</div>' : `<div style="font-size:13px;color:var(--text2);text-align:center;margin-bottom:12px">${ts.selected.length} topic${ts.selected.length>1?'s':''} selected · ${pool.length} questions available</div>`}
+    ${groups}
+
+    <div class="config-section" style="margin-top:16px">
+      <div class="config-section-title"><span>🔢 Questions</span></div>
+      <div class="config-options-row">
+        ${[25,50,75,100].map(n =>
+          `<div class="config-option ${ts.questionCount===n?'selected':''}" onclick="setTopicSelectConfig('questionCount',${n})">
+            <span class="option-label">${n}</span>
+          </div>`
+        ).join('')}
       </div>
-    `).join('')}
+    </div>
+
+    <div class="config-section">
+      <div class="config-section-title"><span>⏱️ Duration</span></div>
+      <div class="config-options-row">
+        ${[30,60,90,120].map(m =>
+          `<div class="config-option ${ts.duration===m?'selected':''}" onclick="setTopicSelectConfig('duration',${m})">
+            <span class="option-label">${m} min</span>
+          </div>`
+        ).join('')}
+      </div>
+    </div>
+
+    <div style="padding:0 0 32px">
+      ${!canStart && !noTopic ? `<div class="config-warn" style="margin-bottom:8px">⚠️ Not enough questions (${pool.length}) for ${ts.questionCount} requested.</div>` : ''}
+      <button class="btn btn-primary" style="width:100%;font-size:17px;padding:16px" onclick="startExamFromTopicSelect()" ${!canStart?'disabled':''}>
+        🚀 Start Exam
+      </button>
+    </div>
   </div>`;
+}
+
+function toggleTopicSelectChip(key) {
+  const s = state.topicSelectState.selected;
+  const i = s.indexOf(key);
+  if (i >= 0) s.splice(i, 1); else s.push(key);
+  render();
+}
+
+function setTopicSelectConfig(key, val) {
+  state.topicSelectState[key] = val;
+  render();
+}
+
+function startExamFromTopicSelect() {
+  const ts = state.topicSelectState;
+  if (ts.selected.length === 0) { alert('Please select at least one topic.'); return; }
+  const subjects = [...new Set(ts.selected.map(k => k.split('::')[0]))];
+  state.examConfig = { subjects, topics: [...ts.selected], difficulty: 'mixed', questionCount: ts.questionCount, duration: ts.duration };
+  startExam();
 }
 
 function nav(view) {
