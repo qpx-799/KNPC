@@ -7,6 +7,7 @@ const QUESTION_FILES = [
   'questions-db.json','questions-se.json','questions-os.json'
 ];
 
+
 const POINTS_PER_QUESTION = 2;
 
 const SUBJECTS = {
