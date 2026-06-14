@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "DB001",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "easy",
+    "question": "What is the name of a row in a relational database table?",
+    "choices": ["A. Field", "B. Column", "C. Attribute", "D. Record"],
+    "correctAnswer": "D",
+    "explanation": "A row in a database table is called a Record (also known as a tuple). A column is called a field or attribute."
+  },
+  {
+    "id": "DB002",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "easy",
+    "question": "What does SQL stand for?",
+    "choices": ["A. Structured Query Language", "B. Sequential Query Language", "C. Structured Question Language", "D. Sequential Question Language"],
+    "correctAnswer": "A",
+    "explanation": "SQL stands for Structured Query Language. It is the standard language for managing and manipulating relational databases."
+  },
+  {
+    "id": "DB003",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "easy",
+    "question": "Which of the following is NOT a characteristic of a DBMS?",
+    "choices": ["A. Data redundancy", "B. Data independence", "C. Data security", "D. Data integrity"],
+    "correctAnswer": "A",
+    "explanation": "Data redundancy is something a DBMS aims to reduce, not a characteristic it provides. DBMS provides data independence, security, and integrity."
+  },
+  {
+    "id": "DB004",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "easy",
+    "question": "What is a DBMS?",
+    "choices": ["A. A hardware device for storing data", "B. A software package used to manipulate, validate, and retrieve databases", "C. A programming language for creating websites", "D. A network protocol for data transfer"],
+    "correctAnswer": "B",
+    "explanation": "A DBMS (Database Management System) is a software package used to manipulate, validate, and retrieve databases. Examples include MySQL, PostgreSQL, Microsoft Access, and SQL Server."
+  },
+  {
+    "id": "DB005",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "easy",
+    "question": "Because it contains a description of its own structure, a database is considered to be ______.",
+    "choices": ["A. Described", "B. Metadata compatible", "C. Self-describing", "D. An application program"],
+    "correctAnswer": "C",
+    "explanation": "A database is considered self-describing because it contains metadata — data about the data — which describes its own structure including table schemas and column types."
+  },
+  {
+    "id": "DB006",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "easy",
+    "question": "The ability to modify the data structure without having to change the programs using that data is called ______.",
+    "choices": ["A. Data integrity", "B. Data dictionary", "C. Referential integrity", "D. Data independence"],
+    "correctAnswer": "D",
+    "explanation": "Data independence means changes in storage structure or access methods do not affect application programs. It is a key advantage of using a DBMS."
+  },
+  {
+    "id": "DB007",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "easy",
+    "question": "Which data model organizes data into a tree-like structure with one-to-many relationships?",
+    "choices": ["A. Relational Model", "B. Network Model", "C. Hierarchical Model", "D. Object-Oriented Model"],
+    "correctAnswer": "C",
+    "explanation": "The Hierarchical DBMS organizes data in a tree-like structure where each record has one parent and potentially many children, representing one-to-many relationships."
+  },
+  {
+    "id": "DB008",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "easy",
+    "question": "Which component of a DBMS is responsible for translating user queries into an efficient execution plan?",
+    "choices": ["A. Storage Manager", "B. Transaction Manager", "C. Query Processor", "D. Data Dictionary"],
+    "correctAnswer": "C",
+    "explanation": "The Query Processor is the DBMS component responsible for translating user queries (SQL) into efficient execution plans."
+  },
+  {
+    "id": "DB009",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "easy",
+    "question": "Which of the following is a key characteristic of a relational database?",
+    "choices": ["A. Data is stored in a graph-like structure", "B. Data is organized into tables with rows and columns", "C. Data is stored as key-value pairs", "D. Data is stored in a hierarchical structure"],
+    "correctAnswer": "B",
+    "explanation": "In a relational database, data is organized into tables (relations) consisting of rows (records/tuples) and columns (attributes/fields)."
+  },
+  {
+    "id": "DB010",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "easy",
+    "question": "What is metadata in the context of a database?",
+    "choices": ["A. The raw data stored in tables", "B. Data about data — descriptive information that explains or gives context to the data", "C. A type of index used for fast retrieval", "D. A stored procedure that runs automatically"],
+    "correctAnswer": "B",
+    "explanation": "Metadata is 'data about data'. In databases, it includes descriptive information such as file size, creation date, data type, table structure, and column types."
+  },
+  {
+    "id": "DB011",
+    "subject": "Database Systems",
+    "topic": "Relational Model - Keys",
+    "difficulty": "medium",
+    "question": "What is a foreign key?",
+    "choices": ["A. Primary key of a participating relation in another table", "B. A super key containing all attributes", "C. A composite key made of multiple columns", "D. A key that uniquely identifies a row in the same table"],
+    "correctAnswer": "A",
+    "explanation": "A foreign key is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table. It establishes a link between two tables."
+  },
+  {
+    "id": "DB012",
+    "subject": "Database Systems",
+    "topic": "Relational Model - Keys",
+    "difficulty": "medium",
+    "question": "Which of the following best describes a composite key?",
+    "choices": ["A. A key that consists of two or more attributes that together uniquely identify a row", "B. A key that refers to the primary key of another table", "C. A key that uniquely identifies a row using a single column", "D. A key that does not contain null values"],
+    "correctAnswer": "A",
+    "explanation": "A composite key is a primary key consisting of two or more attributes. The combination of these attributes uniquely identifies each row in a table."
+  },
+  {
+    "id": "DB013",
+    "subject": "Database Systems",
+    "topic": "Relational Model - Keys",
+    "difficulty": "medium",
+    "question": "What is a candidate key?",
+    "choices": ["A. A key chosen by the DBA from super keys", "B. A minimal set of attributes that can uniquely identify a tuple in a relation", "C. A set of all attributes in a relation", "D. A key that references another table"],
+    "correctAnswer": "B",
+    "explanation": "A candidate key is a minimal set of attributes that can uniquely identify a tuple in a relation. A primary key is chosen from among the candidate keys."
+  },
+  {
+    "id": "DB014",
+    "subject": "Database Systems",
+    "topic": "Relational Model - Keys",
+    "difficulty": "medium",
+    "question": "What is a super key?",
+    "choices": ["A. A minimal set of attributes that uniquely identifies a tuple", "B. A set of attributes that uniquely identifies a tuple, including candidate keys and their supersets", "C. An attribute that references the primary key of another relation", "D. A key chosen by the database designer to uniquely identify tuples"],
+    "correctAnswer": "B",
+    "explanation": "A super key is a set of attributes that uniquely identifies a tuple in a relation. It includes candidate keys and any superset of candidate keys."
+  },
+  {
+    "id": "DB015",
+    "subject": "Database Systems",
+    "topic": "Relational Model - Keys",
+    "difficulty": "medium",
+    "question": "Which properties must a PRIMARY KEY satisfy?",
+    "choices": ["A. Unique, Not Null, and Stable", "B. Unique and may contain nulls", "C. Non-unique and Not Null", "D. Composite and referenced by another table"],
+    "correctAnswer": "A",
+    "explanation": "A PRIMARY KEY must be Unique (no duplicate values), Not Null (cannot be empty), and Stable (values should not change). These ensure reliable identification of each row."
+  },
+  {
+    "id": "DB016",
+    "subject": "Database Systems",
+    "topic": "ER Diagrams",
+    "difficulty": "medium",
+    "question": "In an ER diagram, what shape represents a relationship?",
+    "choices": ["A. Rectangle", "B. Oval/Ellipse", "C. Diamond", "D. Triangle"],
+    "correctAnswer": "C",
+    "explanation": "In an ER diagram, a diamond shape represents a relationship. Rectangles represent entities, ovals represent attributes, and underlined ovals indicate primary key attributes."
+  },
+  {
+    "id": "DB017",
+    "subject": "Database Systems",
+    "topic": "ER Diagrams",
+    "difficulty": "medium",
+    "question": "What is an entity in the context of an ER model?",
+    "choices": ["A. A property or characteristic of an object", "B. A real-world object or concept that is distinguishable from other objects", "C. An association among several tables", "D. A constraint on data values"],
+    "correctAnswer": "B",
+    "explanation": "An entity in an ER model represents a real-world object or concept that is distinguishable from other objects. Examples include Student, Course, and Employee."
+  },
+  {
+    "id": "DB018",
+    "subject": "Database Systems",
+    "topic": "ER Diagrams",
+    "difficulty": "medium",
+    "question": "In an ER diagram, how do we uniquely identify relationships?",
+    "choices": ["A. Primary key of participating entities", "B. Primary key of the relation itself", "C. By its attributes only", "D. Relationships cannot be uniquely identified"],
+    "correctAnswer": "B",
+    "explanation": "In an ER diagram, relationships are uniquely identified by the primary key of the relation itself, which is typically derived from the primary keys of the participating entities."
+  },
+  {
+    "id": "DB019",
+    "subject": "Database Systems",
+    "topic": "ER Diagrams",
+    "difficulty": "medium",
+    "question": "Which relationship type requires an intermediary (junction) table when implemented in a relational database?",
+    "choices": ["A. One-to-One", "B. One-to-Many", "C. Many-to-Many", "D. Self-referencing"],
+    "correctAnswer": "C",
+    "explanation": "A Many-to-Many (M:M) relationship requires an intermediary or junction table in a relational database. For example, Students and Courses require an Enrollment linking table."
+  },
+  {
+    "id": "DB020",
+    "subject": "Database Systems",
+    "topic": "ER Diagrams",
+    "difficulty": "medium",
+    "question": "In Crow's Foot notation, what represents the 'many' side of a relationship?",
+    "choices": ["A. A straight single line", "B. A branching 'crow foot' symbol", "C. A double line", "D. A circle"],
+    "correctAnswer": "B",
+    "explanation": "In Crow's Foot notation, the 'many' side of a relationship is represented by a branching symbol that looks like a crow's foot, while a single straight line represents the 'one' side."
+  },
+  {
+    "id": "DB021",
+    "subject": "Database Systems",
+    "topic": "ER Diagrams",
+    "difficulty": "medium",
+    "question": "In an ER diagram, what shape is used to represent an attribute?",
+    "choices": ["A. Rectangle", "B. Diamond", "C. Oval/Ellipse", "D. Triangle"],
+    "correctAnswer": "C",
+    "explanation": "In an ER diagram, attributes are represented by ovals (ellipses). A key attribute (primary key) is shown with an underlined oval."
+  },
+  {
+    "id": "DB022",
+    "subject": "Database Systems",
+    "topic": "ER Diagrams",
+    "difficulty": "hard",
+    "question": "In a university database, students can enroll in many courses, and each course can have many students. What is the correct ER relationship type and solution?",
+    "choices": ["A. One-to-One; add a foreign key to either table", "B. One-to-Many; add a foreign key to the Courses table", "C. Many-to-Many; create a linking entity (e.g., Enrollment) with Student_ID and Course_ID", "D. Many-to-Many; duplicate course records for each student"],
+    "correctAnswer": "C",
+    "explanation": "A Many-to-Many relationship between Students and Courses requires a linking entity such as Enrollment(Enrollment_ID, Student_ID, Course_ID, Grade) to resolve the relationship in a relational model."
+  },
+  {
+    "id": "DB023",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which SQL command is used to delete an entire table including its structure from a database?",
+    "choices": ["A. DELETE", "B. TRUNCATE", "C. REMOVE", "D. DROP"],
+    "correctAnswer": "D",
+    "explanation": "DROP TABLE removes the entire table including its structure and all data permanently. DELETE removes rows (DML), and TRUNCATE removes all rows but keeps the table structure."
+  },
+  {
+    "id": "DB024",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which SQL sublanguage contains the commands CREATE, ALTER, and DROP?",
+    "choices": ["A. DML (Data Manipulation Language)", "B. DCL (Data Control Language)", "C. DDL (Data Definition Language)", "D. TCL (Transaction Control Language)"],
+    "correctAnswer": "C",
+    "explanation": "DDL (Data Definition Language) contains commands that define and manage database objects. CREATE creates objects, ALTER modifies them, and DROP deletes them."
+  },
+  {
+    "id": "DB025",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "What is the difference between DELETE and TRUNCATE in SQL?",
+    "choices": ["A. DELETE removes rows based on a condition and can be rolled back; TRUNCATE removes all rows and typically cannot be rolled back", "B. DELETE is DDL; TRUNCATE is DML", "C. DELETE is faster than TRUNCATE", "D. TRUNCATE logs each deleted row; DELETE does not"],
+    "correctAnswer": "A",
+    "explanation": "DELETE is a DML command that removes specific rows based on a WHERE condition and can be rolled back. TRUNCATE removes all rows quickly and in most DBMS cannot be rolled back."
+  },
+  {
+    "id": "DB026",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which SQL command is used to change a table's structure (e.g., add or drop a column)?",
+    "choices": ["A. ALTER TABLE", "B. MODIFY TABLE", "C. CHANGE TABLE", "D. UPDATE TABLE"],
+    "correctAnswer": "A",
+    "explanation": "ALTER TABLE is used to modify the structure of an existing table. It can add columns (ALTER TABLE t ADD col datatype), drop columns, or modify column definitions."
+  },
+  {
+    "id": "DB027",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which SQL constraint ensures that all values in a column are different (no duplicates) but allows NULL values?",
+    "choices": ["A. PRIMARY KEY", "B. FOREIGN KEY", "C. UNIQUE", "D. NOT NULL"],
+    "correctAnswer": "C",
+    "explanation": "The UNIQUE constraint ensures all values in a column are different. Unlike PRIMARY KEY, a UNIQUE column can contain NULL values (though only one NULL in most DBMS)."
+  },
+  {
+    "id": "DB028",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which of the following is NOT a DDL (Data Definition Language) command?",
+    "choices": ["A. RENAME", "B. CREATE", "C. DROP", "D. UPDATE"],
+    "correctAnswer": "D",
+    "explanation": "UPDATE is a DML (Data Manipulation Language) command used to modify existing rows. RENAME, CREATE, and DROP are DDL commands that manage database object structures."
+  },
+  {
+    "id": "DB029",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "hard",
+    "question": "Which of the following CREATE TABLE statements correctly defines a primary key and foreign key constraint?",
+    "choices": ["A. CREATE TABLE Orders (OrderID INT PRIMARY KEY, CustomerID INT REFERENCES Customers(CustomerID));", "B. CREATE TABLE Orders (OrderID INT UNIQUE, CustomerID INT PRIMARY KEY);", "C. CREATE TABLE Orders (OrderID INT NOT NULL, CustomerID INT NOT NULL);", "D. CREATE TABLE Orders (OrderID INT, CustomerID INT, FOREIGN KEY(OrderID) REFERENCES Customers(CustomerID));"],
+    "correctAnswer": "A",
+    "explanation": "Option A correctly defines OrderID as the primary key and CustomerID as a foreign key that references the CustomerID column in the Customers table."
+  },
+  {
+    "id": "DB030",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL command is used to retrieve data from a database?",
+    "choices": ["A. UPDATE", "B. INSERT", "C. SELECT", "D. DELETE"],
+    "correctAnswer": "C",
+    "explanation": "SELECT is the DML command used to retrieve/query data from one or more tables. It is the most frequently used SQL command."
+  },
+  {
+    "id": "DB031",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL statement is used to update existing data in a database table?",
+    "choices": ["A. SAVE", "B. UPDATE", "C. SAVE AS", "D. MODIFY"],
+    "correctAnswer": "B",
+    "explanation": "UPDATE is the DML command used to modify existing rows in a table. Syntax: UPDATE table_name SET column = value WHERE condition."
+  },
+  {
+    "id": "DB032",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "What is the purpose of the GROUP BY clause in SQL?",
+    "choices": ["A. To filter rows based on a specified condition", "B. To sort the result set in ascending or descending order", "C. To group rows that have the same values in specified columns into summary rows", "D. To combine rows from two or more tables"],
+    "correctAnswer": "C",
+    "explanation": "GROUP BY groups rows that share the same values in specified columns into summary rows. It is typically used with aggregate functions like COUNT, SUM, AVG, MIN, MAX."
+  },
+  {
+    "id": "DB033",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "What is the purpose of the HAVING clause in SQL?",
+    "choices": ["A. To filter individual rows before grouping", "B. To filter groups based on aggregate conditions after GROUP BY", "C. To sort grouped results", "D. To join two tables based on a common column"],
+    "correctAnswer": "B",
+    "explanation": "HAVING is used with GROUP BY to filter groups based on aggregate conditions. WHERE filters individual rows before grouping, while HAVING filters groups after grouping."
+  },
+  {
+    "id": "DB034",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL keyword is used to sort the result set?",
+    "choices": ["A. SORT BY", "B. ORDER", "C. ORDER BY", "D. SORT"],
+    "correctAnswer": "C",
+    "explanation": "ORDER BY is used to sort the result set in ascending (ASC, default) or descending (DESC) order based on one or more columns."
+  },
+  {
+    "id": "DB035",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL command is used to SELECT only one copy of each set of duplicate rows?",
+    "choices": ["A. SELECT DISTINCT", "B. SELECT UNIQUE", "C. SELECT DIFFERENT", "D. SELECT SINGLE"],
+    "correctAnswer": "A",
+    "explanation": "SELECT DISTINCT eliminates duplicate rows from the result set, returning only unique values for the specified columns."
+  },
+  {
+    "id": "DB036",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "What is the correct order of clauses in a SQL SELECT statement?",
+    "choices": ["A. SELECT, WHERE, FROM, GROUP BY, HAVING, ORDER BY", "B. SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY", "C. FROM, SELECT, WHERE, ORDER BY, GROUP BY, HAVING", "D. SELECT, FROM, GROUP BY, WHERE, HAVING, ORDER BY"],
+    "correctAnswer": "B",
+    "explanation": "The correct order of SQL clauses is: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY. The WHERE clause filters rows before grouping, while HAVING filters after grouping."
+  },
+  {
+    "id": "DB037",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL operator is used for pattern matching in a WHERE clause?",
+    "choices": ["A. BETWEEN", "B. LIKE", "C. EXISTS", "D. IN"],
+    "correctAnswer": "B",
+    "explanation": "The LIKE operator is used for pattern matching. It uses wildcards: % (percent) represents zero, one, or more characters, and _ (underscore) represents exactly one character."
+  },
+  {
+    "id": "DB038",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "What is the purpose of the SQL operator IN?",
+    "choices": ["A. Specifies that the sort order should be increasing", "B. Used in GROUP BY to indicate sub-groups", "C. Used to test if one value appears in a set of values", "D. Indicates which table each field belongs to"],
+    "correctAnswer": "C",
+    "explanation": "The IN operator tests if a value matches any value in a list or subquery. Example: WHERE continent IN ('Europe', 'Asia', 'Africa')"
+  },
+  {
+    "id": "DB039",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which operator tests a column for the absence of data (NULL values)?",
+    "choices": ["A. EXISTS operator", "B. NOT operator", "C. IS NULL operator", "D. EMPTY operator"],
+    "correctAnswer": "C",
+    "explanation": "IS NULL is the correct operator to test for the absence of data. You cannot use = NULL; you must always use IS NULL or IS NOT NULL."
+  },
+  {
+    "id": "DB040",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL aggregate function calculates the average value of a numeric column?",
+    "choices": ["A. SUM()", "B. COUNT()", "C. AVG()", "D. MAX()"],
+    "correctAnswer": "C",
+    "explanation": "AVG() is the aggregate function that returns the average value of a numeric column. Other aggregate functions include SUM, COUNT, MIN, and MAX."
+  },
+  {
+    "id": "DB041",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL keyword is used to retrieve the maximum value in a column?",
+    "choices": ["A. TOP", "B. MOST", "C. UPPER", "D. MAX"],
+    "correctAnswer": "D",
+    "explanation": "MAX() is the aggregate function used to get the maximum value from a column. Example: SELECT MAX(salary) FROM employees;"
+  },
+  {
+    "id": "DB042",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which of the following aggregate functions ignores NULL values?",
+    "choices": ["A. MAX only", "B. COUNT only", "C. SUM only", "D. MAX, COUNT, SUM, AVG, and MIN all ignore NULL values"],
+    "correctAnswer": "D",
+    "explanation": "All SQL aggregate functions (MAX, MIN, SUM, AVG, COUNT with a column argument) ignore NULL values when computing their results."
+  },
+  {
+    "id": "DB043",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Given table: Customers(CustomerNo, FirstName, LastName, Phone, Address, City, Country). Which query retrieves customers in telephone area code (408)?",
+    "choices": ["A. SELECT * FROM Customers WHERE Phone = '408'", "B. SELECT FirstName, LastName FROM Customers WHERE Phone LIKE '(408)%'", "C. SELECT FirstName FROM Customers WHERE Phone STARTS WITH '408'", "D. SELECT * FROM Customers WHERE Phone IN ('408')"],
+    "correctAnswer": "B",
+    "explanation": "The LIKE '(408)%' pattern matches any phone number starting with '(408)'. The % wildcard matches zero or more characters after the area code."
+  },
+  {
+    "id": "DB044",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Which SQL query finds country names that have 'A' as the second letter?",
+    "choices": ["A. SELECT NAME FROM COUNTRY WHERE NAME LIKE 'A%'", "B. SELECT NAME FROM COUNTRY WHERE NAME LIKE '_A%'", "C. SELECT NAME FROM COUNTRY WHERE NAME LIKE '__A%'", "D. SELECT NAME FROM COUNTRY WHERE NAME LIKE '%A%'"],
+    "correctAnswer": "B",
+    "explanation": "The pattern '_A%' uses one underscore to match exactly one character in the first position, then 'A' in the second position, then '%' to match any remaining characters."
+  },
+  {
+    "id": "DB045",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Which SQL query finds country names that end with 'AN'?",
+    "choices": ["A. SELECT NAME FROM COUNTRY WHERE NAME LIKE 'AN%'", "B. SELECT NAME FROM COUNTRY WHERE NAME LIKE '%AN'", "C. SELECT NAME FROM COUNTRY WHERE NAME LIKE '%AN%'", "D. SELECT NAME FROM COUNTRY WHERE NAME LIKE 'AN'"],
+    "correctAnswer": "B",
+    "explanation": "The pattern '%AN' uses the % wildcard to match any characters at the beginning, then requires the name to end with 'AN'."
+  },
+  {
+    "id": "DB046",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "medium",
+    "question": "How does an INNER JOIN differ from an OUTER JOIN?",
+    "choices": ["A. INNER JOIN involves only one table while OUTER JOIN involves multiple tables", "B. INNER JOIN only returns records with matching values in both tables; OUTER JOIN also includes records without a match in one table", "C. INNER JOIN connects tables within the database while OUTER JOIN connects to external tables", "D. INNER JOIN is processed first while OUTER JOIN is processed last"],
+    "correctAnswer": "B",
+    "explanation": "INNER JOIN returns only records that have matching values in both tables. OUTER JOIN (LEFT, RIGHT, or FULL) includes records without a match in one or both tables, placing NULL for missing values."
+  },
+  {
+    "id": "DB047",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "medium",
+    "question": "Which type of JOIN returns all records from the left table and matched records from the right table, with NULLs for non-matching right table records?",
+    "choices": ["A. INNER JOIN", "B. LEFT OUTER JOIN", "C. RIGHT OUTER JOIN", "D. FULL OUTER JOIN"],
+    "correctAnswer": "B",
+    "explanation": "A LEFT OUTER JOIN (LEFT JOIN) returns all records from the left table and matching records from the right table. Where there is no match, NULL values are returned for the right table columns."
+  },
+  {
+    "id": "DB048",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "medium",
+    "question": "Which JOIN type returns all records when there is a match in either left or right table, and NULL for non-matching rows on either side?",
+    "choices": ["A. INNER JOIN", "B. LEFT OUTER JOIN", "C. RIGHT OUTER JOIN", "D. FULL OUTER JOIN"],
+    "correctAnswer": "D",
+    "explanation": "FULL OUTER JOIN returns all records when there is a match in either the left or right table. Rows without a match on either side are filled with NULLs."
+  },
+  {
+    "id": "DB049",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "medium",
+    "question": "If you wanted to find all customers who have NOT placed any orders, which JOIN would you use between Customers and Orders tables?",
+    "choices": ["A. INNER JOIN with a WHERE clause filtering orders", "B. RIGHT OUTER JOIN keeping only matched records", "C. LEFT OUTER JOIN with WHERE Orders.OrderID IS NULL", "D. SELF JOIN on the Customers table"],
+    "correctAnswer": "C",
+    "explanation": "A LEFT OUTER JOIN between Customers and Orders, filtered with WHERE Orders.OrderID IS NULL, returns customers who have no matching orders — effectively finding customers who never ordered."
+  },
+  {
+    "id": "DB050",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "hard",
+    "question": "Given: Customers(CustomerNo, FirstName, LastName) and Orders(OrderNo, CustomerNo, OrderDate). Which query retrieves first and last names of customers who made an order on or before January 1, 2007?",
+    "choices": ["A. SELECT FirstName, LastName FROM Customers WHERE OrderDate < '2007-01-01'", "B. SELECT Customers.FirstName, Customers.LastName FROM Customers INNER JOIN Orders ON Customers.CustomerNo = Orders.CustomerNo WHERE Orders.OrderDate <= '2007-01-01'", "C. SELECT FirstName, LastName FROM Orders WHERE OrderDate < '2007-01-01'", "D. SELECT FirstName, LastName FROM Customers LEFT JOIN Orders ON CustomerNo WHERE OrderDate = '2007-01-01'"],
+    "correctAnswer": "B",
+    "explanation": "An INNER JOIN between Customers and Orders on CustomerNo, with a WHERE clause filtering OrderDate on or before January 1, 2007, correctly retrieves customers who placed orders in that period."
+  },
+  {
+    "id": "DB051",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "hard",
+    "question": "Which type of JOIN would you use to find customers who have not bought anything in the last month by joining Sales and Customers tables?",
+    "choices": ["A. REFLEXIVE JOIN", "B. EQUI JOIN", "C. RIGHT OUTER JOIN", "D. INNER JOIN"],
+    "correctAnswer": "C",
+    "explanation": "A RIGHT OUTER JOIN between Sales and Customers ensures all Customers are included even if they have no matching Sales records, allowing you to sum up sales per customer and identify those with no purchases."
+  },
+  {
+    "id": "DB052",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "hard",
+    "question": "A SELF JOIN is used when:",
+    "choices": ["A. Two different tables are joined on a common foreign key", "B. A table is joined with itself to compare rows within the same table", "C. A table is joined with a view", "D. Three or more tables are joined simultaneously"],
+    "correctAnswer": "B",
+    "explanation": "A SELF JOIN joins a table to itself. It is useful when comparing rows within the same table — for example, finding employees who share the same manager, or finding pairs of employees in the same department."
+  },
+  {
+    "id": "DB053",
+    "subject": "Database Systems",
+    "topic": "Subqueries",
+    "difficulty": "medium",
+    "question": "What is a subquery in SQL?",
+    "choices": ["A. A query that uses Query By Example", "B. A sub-schema within a database schema", "C. A schema definition inside a CREATE statement", "D. A smaller query nested inside another SQL query used as building blocks for the larger query"],
+    "correctAnswer": "D",
+    "explanation": "A subquery is a query nested inside another SQL query (SELECT, INSERT, UPDATE, or DELETE). It builds up complex queries from smaller, reusable query results."
+  },
+  {
+    "id": "DB054",
+    "subject": "Database Systems",
+    "topic": "Subqueries",
+    "difficulty": "medium",
+    "question": "A subquery can be used in which of the following SQL clauses?",
+    "choices": ["A. SELECT only", "B. FROM only", "C. WHERE only", "D. SELECT, FROM, and WHERE"],
+    "correctAnswer": "D",
+    "explanation": "A subquery can be used in SELECT (scalar subquery), FROM (derived table), WHERE, HAVING, and even INSERT/UPDATE/DELETE statements."
+  },
+  {
+    "id": "DB055",
+    "subject": "Database Systems",
+    "topic": "Subqueries",
+    "difficulty": "medium",
+    "question": "Which SQL query finds customers who never ordered anything from the store?",
+    "choices": ["A. SELECT FirstName, LastName FROM Customers WHERE CustomerNo = NULL", "B. SELECT FirstName, LastName FROM Customers WHERE CustomerNo NOT IN (SELECT CustomerNo FROM Orders)", "C. SELECT FirstName, LastName FROM Customers INNER JOIN Orders ON Customers.CustomerNo = Orders.CustomerNo", "D. SELECT FirstName, LastName FROM Customers WHERE CustomerNo IN (SELECT CustomerNo FROM Orders)"],
+    "correctAnswer": "B",
+    "explanation": "Using NOT IN with a subquery that retrieves all CustomerNos from Orders effectively finds customers whose IDs do not appear in any order — customers who never ordered."
+  },
+  {
+    "id": "DB056",
+    "subject": "Database Systems",
+    "topic": "Subqueries",
+    "difficulty": "hard",
+    "question": "What is the difference between a correlated subquery and a non-correlated subquery?",
+    "choices": ["A. A correlated subquery executes once for each row of the outer query; a non-correlated subquery executes only once", "B. A correlated subquery uses JOIN; a non-correlated subquery uses WHERE", "C. A correlated subquery returns multiple rows; a non-correlated subquery returns one row", "D. There is no difference; both execute the same way"],
+    "correctAnswer": "A",
+    "explanation": "A correlated subquery references columns from the outer query and is re-executed for each row of the outer query. A non-correlated (simple) subquery is independent and executes only once, providing results to the outer query."
+  },
+  {
+    "id": "DB057",
+    "subject": "Database Systems",
+    "topic": "Subqueries",
+    "difficulty": "hard",
+    "question": "Which SQL operator in a subquery tests for the existence of any rows returned by the subquery?",
+    "choices": ["A. IN", "B. ANY", "C. EXISTS", "D. ALL"],
+    "correctAnswer": "C",
+    "explanation": "The EXISTS operator tests whether a subquery returns any rows. It returns TRUE if the subquery produces at least one row and is often used in correlated subqueries for efficiency."
+  },
+  {
+    "id": "DB058",
+    "subject": "Database Systems",
+    "topic": "Subqueries",
+    "difficulty": "hard",
+    "question": "Which query finds products with a price above the average price?",
+    "choices": ["A. SELECT ProductName FROM Products WHERE Price > MAX(Price)", "B. SELECT ProductName, Price FROM Products WHERE Price > (SELECT AVG(Price) FROM Products)", "C. SELECT ProductName FROM Products HAVING Price > AVG(Price)", "D. SELECT ProductName FROM Products WHERE Price > AVG(Price)"],
+    "correctAnswer": "B",
+    "explanation": "A scalar subquery (SELECT AVG(Price) FROM Products) computes the average price once, and the outer query filters products whose price exceeds that average."
+  },
+  {
+    "id": "DB059",
+    "subject": "Database Systems",
+    "topic": "Views",
+    "difficulty": "medium",
+    "question": "What is a VIEW in SQL?",
+    "choices": ["A. A special stored procedure that executes when a specific event occurs", "B. A virtual table whose contents are defined by a pre-compiled query; it does not store data physically", "C. A database diagram showing entity relationships", "D. A physical copy of a table stored separately"],
+    "correctAnswer": "B",
+    "explanation": "A VIEW is a virtual table based on the result of a SELECT statement. It does not store data itself but presents data from one or more tables. Views are used to simplify queries, restrict access, and hide data complexity."
+  },
+  {
+    "id": "DB060",
+    "subject": "Database Systems",
+    "topic": "Views",
+    "difficulty": "medium",
+    "question": "Which SQL syntax is correct to create a view?",
+    "choices": ["A. MAKE VIEW view_name AS SELECT columns FROM table", "B. CREATE VIEW view_name AS SELECT column_list FROM table_name WHERE condition", "C. BUILD VIEW view_name SELECT columns FROM table WHERE condition", "D. CREATE VIRTUAL TABLE view_name AS SELECT columns FROM table"],
+    "correctAnswer": "B",
+    "explanation": "The correct syntax to create a view is: CREATE VIEW view_name AS SELECT column_list FROM table_name [WHERE condition]. The SELECT statement defines what the view contains."
+  },
+  {
+    "id": "DB061",
+    "subject": "Database Systems",
+    "topic": "Views",
+    "difficulty": "medium",
+    "question": "Which of the following is a primary purpose of using views in a database?",
+    "choices": ["A. To increase data storage capacity", "B. To speed up write operations", "C. To restrict access to specific columns/rows and simplify complex queries", "D. To replace indexes for faster retrieval"],
+    "correctAnswer": "C",
+    "explanation": "Views are used to: restrict access to sensitive columns/rows (security), simplify complex queries (abstraction), hide data complexity, and present data in a specific format. They do not speed up writes or increase storage."
+  },
+  {
+    "id": "DB062",
+    "subject": "Database Systems",
+    "topic": "Views",
+    "difficulty": "hard",
+    "question": "When a DML operation (INSERT, UPDATE, DELETE) is performed on a view, what happens to the underlying base table?",
+    "choices": ["A. The view is updated but the base table remains unchanged", "B. Both the view and a separate view storage table are updated", "C. The DML operation affects the data in the original base table upon which the view is based", "D. The operation is rejected since views are read-only in all cases"],
+    "correctAnswer": "C",
+    "explanation": "DML operations (INSERT, UPDATE, DELETE) on an updatable view affect the data in the original base table. A view is virtual; it merely presents data from the underlying table(s)."
+  },
+  {
+    "id": "DB063",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "question": "What is the primary purpose of normalization in database design?",
+    "choices": ["A. To speed up data retrieval", "B. To reduce data redundancy and improve data integrity", "C. To simplify complex queries", "D. To enhance database security"],
+    "correctAnswer": "B",
+    "explanation": "Normalization is the process of organizing tables to minimize data redundancy and improve data integrity by decomposing tables and defining relationships between them."
+  },
+  {
+    "id": "DB064",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "question": "What is First Normal Form (1NF)?",
+    "choices": ["A. All non-key attributes depend on the whole primary key", "B. No transitive dependencies exist among non-key attributes", "C. All columns in the table are atomic (indivisible) and contain no multi-valued attributes", "D. Every determinant is a candidate key"],
+    "correctAnswer": "C",
+    "explanation": "1NF requires that all columns in a table are atomic (single-valued) and not composite or multi-valued. Example: A 'Name' column storing 'first+last' violates 1NF."
+  },
+  {
+    "id": "DB065",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "question": "Which table violates First Normal Form (1NF)?",
+    "choices": ["A. EMPLOYEE(empno, first_name, last_name, salary)", "B. EMPLOYEE(empno, name: first+last, salary)", "C. EMPLOYEE(empno, department, salary)", "D. EMPLOYEE(empno, email, hire_date)"],
+    "correctAnswer": "B",
+    "explanation": "EMPLOYEE(empno, name: first+last, salary) violates 1NF because the 'name' column is composite (contains both first and last name), violating the atomic requirement of 1NF."
+  },
+  {
+    "id": "DB066",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "question": "What is Second Normal Form (2NF)?",
+    "choices": ["A. The table is in 1NF and all non-key attributes depend on the entire primary key (no partial dependencies)", "B. The table is in 1NF and no non-key attribute depends on another non-key attribute", "C. The table is in 3NF and every determinant is a candidate key", "D. The table has no composite primary key"],
+    "correctAnswer": "A",
+    "explanation": "2NF requires the table to be in 1NF AND all non-key (non-prime) attributes must depend on the ENTIRE primary key, not just part of it (no partial dependencies). Only relevant when the primary key is composite."
+  },
+  {
+    "id": "DB067",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "question": "The table sales(saleID, customerID, customer-name, date) with primary key (saleID, customerID) fails which normal form, and why?",
+    "choices": ["A. 1NF, because customer-name is a composite attribute", "B. 2NF, because customer-name depends only on customerID (a part of the primary key), not the entire key", "C. 3NF, because customer-name depends on another non-key attribute", "D. BCNF, because a non-key attribute determines part of the primary key"],
+    "correctAnswer": "B",
+    "explanation": "The functional dependency customerID → customer-name shows that customer-name depends on only part of the composite primary key (customerID), not the entire key (saleID, customerID). This partial dependency violates 2NF."
+  },
+  {
+    "id": "DB068",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "question": "What is Third Normal Form (3NF)?",
+    "choices": ["A. The table is in 1NF and all non-key attributes depend on the entire primary key", "B. The table is in 2NF and no non-key attribute depends on another non-key attribute (no transitive dependencies)", "C. Every determinant is a candidate key", "D. The table has no composite attributes"],
+    "correctAnswer": "B",
+    "explanation": "3NF requires the table to be in 2NF AND no non-key attribute should depend on another non-key attribute (no transitive dependencies). Every non-key attribute must depend directly on the primary key."
+  },
+  {
+    "id": "DB069",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "Table: sales(saleID, customerID, customer-name, date). Given that customerID → customer-name, which normal form does this table violate and why?",
+    "choices": ["A. 1NF, because customer-name is multi-valued", "B. 2NF only, because of the partial dependency customerID → customer-name", "C. Both 2NF and 3NF; it violates 2NF due to partial dependency and 3NF because customer-name (non-key) depends on customerID (non-key)", "D. BCNF only, because the primary key determines a non-key attribute"],
+    "correctAnswer": "C",
+    "explanation": "This table violates both 2NF (customer-name depends on only part of the composite key) and 3NF (customer-name, a non-key attribute, depends on customerID, another non-key attribute). Fixing 2NF would also resolve 3NF here."
+  },
+  {
+    "id": "DB070",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "What is Boyce-Codd Normal Form (BCNF)?",
+    "choices": ["A. The table is in 2NF and no transitive dependencies exist", "B. The table is in 3NF and every determinant (left-hand side of any functional dependency) is a candidate key", "C. The table has no composite primary key", "D. All non-key attributes are independent of each other"],
+    "correctAnswer": "B",
+    "explanation": "BCNF is a stronger version of 3NF. It requires that the table is in 3NF AND for every non-trivial functional dependency X → Y, X must be a candidate key (superkey). It eliminates all anomalies based on functional dependencies."
+  },
+  {
+    "id": "DB071",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "Consider EmpSpecMgr(EID, speciality, manager) with a functional dependency manager → EID. Which normal form does this table violate?",
+    "choices": ["A. 1NF", "B. 2NF", "C. 3NF", "D. BCNF"],
+    "correctAnswer": "D",
+    "explanation": "The table violates BCNF because in the dependency manager → EID, 'manager' (a non-key attribute) determines EID (which is part of the primary key). In BCNF, every determinant must be a candidate key."
+  },
+  {
+    "id": "DB072",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "Given functional dependencies: A → {B,C,D,E,F}; {B,C} → {A,D,E,F}; B → F; D → E. For relation R2(A, B, C, D, E) with primary key {B,C}, which normal forms does R2 satisfy?",
+    "choices": ["A. 1NF only", "B. 1NF and 2NF only", "C. 1NF, 2NF, and 3NF but not BCNF", "D. 1NF, 2NF, 3NF, and BCNF"],
+    "correctAnswer": "B",
+    "explanation": "R2 satisfies 1NF (no composite attributes) and 2NF (A, D, E all depend on the full composite key {B,C}). R2 violates 3NF because D → E means non-key attribute E depends on non-key attribute D (a transitive dependency)."
+  },
+  {
+    "id": "DB073",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "Given the same functional dependencies, for relation R1(A, B, C, D, E, F) with primary key {B,C}, which normal forms does R1 satisfy?",
+    "choices": ["A. 1NF only", "B. 1NF and 2NF", "C. 1NF, 2NF, and 3NF", "D. All normal forms including BCNF"],
+    "correctAnswer": "A",
+    "explanation": "R1 satisfies 1NF (no composite attributes) but violates 2NF because non-key attribute F depends on B alone (B → F), which is only part of the composite primary key {B,C}. Since 2NF fails, 3NF and BCNF cannot be tested."
+  },
+  {
+    "id": "DB074",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "Given the same functional dependencies, for relation R3(B, F) with primary key {B}, which normal forms does R3 satisfy?",
+    "choices": ["A. 1NF only", "B. 1NF and 2NF only", "C. 1NF, 2NF, and 3NF only", "D. 1NF, 2NF, 3NF, and BCNF"],
+    "correctAnswer": "D",
+    "explanation": "R3 satisfies all normal forms: 1NF (no composite attributes), 2NF (primary key B is a single attribute, so no partial dependency possible), 3NF (only one non-key attribute F), and BCNF (assuming F does not determine B)."
+  },
+  {
+    "id": "DB075",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "question": "What is the main goal of denormalization?",
+    "choices": ["A. To eliminate data redundancy", "B. To improve query performance by intentionally adding redundant data", "C. To simplify database design by removing relationships", "D. To enforce stricter data integrity rules"],
+    "correctAnswer": "B",
+    "explanation": "Denormalization deliberately introduces redundancy into a normalized database to improve read/query performance. It reduces the number of joins needed but increases the risk of data anomalies."
+  },
+  {
+    "id": "DB076",
+    "subject": "Database Systems",
+    "topic": "Functional Dependencies",
+    "difficulty": "medium",
+    "question": "What does the functional dependency A → B mean?",
+    "choices": ["A. A and B are always equal", "B. Column B depends on column A; knowing A uniquely determines B", "C. A and B must both be primary keys", "D. B is a foreign key referencing A"],
+    "correctAnswer": "B",
+    "explanation": "A → B means 'A determines B' or 'B depends on A'. Given any value of A, there is exactly one corresponding value of B. For example, customerID → customer_name."
+  },
+  {
+    "id": "DB077",
+    "subject": "Database Systems",
+    "topic": "Functional Dependencies",
+    "difficulty": "hard",
+    "question": "Which of the following is a transitive dependency?",
+    "choices": ["A. Primary key → Non-key attribute", "B. Part of composite primary key → Non-key attribute", "C. Non-key attribute → Another non-key attribute (where primary key → first non-key → second non-key)", "D. Non-key attribute → Part of primary key"],
+    "correctAnswer": "C",
+    "explanation": "A transitive dependency exists when a non-key attribute determines another non-key attribute. For example: StudentID → DeptID → DeptName means DeptName is transitively dependent on StudentID through DeptID."
+  },
+  {
+    "id": "DB078",
+    "subject": "Database Systems",
+    "topic": "Functional Dependencies",
+    "difficulty": "hard",
+    "question": "Which type of dependency violates 2NF?",
+    "choices": ["A. Full dependency of a non-key attribute on the entire composite primary key", "B. Partial dependency: a non-key attribute depends on only part of a composite primary key", "C. Transitive dependency: a non-key attribute depends on another non-key attribute", "D. A non-key attribute determines a candidate key"],
+    "correctAnswer": "B",
+    "explanation": "A partial dependency occurs when a non-key attribute depends on only part of a composite primary key, not the entire key. This violates 2NF. For example, if the key is {A,B} and C depends only on A (not A+B), then A → C is a partial dependency."
+  },
+  {
+    "id": "DB079",
+    "subject": "Database Systems",
+    "topic": "Functional Dependencies",
+    "difficulty": "hard",
+    "question": "To decompose a table from 2NF to 3NF, what must you eliminate?",
+    "choices": ["A. Multi-valued attributes", "B. Partial dependencies on composite primary keys", "C. Transitive dependencies among non-key attributes", "D. Non-key attributes that determine primary key parts"],
+    "correctAnswer": "C",
+    "explanation": "To achieve 3NF, you must eliminate transitive dependencies — cases where a non-key attribute depends on another non-key attribute rather than directly on the primary key. The table must already be in 2NF."
+  },
+  {
+    "id": "DB080",
+    "subject": "Database Systems",
+    "topic": "Functional Dependencies",
+    "difficulty": "hard",
+    "question": "Given R(A, B, C, D) where A → B, B → C, A → D. What is the closure of A (A+)?",
+    "choices": ["A. {A}", "B. {A, B}", "C. {A, B, C, D}", "D. {A, D}"],
+    "correctAnswer": "C",
+    "explanation": "The closure of A: Start with {A}. A → B gives {A,B}. A → D gives {A,B,D}. B → C gives {A,B,C,D}. Therefore A+ = {A,B,C,D}, meaning A is a candidate key for R."
+  },
+  {
+    "id": "DB081",
+    "subject": "Database Systems",
+    "topic": "Indexing",
+    "difficulty": "medium",
+    "question": "What is an index in a database?",
+    "choices": ["A. A table that stores metadata about other tables", "B. A special lookup structure that the database engine uses to speed up data retrieval", "C. A stored program that runs when a specific event occurs", "D. A virtual table based on the result-set of an SQL statement"],
+    "correctAnswer": "B",
+    "explanation": "An index is a special lookup structure (similar to an index in a book) that the database search engine can use to speed up data retrieval, especially for SELECT queries with WHERE clauses."
+  },
+  {
+    "id": "DB082",
+    "subject": "Database Systems",
+    "topic": "Indexing",
+    "difficulty": "medium",
+    "question": "What is a clustered index?",
+    "choices": ["A. An index that does not alter the physical order of the table", "B. An index that determines and stores the physical order of data rows in a table", "C. An index that can be created multiple times on the same table", "D. An index stored in a separate table structure"],
+    "correctAnswer": "B",
+    "explanation": "A clustered index determines the physical order of data in a table. The data rows are stored in the order of the clustered index key. A table can have only ONE clustered index."
+  },
+  {
+    "id": "DB083",
+    "subject": "Database Systems",
+    "topic": "Indexing",
+    "difficulty": "medium",
+    "question": "What is a non-clustered index?",
+    "choices": ["A. An index that physically reorders table data", "B. A single index that covers all columns", "C. An index that creates a separate structure with indexed columns and pointers to actual data rows, without changing physical order", "D. An index used only for primary keys"],
+    "correctAnswer": "C",
+    "explanation": "A non-clustered index creates a separate structure containing the indexed columns and pointers (row locators) to the actual data rows. It does not alter the physical order. A table can have multiple non-clustered indexes."
+  },
+  {
+    "id": "DB084",
+    "subject": "Database Systems",
+    "topic": "Indexing",
+    "difficulty": "medium",
+    "question": "How many clustered indexes can a table have?",
+    "choices": ["A. Unlimited", "B. One", "C. Two", "D. One per column"],
+    "correctAnswer": "B",
+    "explanation": "A table can have only ONE clustered index because the data rows can only be physically ordered in one way. However, a table can have multiple non-clustered indexes."
+  },
+  {
+    "id": "DB085",
+    "subject": "Database Systems",
+    "topic": "Indexing",
+    "difficulty": "medium",
+    "question": "Which of the following is a disadvantage of indexing?",
+    "choices": ["A. Slower SELECT queries", "B. Increased storage space and slower data modification operations (INSERT, UPDATE, DELETE)", "C. Reduced query accuracy", "D. Indexes prevent the use of WHERE clauses"],
+    "correctAnswer": "B",
+    "explanation": "Indexes consume additional storage space. They also slow down INSERT, UPDATE, and DELETE operations because the index structures must also be updated whenever the table data changes."
+  },
+  {
+    "id": "DB086",
+    "subject": "Database Systems",
+    "topic": "Indexing",
+    "difficulty": "hard",
+    "question": "A B-tree index is commonly used in databases because:",
+    "choices": ["A. It stores all data in a single sorted array for fast linear search", "B. It maintains balanced tree structure enabling O(log n) search, insert, and delete operations while supporting range queries", "C. It requires no additional storage beyond the main table", "D. It only works for integer data types"],
+    "correctAnswer": "B",
+    "explanation": "B-tree (Balanced tree) indexes maintain a balanced structure that guarantees O(log n) performance for search, insert, and delete. They also efficiently support range queries (BETWEEN, >, <) unlike hash indexes."
+  },
+  {
+    "id": "DB087",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "medium",
+    "question": "What does ACID stand for in the context of database transactions?",
+    "choices": ["A. Atomicity, Consistency, Isolation, Durability", "B. Accuracy, Completeness, Integrity, Dependability", "C. Atomicity, Correctness, Independence, Distribution", "D. Access, Control, Integrity, Data"],
+    "correctAnswer": "A",
+    "explanation": "ACID stands for Atomicity (transaction completes fully or not at all), Consistency (database remains in valid state), Isolation (concurrent transactions appear isolated), and Durability (committed changes persist)."
+  },
+  {
+    "id": "DB088",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "medium",
+    "question": "Which ACID property ensures that a transaction is treated as a single indivisible unit — either all operations succeed or none do?",
+    "choices": ["A. Consistency", "B. Isolation", "C. Atomicity", "D. Durability"],
+    "correctAnswer": "C",
+    "explanation": "Atomicity ensures that a transaction is treated as a single unit. If any part of the transaction fails, the entire transaction is rolled back, leaving the database unchanged."
+  },
+  {
+    "id": "DB089",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "medium",
+    "question": "Which ACID property guarantees that once a transaction is committed, the changes are permanent even in the event of a system failure?",
+    "choices": ["A. Atomicity", "B. Consistency", "C. Isolation", "D. Durability"],
+    "correctAnswer": "D",
+    "explanation": "Durability guarantees that committed transactions are permanently saved, even if a system failure (crash, power loss) occurs after the commit. This is typically achieved through write-ahead logging."
+  },
+  {
+    "id": "DB090",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "medium",
+    "question": "The command that indicates a transaction has successfully completed and changes must be made permanent is:",
+    "choices": ["A. COMMIT", "B. END TRANSACTION", "C. EXECUTE", "D. SAVE"],
+    "correctAnswer": "A",
+    "explanation": "COMMIT is the TCL (Transaction Control Language) command that permanently saves all changes made during the current transaction. After COMMIT, the changes cannot be undone with ROLLBACK."
+  },
+  {
+    "id": "DB091",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "medium",
+    "question": "Which command undoes all updates performed by SQL statements in the current transaction?",
+    "choices": ["A. ROLLBACK", "B. COMMIT", "C. TRUNCATE", "D. DELETE"],
+    "correctAnswer": "A",
+    "explanation": "ROLLBACK undoes all changes made during the current transaction, restoring the database to its state before the transaction began. It is used when an error occurs or the transaction needs to be aborted."
+  },
+  {
+    "id": "DB092",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "medium",
+    "question": "What is the purpose of SAVEPOINT in transaction management?",
+    "choices": ["A. To permanently save all transaction changes", "B. To set a named point within a transaction to which you can later roll back without undoing the entire transaction", "C. To lock all tables involved in the transaction", "D. To mark the beginning of a transaction"],
+    "correctAnswer": "B",
+    "explanation": "SAVEPOINT sets a named marker within a transaction. You can use ROLLBACK TO SAVEPOINT to undo changes back to that point without rolling back the entire transaction, providing fine-grained control."
+  },
+  {
+    "id": "DB093",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "hard",
+    "question": "Which ACID property ensures that concurrent transactions produce the same result as if they were executed serially?",
+    "choices": ["A. Atomicity", "B. Consistency", "C. Isolation", "D. Durability"],
+    "correctAnswer": "C",
+    "explanation": "Isolation ensures that concurrent transactions appear to execute serially (one at a time). The intermediate state of a transaction is invisible to other concurrent transactions, preventing dirty reads and other anomalies."
+  },
+  {
+    "id": "DB094",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "medium",
+    "question": "What is a deadlock in a database?",
+    "choices": ["A. A situation where a transaction cannot find the data it needs", "B. A situation where two or more transactions are each waiting for the other to release a lock, causing all to be blocked indefinitely", "C. A lock that prevents all read operations on a table", "D. An error that occurs when a transaction exceeds its time limit"],
+    "correctAnswer": "B",
+    "explanation": "A deadlock occurs when two or more transactions are each waiting for resources (locks) held by the other, creating a circular dependency where none can proceed. DBMS typically detects and resolves deadlocks by aborting one transaction."
+  },
+  {
+    "id": "DB095",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "medium",
+    "question": "What is a dirty read in the context of database concurrency?",
+    "choices": ["A. Reading data that has been encrypted", "B. Reading data that has been modified by another transaction that has not yet been committed", "C. Reading data from a corrupted table", "D. Reading the same row twice and getting different results"],
+    "correctAnswer": "B",
+    "explanation": "A dirty read occurs when a transaction reads data that has been modified by another uncommitted transaction. If that other transaction rolls back, the first transaction has read invalid (dirty) data."
+  },
+  {
+    "id": "DB096",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "medium",
+    "question": "What is a shared lock (S-lock) used for in concurrency control?",
+    "choices": ["A. To allow only one transaction to write to a resource", "B. To allow multiple transactions to read a resource simultaneously while preventing writes", "C. To prevent all access to a resource", "D. To lock a table for exclusive use during bulk inserts"],
+    "correctAnswer": "B",
+    "explanation": "A shared lock (S-lock or read lock) allows multiple transactions to read the same resource simultaneously. However, it prevents other transactions from obtaining an exclusive (write) lock on the resource."
+  },
+  {
+    "id": "DB097",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "hard",
+    "question": "Which isolation level prevents dirty reads but allows non-repeatable reads?",
+    "choices": ["A. READ UNCOMMITTED", "B. READ COMMITTED", "C. REPEATABLE READ", "D. SERIALIZABLE"],
+    "correctAnswer": "B",
+    "explanation": "READ COMMITTED prevents dirty reads (you only read committed data) but allows non-repeatable reads (the same row may return different values if read twice within the same transaction due to another committed transaction)."
+  },
+  {
+    "id": "DB098",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "hard",
+    "question": "Which isolation level provides the highest level of data consistency by preventing dirty reads, non-repeatable reads, and phantom reads?",
+    "choices": ["A. READ UNCOMMITTED", "B. READ COMMITTED", "C. REPEATABLE READ", "D. SERIALIZABLE"],
+    "correctAnswer": "D",
+    "explanation": "SERIALIZABLE is the highest isolation level. It prevents dirty reads, non-repeatable reads, AND phantom reads. Transactions are executed as if they run serially, ensuring complete isolation but at the cost of performance."
+  },
+  {
+    "id": "DB099",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "hard",
+    "question": "What is a phantom read in database concurrency?",
+    "choices": ["A. Reading data from a table that has been dropped", "B. A transaction reads a set of rows twice; the second read returns new rows inserted by another committed transaction (rows that 'appear' as phantoms)", "C. Reading NULL values from a nullable column", "D. Reading a row that another transaction has already deleted"],
+    "correctAnswer": "B",
+    "explanation": "A phantom read occurs when a transaction executes a query twice and the second execution returns additional rows that were inserted by another committed transaction between the two reads. The new rows 'appear' like phantoms."
+  },
+  {
+    "id": "DB100",
+    "subject": "Database Systems",
+    "topic": "Database Security",
+    "difficulty": "medium",
+    "question": "What is the purpose of the GRANT command in SQL?",
+    "choices": ["A. To remove user access privileges to database objects", "B. To give users access privileges to database objects", "C. To create a new user account", "D. To lock a table for maintenance"],
+    "correctAnswer": "B",
+    "explanation": "GRANT is a DCL (Data Control Language) command that gives users access privileges (e.g., SELECT, INSERT, UPDATE, DELETE, ALL) to database objects such as tables, views, and procedures."
+  },
+  {
+    "id": "DB101",
+    "subject": "Database Systems",
+    "topic": "Database Security",
+    "difficulty": "medium",
+    "question": "What is the purpose of the REVOKE command in SQL?",
+    "choices": ["A. To give users access privileges to database objects", "B. To permanently delete user accounts", "C. To remove previously granted user access privileges to database objects", "D. To restrict SELECT queries to specific columns"],
+    "correctAnswer": "C",
+    "explanation": "REVOKE is a DCL command that removes previously granted privileges from a user or role. Example: REVOKE SELECT ON Employees FROM user1; removes the right to query the Employees table from user1."
+  },
+  {
+    "id": "DB102",
+    "subject": "Database Systems",
+    "topic": "Database Security",
+    "difficulty": "medium",
+    "question": "Referential Integrity Constraints are used to:",
+    "choices": ["A. Enforce one-to-many relationships only", "B. Enforce the uniqueness of values entered as primary keys", "C. Ensure that foreign keys can be entered only if the corresponding value exists in the originating table", "D. Prevent NULL values in all columns"],
+    "correctAnswer": "C",
+    "explanation": "Referential Integrity ensures that a foreign key value in one table must match an existing primary key value in the referenced table, or be NULL. This maintains consistency between related tables."
+  },
+  {
+    "id": "DB103",
+    "subject": "Database Systems",
+    "topic": "Database Security",
+    "difficulty": "hard",
+    "question": "Which SQL statement grants a user 'john' the ability to SELECT and INSERT data into the Employees table?",
+    "choices": ["A. GRANT ALL ON Employees TO john", "B. GRANT SELECT, INSERT ON Employees TO john", "C. ALLOW SELECT, INSERT ON Employees FOR john", "D. PERMIT john TO SELECT, INSERT FROM Employees"],
+    "correctAnswer": "B",
+    "explanation": "The correct syntax is GRANT privilege(s) ON object TO user. To grant SELECT and INSERT on the Employees table to john: GRANT SELECT, INSERT ON Employees TO john;"
+  },
+  {
+    "id": "DB104",
+    "subject": "Database Systems",
+    "topic": "Database Security",
+    "difficulty": "hard",
+    "question": "What is database security primarily concerned with?",
+    "choices": ["A. Protecting data from unauthorized access, modification, or destruction", "B. Ensuring fast data retrieval for all users", "C. Optimizing storage space usage", "D. Managing database schema changes automatically"],
+    "correctAnswer": "A",
+    "explanation": "Database security is primarily concerned with protecting data from unauthorized access, modification, or destruction. It includes authentication, authorization (GRANT/REVOKE), encryption, and auditing."
+  },
+  {
+    "id": "DB105",
+    "subject": "Database Systems",
+    "topic": "Relational Algebra",
+    "difficulty": "medium",
+    "question": "Which relational algebra operation combines two relations based on a common attribute?",
+    "choices": ["A. Union", "B. Intersection", "C. Join", "D. Projection"],
+    "correctAnswer": "C",
+    "explanation": "The JOIN operation in relational algebra combines tuples from two relations based on a common attribute (or join condition). It corresponds to the SQL JOIN clause."
+  },
+  {
+    "id": "DB106",
+    "subject": "Database Systems",
+    "topic": "Relational Algebra",
+    "difficulty": "medium",
+    "question": "What does the PROJECT (π) operation do in relational algebra?",
+    "choices": ["A. Selects rows that satisfy a condition", "B. Selects a subset of columns from a relation, eliminating duplicates", "C. Combines two relations based on a common attribute", "D. Returns all tuples present in both relations"],
+    "correctAnswer": "B",
+    "explanation": "The PROJECT (π) operation in relational algebra selects specific columns (attributes) from a relation, discarding others and eliminating duplicate tuples in the result. It corresponds to the SELECT column list in SQL."
+  },
+  {
+    "id": "DB107",
+    "subject": "Database Systems",
+    "topic": "Relational Algebra",
+    "difficulty": "medium",
+    "question": "What does the SELECT (σ) operation do in relational algebra?",
+    "choices": ["A. Selects specific columns from a relation", "B. Combines two relations based on a shared attribute", "C. Selects rows (tuples) that satisfy a given predicate/condition", "D. Returns tuples present in either relation"],
+    "correctAnswer": "C",
+    "explanation": "The SELECT (σ) operation in relational algebra filters rows based on a condition (predicate). For example, σ(salary > 50000)(Employees) returns only employees earning more than 50000. It corresponds to the SQL WHERE clause."
+  },
+  {
+    "id": "DB108",
+    "subject": "Database Systems",
+    "topic": "Relational Algebra",
+    "difficulty": "hard",
+    "question": "What is the requirement for the UNION operation in relational algebra?",
+    "choices": ["A. The two relations must have at least one common attribute", "B. The two relations must be union-compatible (same number of attributes with compatible domains)", "C. The two relations must have the same primary key", "D. One relation must be a subset of the other"],
+    "correctAnswer": "B",
+    "explanation": "For a UNION operation, the two relations must be union-compatible: they must have the same number of attributes, and corresponding attributes must have compatible domains (data types). The result contains all tuples from both relations with duplicates eliminated."
+  },
+  {
+    "id": "DB109",
+    "subject": "Database Systems",
+    "topic": "Relational Algebra",
+    "difficulty": "hard",
+    "question": "In relational algebra, what does the NATURAL JOIN operation do differently from a regular JOIN?",
+    "choices": ["A. It joins tables on all common attributes automatically and eliminates duplicate attribute columns", "B. It only works with foreign key relationships", "C. It returns only non-matching tuples", "D. It requires an explicit ON condition to be specified"],
+    "correctAnswer": "A",
+    "explanation": "A NATURAL JOIN automatically joins two relations on ALL attributes with the same name, eliminating duplicate columns in the result. A regular JOIN requires an explicit join condition and may keep duplicate column names."
+  },
+  {
+    "id": "DB110",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "hard",
+    "question": "What does the CHECK constraint do in SQL?",
+    "choices": ["A. Ensures a column cannot have NULL values", "B. Ensures the value in a column satisfies a specific condition (Boolean expression)", "C. Ensures that all values in a column are unique", "D. Ensures a column references the primary key of another table"],
+    "correctAnswer": "B",
+    "explanation": "The CHECK constraint limits the value range that can be placed in a column. For example: CHECK (salary > 0) ensures only positive salary values are allowed. It enforces domain integrity."
+  },
+  {
+    "id": "DB111",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL clause is used to filter the results of a SELECT statement based on a condition?",
+    "choices": ["A. HAVING", "B. GROUP BY", "C. WHERE", "D. ORDER BY"],
+    "correctAnswer": "C",
+    "explanation": "The WHERE clause filters individual rows based on a condition before any grouping occurs. HAVING filters groups after GROUP BY. WHERE is used with SELECT, UPDATE, and DELETE statements."
+  },
+  {
+    "id": "DB112",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "What is the FROM clause used for in SQL?",
+    "choices": ["A. To specify what table(s) we are selecting or deleting data from", "B. To specify the range for a search condition", "C. To specify only the search condition", "D. To define the output format"],
+    "correctAnswer": "A",
+    "explanation": "The FROM clause specifies the table(s) from which data is to be retrieved or deleted. It tells the DBMS which relations to include in the query."
+  },
+  {
+    "id": "DB113",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Given Customers(CustomerNo, FirstName, LastName) and Orders(OrderNo, CustomerNo, OrderDate) and OrderItems(OrderNo, ItemNo, SalePrice, Quantity). Which query lists customers with total value of all their orders in descending order?",
+    "choices": ["A. SELECT CustomerNo, SUM(SalePrice) FROM Orders ORDER BY SUM DESC", "B. SELECT C.CustomerNo, C.FirstName, C.LastName, SUM(OI.Quantity * OI.SalePrice) AS Total FROM Customers C INNER JOIN Orders O ON C.CustomerNo = O.CustomerNo INNER JOIN OrderItems OI ON O.OrderNo = OI.OrderNo GROUP BY C.CustomerNo ORDER BY Total DESC", "C. SELECT FirstName, LastName FROM Customers ORDER BY Total DESC", "D. SELECT CustomerNo, COUNT(*) FROM Orders GROUP BY CustomerNo"],
+    "correctAnswer": "B",
+    "explanation": "This query requires joining three tables (Customers, Orders, OrderItems), computing the total as SUM(Quantity * SalePrice), grouping by customer, and ordering by the total in descending order."
+  },
+  {
+    "id": "DB114",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Which query correctly finds the highest population in every continent using the World Country table?",
+    "choices": ["A. SELECT Continent, MAX(Population) FROM Country ORDER BY Continent", "B. SELECT Continent, MAX(Population) FROM Country GROUP BY Continent", "C. SELECT Continent, Population FROM Country WHERE Population = MAX(Population)", "D. SELECT Continent, SUM(Population) FROM Country GROUP BY Continent"],
+    "correctAnswer": "B",
+    "explanation": "GROUP BY Continent groups all rows by continent, and MAX(Population) returns the highest population within each continent group. WHERE cannot be used with aggregate functions directly."
+  },
+  {
+    "id": "DB115",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Which query finds the average life expectancy in every continent and region where the average is greater than or equal to 70?",
+    "choices": ["A. SELECT Continent, Region, AVG(LifeExpectancy) FROM Country WHERE AVG(LifeExpectancy) >= 70 GROUP BY Continent, Region", "B. SELECT Continent, Region, AVG(LifeExpectancy) FROM Country GROUP BY Continent, Region HAVING AVG(LifeExpectancy) >= 70", "C. SELECT Continent, Region FROM Country GROUP BY Continent HAVING LifeExpectancy >= 70", "D. SELECT AVG(LifeExpectancy) FROM Country WHERE LifeExpectancy >= 70 GROUP BY Continent, Region"],
+    "correctAnswer": "B",
+    "explanation": "HAVING is used after GROUP BY to filter groups based on aggregate conditions. WHERE cannot reference aggregate functions like AVG(). The GROUP BY must include both Continent and Region."
+  },
+  {
+    "id": "DB116",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "medium",
+    "question": "The DBMS acts as an interface between what two components of an enterprise-class database system?",
+    "choices": ["A. Database application and the database", "B. Data and the database", "C. The user and the database application", "D. Database application and SQL"],
+    "correctAnswer": "A",
+    "explanation": "The DBMS acts as an interface between the database application (which users interact with) and the physical database (where data is stored). It manages all access to the data."
+  },
+  {
+    "id": "DB117",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "medium",
+    "question": "Which of the following is NOT a component of a database system?",
+    "choices": ["A. User data", "B. Metadata", "C. Reports", "D. Indexes"],
+    "correctAnswer": "C",
+    "explanation": "Reports are output products generated from a database, not components of the database system itself. Core database components include user data, metadata (data dictionary), and indexes."
+  },
+  {
+    "id": "DB118",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "medium",
+    "question": "Which of the following is NOT a function of a DBMS?",
+    "choices": ["A. Creating and processing forms", "B. Creating databases", "C. Processing data", "D. Administrating databases"],
+    "correctAnswer": "A",
+    "explanation": "Creating and processing forms is a function of application programs or front-end tools (like Microsoft Access forms), not a core function of the DBMS itself. DBMS functions include creating, processing, and administrating databases."
+  },
+  {
+    "id": "DB119",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "medium",
+    "question": "Which of the following is a common technique for query optimization?",
+    "choices": ["A. Increasing data redundancy", "B. Using appropriate indexing", "C. Decreasing the number of tables", "D. Disabling transaction logging"],
+    "correctAnswer": "B",
+    "explanation": "Using appropriate indexing is a primary technique for query optimization. Indexes speed up data retrieval for SELECT queries, especially those with WHERE, ORDER BY, GROUP BY, and JOIN operations."
+  },
+  {
+    "id": "DB120",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "medium",
+    "question": "Which of the following is a primary advantage of NoSQL databases over traditional RDBMS for certain use cases?",
+    "choices": ["A. Strong ACID compliance", "B. Horizontal scalability and flexibility with unstructured data", "C. Strict schema enforcement", "D. Complex join operations"],
+    "correctAnswer": "B",
+    "explanation": "NoSQL databases excel at horizontal scalability (scaling out across many servers) and handling unstructured/semi-structured data with flexible schemas. Traditional RDBMS are better for ACID compliance and complex joins."
+  },
+  {
+    "id": "DB121",
+    "subject": "Database Systems",
+    "topic": "DBMS Concepts",
+    "difficulty": "medium",
+    "question": "Which NoSQL database type is best suited for storing interconnected data such as social networks?",
+    "choices": ["A. Key-Value Store", "B. Document Database", "C. Column-Family Database", "D. Graph Database"],
+    "correctAnswer": "D",
+    "explanation": "Graph databases are optimized for storing and querying highly connected data with complex relationships, making them ideal for social networks, recommendation engines, and fraud detection."
+  },
+  {
+    "id": "DB122",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "medium",
+    "question": "In database design, what does a strong entity set have?",
+    "choices": ["A. A primary key derived from another entity set", "B. A primary key dependent on another entity set", "C. A primary key that uniquely identifies its tuples without relying on other entity sets", "D. No primary key"],
+    "correctAnswer": "C",
+    "explanation": "A strong entity has a primary key that uniquely identifies its instances independently, without relying on another entity. A weak entity, by contrast, depends on a related strong entity for its identification."
+  },
+  {
+    "id": "DB123",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "Which of the following is a disadvantage of a highly normalized database?",
+    "choices": ["A. Increased data redundancy", "B. Slower query performance due to more JOIN operations required", "C. Difficulty in maintaining data integrity", "D. Less flexible schema design"],
+    "correctAnswer": "B",
+    "explanation": "Highly normalized databases minimize redundancy but may suffer from slower query performance because retrieving related data requires multiple JOIN operations across many tables, which adds overhead."
+  },
+  {
+    "id": "DB124",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "hard",
+    "question": "What is the difference between TRUNCATE and DELETE in terms of transaction logging and performance?",
+    "choices": ["A. Both log every row deleted and have the same performance", "B. TRUNCATE is a DDL operation that minimally logs (drops and recreates table pages) and is faster; DELETE logs every row and is slower for large tables", "C. DELETE is a DDL operation; TRUNCATE is a DML operation", "D. TRUNCATE can be rolled back; DELETE cannot"],
+    "correctAnswer": "B",
+    "explanation": "TRUNCATE is a DDL operation that deallocates data pages with minimal logging, making it much faster for large tables. DELETE is DML, logs every deleted row for rollback capability, and fires triggers. TRUNCATE typically cannot be rolled back."
+  },
+  {
+    "id": "DB125",
+    "subject": "Database Systems",
+    "topic": "Joins",
+    "difficulty": "hard",
+    "question": "What is the result of a CROSS JOIN between two tables, Table A with 4 rows and Table B with 3 rows?",
+    "choices": ["A. 4 rows", "B. 3 rows", "C. 7 rows", "D. 12 rows"],
+    "correctAnswer": "D",
+    "explanation": "A CROSS JOIN produces the Cartesian product of both tables — every row in Table A is combined with every row in Table B. Result = 4 × 3 = 12 rows. No join condition is specified in a CROSS JOIN."
+  },
+  {
+    "id": "DB126",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "hard",
+    "question": "The Two-Phase Locking (2PL) protocol ensures serializability by:",
+    "choices": ["A. Allowing a transaction to acquire and release locks at any time", "B. Requiring all locks to be acquired before any are released: a growing phase (acquiring locks) followed by a shrinking phase (releasing locks)", "C. Limiting each transaction to acquiring exactly two locks", "D. Releasing all locks immediately after each database operation"],
+    "correctAnswer": "B",
+    "explanation": "Two-Phase Locking (2PL) guarantees serializability by dividing lock management into two phases: the growing phase (only acquires locks, never releases) and the shrinking phase (only releases locks, never acquires). This prevents certain conflict cycles."
+  },
+  {
+    "id": "DB127",
+    "subject": "Database Systems",
+    "topic": "Relational Algebra",
+    "difficulty": "hard",
+    "question": "Which relational algebra operation returns tuples that appear in either of two union-compatible relations?",
+    "choices": ["A. JOIN", "B. INTERSECTION", "C. UNION", "D. DIFFERENCE"],
+    "correctAnswer": "C",
+    "explanation": "The UNION operation returns all distinct tuples from both relations (equivalent to SQL UNION). Both relations must be union-compatible. INTERSECTION returns common tuples; DIFFERENCE returns tuples in one relation but not the other."
+  },
+  {
+    "id": "DB128",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "medium",
+    "question": "What is the role of the data dictionary (system catalog) in a DBMS?",
+    "choices": ["A. To store encrypted user passwords", "B. To store metadata about the database structure including table schemas, column types, and constraints", "C. To cache frequently accessed data for fast retrieval", "D. To store backup copies of all database tables"],
+    "correctAnswer": "B",
+    "explanation": "The data dictionary (or system catalog) stores metadata about the database: table schemas, column names and data types, constraints, indexes, views, and user permissions. It is used by the DBMS to manage and validate all operations."
+  },
+  {
+    "id": "DB129",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which SQL constraint prevents NULL values from being inserted into a column?",
+    "choices": ["A. UNIQUE", "B. PRIMARY KEY", "C. NOT NULL", "D. CHECK"],
+    "correctAnswer": "C",
+    "explanation": "NOT NULL is the constraint that prevents NULL values from being entered into a column. PRIMARY KEY also implicitly enforces NOT NULL, but NOT NULL can be applied to any non-primary-key column independently."
+  },
+  {
+    "id": "DB130",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which DDL command is used to enforce referential integrity between two tables?",
+    "choices": ["A. PRIMARY KEY constraint", "B. UNIQUE constraint", "C. FOREIGN KEY constraint", "D. CHECK constraint"],
+    "correctAnswer": "C",
+    "explanation": "The FOREIGN KEY constraint is used to enforce referential integrity between two tables. It ensures that the value in the foreign key column matches an existing value in the referenced table's primary key."
+  },
+  {
+    "id": "DB131",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "How do you fix a 2NF violation caused by a partial dependency?",
+    "choices": ["A. Add more columns to the table to make the key larger", "B. Move the partially dependent attribute and the part of the key it depends on into a separate table", "C. Create an index on the partially dependent attribute", "D. Add a NOT NULL constraint to the partial key column"],
+    "correctAnswer": "B",
+    "explanation": "To fix a 2NF violation (partial dependency), decompose the table: create a new table with the partial key and the dependent attribute(s), remove those attributes from the original table, and keep the relationship via the foreign key."
+  },
+  {
+    "id": "DB132",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "How do you fix a 3NF violation caused by a transitive dependency (A → B → C where A is the key)?",
+    "choices": ["A. Remove attribute C from the database entirely", "B. Create a composite key using A and B", "C. Decompose into two tables: one with (A, B) and another with (B, C), using B as a foreign key in the first table", "D. Move all transitive attributes into the primary key"],
+    "correctAnswer": "C",
+    "explanation": "To eliminate a transitive dependency A → B → C, decompose into two tables: Table1(A, B) where A is the PK, and Table2(B, C) where B is the PK. Table1 references Table2 via B as a foreign key."
+  },
+  {
+    "id": "DB133",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Which SQL query counts the number of countries in each region of 'Asia' and 'Africa'?",
+    "choices": ["A. SELECT Region, COUNT(*) FROM Country WHERE Continent IN ('Asia', 'Africa')", "B. SELECT Region, COUNT(*) FROM Country WHERE Continent IN ('Asia', 'Africa') GROUP BY Region", "C. SELECT COUNT(*) FROM Country WHERE Continent = 'Asia' AND Continent = 'Africa' GROUP BY Region", "D. SELECT Continent, COUNT(*) FROM Country WHERE Region IN ('Asia', 'Africa') GROUP BY Continent"],
+    "correctAnswer": "B",
+    "explanation": "The query filters rows where Continent is 'Asia' or 'Africa' using IN, then groups by Region and counts the number of countries in each region using COUNT(*)."
+  },
+  {
+    "id": "DB134",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which query finds countries that have a 'Republic' government form and are in 'Asia'?",
+    "choices": ["A. SELECT Name FROM Country WHERE GovernmentForm = 'Republic' OR Continent = 'Asia'", "B. SELECT Name FROM Country WHERE GovernmentForm = 'Republic' AND Continent = 'Asia'", "C. SELECT Name FROM Country WHERE Continent = 'Asia' HAVING GovernmentForm = 'Republic'", "D. SELECT Name FROM Country WHERE Continent IN ('Asia') AND GovernmentForm IN ('Republic')"],
+    "correctAnswer": "B",
+    "explanation": "Using AND combines both conditions: the country must be in 'Asia' AND have 'Republic' as government form. Option D is also technically valid, but B is cleaner and more standard."
+  },
+  {
+    "id": "DB135",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL statement correctly inserts a new row into the Employees table?",
+    "choices": ["A. ADD INTO Employees (EmployeeID, FirstName, LastName) VALUES (1, 'John', 'Doe')", "B. INSERT Employees VALUES (1, 'John', 'Doe')", "C. INSERT INTO Employees (EmployeeID, FirstName, LastName) VALUES (1, 'John', 'Doe')", "D. PUT INTO Employees (EmployeeID, FirstName) VALUES (1, 'John')"],
+    "correctAnswer": "C",
+    "explanation": "The correct SQL syntax for inserting data is: INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...). Specifying column names is a best practice."
+  },
+  {
+    "id": "DB136",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "Which SQL statement correctly updates a record in the Products table?",
+    "choices": ["A. MODIFY Products SET Price = 55.00 WHERE ProductID = 1", "B. UPDATE Products SET Price = 55.00 WHERE ProductID = 1", "C. ALTER Products SET Price = 55.00 WHERE ProductID = 1", "D. CHANGE Products Price = 55.00 WHERE ProductID = 1"],
+    "correctAnswer": "B",
+    "explanation": "The correct SQL syntax for updating existing data is: UPDATE table_name SET column = value WHERE condition. Always include a WHERE clause to avoid updating all rows."
+  },
+  {
+    "id": "DB137",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "medium",
+    "question": "What is the difference between data and metadata in a database?",
+    "choices": ["A. Data is about the structure; metadata is the actual content", "B. Data is the actual content stored (e.g., student names, grades); metadata describes the data (e.g., table schema, column types, creation date)", "C. Data and metadata are identical concepts in databases", "D. Metadata is encrypted data; data is plain text"],
+    "correctAnswer": "B",
+    "explanation": "Data is the actual information stored in the database (e.g., student names, values). Metadata is 'data about data' — it describes the structure and properties of the data (e.g., column names, data types, table relationships)."
+  },
+  {
+    "id": "DB138",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "hard",
+    "question": "How can deadlocks be prevented in a database system?",
+    "choices": ["A. By allowing transactions to wait indefinitely for locks", "B. By using techniques such as lock ordering (all transactions acquire locks in the same predefined order), timeout-based detection, or wait-for graph analysis", "C. By disabling all locking mechanisms", "D. By running only one transaction at a time"],
+    "correctAnswer": "B",
+    "explanation": "Deadlock prevention strategies include: requiring transactions to acquire locks in a fixed global order (preventing circular waits), using timeouts to abort waiting transactions, and using wait-for graphs to detect and break deadlock cycles."
+  },
+  {
+    "id": "DB139",
+    "subject": "Database Systems",
+    "topic": "Transactions",
+    "difficulty": "hard",
+    "question": "Which ACID property ensures the database moves from one valid state to another, enforcing all defined rules (constraints, cascades, triggers)?",
+    "choices": ["A. Atomicity", "B. Consistency", "C. Isolation", "D. Durability"],
+    "correctAnswer": "B",
+    "explanation": "Consistency ensures that a transaction brings the database from one valid state to another valid state, satisfying all integrity constraints (primary keys, foreign keys, check constraints, etc.). An inconsistent transaction is rolled back."
+  },
+  {
+    "id": "DB140",
+    "subject": "Database Systems",
+    "topic": "Indexing",
+    "difficulty": "hard",
+    "question": "Which type of index is automatically created when you define a PRIMARY KEY constraint on a table in most RDBMS?",
+    "choices": ["A. A non-clustered index", "B. A hash index", "C. A clustered index", "D. A bitmap index"],
+    "correctAnswer": "C",
+    "explanation": "In most RDBMS (e.g., SQL Server, MySQL InnoDB), defining a PRIMARY KEY automatically creates a clustered index on that column, physically ordering the table data by the primary key values."
+  },
+  {
+    "id": "DB141",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "hard",
+    "question": "Which SQL command creates a new database object that automatically executes when a specific event (INSERT, UPDATE, DELETE) occurs on a table?",
+    "choices": ["A. CREATE VIEW", "B. CREATE PROCEDURE", "C. CREATE TRIGGER", "D. CREATE FUNCTION"],
+    "correctAnswer": "C",
+    "explanation": "A TRIGGER is a database object that automatically executes a defined set of SQL statements when a specific DML event (INSERT, UPDATE, DELETE) occurs on a specified table or view."
+  },
+  {
+    "id": "DB142",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "hard",
+    "question": "Which of the following queries correctly finds the total population for every region in 'Europe' AND 'Africa' combined?",
+    "choices": ["A. SELECT Region, SUM(Population) FROM Country WHERE Continent = 'Europe' AND Continent = 'Africa' GROUP BY Region", "B. SELECT Region, SUM(Population) FROM Country WHERE Continent IN ('Europe', 'Africa') GROUP BY Region", "C. SELECT Region, SUM(Population) FROM Country WHERE Continent = 'Europe' OR Continent = 'Africa'", "D. SELECT Region, COUNT(Population) FROM Country WHERE Continent IN ('Europe', 'Africa') GROUP BY Region"],
+    "correctAnswer": "B",
+    "explanation": "Using IN ('Europe', 'Africa') filters for both continents (equivalent to OR), and GROUP BY Region groups the results. SUM(Population) calculates the total population per region. Option A using AND is logically impossible (a country cannot be in two continents)."
+  },
+  {
+    "id": "DB143",
+    "subject": "Database Systems",
+    "topic": "Views",
+    "difficulty": "hard",
+    "question": "Which of the following is true about updatable views?",
+    "choices": ["A. All views in SQL are updatable by default", "B. A view is updatable if it is based on a single table, contains no aggregate functions, DISTINCT, GROUP BY, or HAVING, and no subqueries in the SELECT list", "C. Views can never be updated; they are strictly read-only", "D. A view is updatable only if it contains a primary key column"],
+    "correctAnswer": "B",
+    "explanation": "A view is updatable if it maps directly to a single base table without complexity (no aggregates, no DISTINCT, no GROUP BY/HAVING, no set operations). Complex views combining multiple tables or using aggregations are typically read-only."
+  },
+  {
+    "id": "DB144",
+    "subject": "Database Systems",
+    "topic": "Normalization",
+    "difficulty": "hard",
+    "question": "A table Employee(EmpID, EmpName, DeptID, DeptName, DeptLocation) suffers from which anomalies due to its non-normalized design?",
+    "choices": ["A. Only insertion anomalies", "B. Only deletion anomalies", "C. Insertion, deletion, and update anomalies due to the transitive dependency DeptID → {DeptName, DeptLocation}", "D. No anomalies; the table is already in BCNF"],
+    "correctAnswer": "C",
+    "explanation": "The transitive dependency EmpID → DeptID → {DeptName, DeptLocation} violates 3NF. This causes: update anomalies (changing dept name requires updating many rows), insertion anomalies (cannot add a dept without an employee), and deletion anomalies (deleting the last employee in a dept loses dept info)."
+  },
+  {
+    "id": "DB145",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "medium",
+    "question": "What is the main goal of database backup and recovery?",
+    "choices": ["A. To improve database performance", "B. To ensure data availability and prevent data loss in case of failures", "C. To reduce storage space", "D. To simplify database administration tasks"],
+    "correctAnswer": "B",
+    "explanation": "Database backup and recovery is primarily aimed at ensuring data availability and preventing data loss in the event of hardware failures, human errors, disasters, or other system failures."
+  },
+  {
+    "id": "DB146",
+    "subject": "Database Systems",
+    "topic": "SQL DDL",
+    "difficulty": "medium",
+    "question": "Which SQL command is used to rename a table?",
+    "choices": ["A. RENAME TABLE old_name TO new_name", "B. ALTER TABLE old_name RENAME TO new_name", "C. MODIFY TABLE old_name TO new_name", "D. Both A and B are valid depending on the DBMS"],
+    "correctAnswer": "D",
+    "explanation": "Different DBMS use different syntax to rename a table. In standard SQL and some DBMS: RENAME TABLE or ALTER TABLE ... RENAME TO are both valid. The specific syntax depends on the database product (MySQL, Oracle, SQL Server, etc.)."
+  },
+  {
+    "id": "DB147",
+    "subject": "Database Systems",
+    "topic": "SQL DML",
+    "difficulty": "medium",
+    "question": "What does the COUNT(*) function return in SQL?",
+    "choices": ["A. The number of non-NULL values in a specific column", "B. The total number of rows in the result set, including NULL values", "C. The sum of all numeric values in the table", "D. The number of distinct values in a column"],
+    "correctAnswer": "B",
+    "explanation": "COUNT(*) returns the total number of rows in the result set, including rows with NULL values. COUNT(column_name) counts only non-NULL values. COUNT(DISTINCT column) counts unique non-NULL values."
+  },
+  {
+    "id": "DB148",
+    "subject": "Database Systems",
+    "topic": "Concurrency Control",
+    "difficulty": "hard",
+    "question": "Which isolation level allows dirty reads (reading uncommitted data from other transactions)?",
+    "choices": ["A. READ UNCOMMITTED", "B. READ COMMITTED", "C. REPEATABLE READ", "D. SERIALIZABLE"],
+    "correctAnswer": "A",
+    "explanation": "READ UNCOMMITTED is the lowest isolation level. It allows transactions to read data that has been modified by other transactions but not yet committed (dirty reads). It provides the best performance but the least data consistency."
+  },
+  {
+    "id": "DB149",
+    "subject": "Database Systems",
+    "topic": "Database Concepts",
+    "difficulty": "hard",
+    "question": "In the context of database design, what is data abstraction and what are its three levels?",
+    "choices": ["A. Data encryption at storage, transmission, and application levels", "B. Three schema architecture: Physical level (how data is stored), Logical/Conceptual level (what data is stored and relationships), and External/View level (how data appears to users)", "C. Three layers of data backup: hot standby, warm standby, and cold backup", "D. Three normalization stages: 1NF, 2NF, and 3NF applied to all tables"],
+    "correctAnswer": "B",
+    "explanation": "Data abstraction in DBMS has three levels: Physical (internal) — how data is physically stored; Logical (conceptual) — structure of the entire database, tables and relationships; External (view) — how individual users/applications see the data. This hides implementation details."
+  },
+  {
+    "id": "DB150",
+    "subject": "Database Systems",
+    "topic": "Database Security",
+    "difficulty": "hard",
+    "question": "Which of the following best describes the principle of least privilege in database security?",
+    "choices": ["A. All users should have administrator access to simplify management", "B. Users should be granted only the minimum permissions necessary to perform their required tasks, and no more", "C. Privileges should be granted to roles only, never directly to users", "D. All database tables should be publicly readable but only administrators can write"],
+    "correctAnswer": "B",
+    "explanation": "The principle of least privilege means granting users only the permissions they need to do their job — no more. For example, a report user gets SELECT only, not INSERT/UPDATE/DELETE. This minimizes the impact of compromised accounts or insider threats."
+  }
+]

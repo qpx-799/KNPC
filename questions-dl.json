@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "DL001",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "easy",
+    "question": "Convert the decimal number 45 to binary.",
+    "choices": [
+      "A. 101100",
+      "B. 101101",
+      "C. 101011",
+      "D. 110101"
+    ],
+    "correctAnswer": "B",
+    "explanation": "45 \u00f7 2: 22 R1, 11 R0, 5 R1, 2 R1, 1 R0, 0 R1. Reading remainders bottom-up: 101101."
+  },
+  {
+    "id": "DL002",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "Convert hexadecimal 0xAF to decimal.",
+    "choices": [
+      "A. 165",
+      "B. 175",
+      "C. 185",
+      "D. 195"
+    ],
+    "correctAnswer": "B",
+    "explanation": "0xAF = A\u00d716 + F = 10\u00d716 + 15 = 160 + 15 = 175."
+  },
+  {
+    "id": "DL003",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "What is the octal representation of binary 110101011?",
+    "choices": [
+      "A. 653",
+      "B. 652",
+      "C. 654",
+      "D. 655"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Group from right in sets of 3: 110 101 011 = 6 5 3 = 653\u2088."
+  },
+  {
+    "id": "DL004",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "Convert 0.625 decimal to binary.",
+    "choices": [
+      "A. 0.101",
+      "B. 0.110",
+      "C. 0.011",
+      "D. 0.111"
+    ],
+    "correctAnswer": "A",
+    "explanation": "0.625 \u00d7 2 = 1.25 \u2192 1; 0.25 \u00d7 2 = 0.5 \u2192 0; 0.5 \u00d7 2 = 1.0 \u2192 1. Result: 0.101\u2082."
+  },
+  {
+    "id": "DL005",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "What is the hexadecimal equivalent of binary 10111110?",
+    "choices": [
+      "A. 0xBD",
+      "B. 0xBE",
+      "C. 0xBF",
+      "D. 0xBC"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Group 4 bits: 1011 1110 = B E = 0xBE."
+  },
+  {
+    "id": "DL006",
+    "subject": "Digital Logic Design",
+    "topic": "Binary Arithmetic",
+    "difficulty": "medium",
+    "question": "What is 1011 + 0110 in binary?",
+    "choices": [
+      "A. 10001",
+      "B. 10000",
+      "C. 10010",
+      "D. 01111"
+    ],
+    "correctAnswer": "A",
+    "explanation": "1011 + 0110: 1+0=1, 1+1=10 (write 0 carry 1), 0+1+1=10 (write 0 carry 1), 1+0+1=10. Result: 10001."
+  },
+  {
+    "id": "DL007",
+    "subject": "Digital Logic Design",
+    "topic": "Binary Arithmetic",
+    "difficulty": "medium",
+    "question": "Subtract 0101 from 1100 in binary (1100 - 0101).",
+    "choices": [
+      "A. 0110",
+      "B. 0111",
+      "C. 1001",
+      "D. 0100"
+    ],
+    "correctAnswer": "B",
+    "explanation": "1100 - 0101: use borrow method or 2's complement. 1100 + two's complement of 0101 = 1100 + 1011 = 10111. Take 4 bits: 0111."
+  },
+  {
+    "id": "DL008",
+    "subject": "Digital Logic Design",
+    "topic": "Binary Arithmetic",
+    "difficulty": "hard",
+    "question": "What is the 2's complement representation of -13 in 8 bits?",
+    "choices": [
+      "A. 11110010",
+      "B. 11110011",
+      "C. 10001101",
+      "D. 01110011"
+    ],
+    "correctAnswer": "B",
+    "explanation": "13 = 00001101. Invert: 11110010. Add 1: 11110011. So -13 in 8-bit 2's complement = 11110011."
+  },
+  {
+    "id": "DL009",
+    "subject": "Digital Logic Design",
+    "topic": "Binary Arithmetic",
+    "difficulty": "hard",
+    "question": "In 2's complement 8-bit arithmetic, what decimal value does 11001010 represent?",
+    "choices": [
+      "A. -54",
+      "B. -55",
+      "C. 202",
+      "D. -53"
+    ],
+    "correctAnswer": "A",
+    "explanation": "MSB=1 \u2192 negative. Invert: 00110101. Add 1: 00110110 = 54. So value = -54."
+  },
+  {
+    "id": "DL010",
+    "subject": "Digital Logic Design",
+    "topic": "Binary Arithmetic",
+    "difficulty": "medium",
+    "question": "BCD (Binary Coded Decimal) encodes each decimal digit using:",
+    "choices": [
+      "A. 3 bits",
+      "B. 4 bits",
+      "C. 8 bits",
+      "D. 7 bits"
+    ],
+    "correctAnswer": "B",
+    "explanation": "BCD uses 4 bits per decimal digit (0-9 = 0000-1001). Codes 1010-1111 are invalid in BCD."
+  },
+  {
+    "id": "DL011",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "Simplify: A + A'B",
+    "choices": [
+      "A. A + B",
+      "B. AB",
+      "C. A'",
+      "D. B"
+    ],
+    "correctAnswer": "A",
+    "explanation": "A + A'B = (A + A')(A + B) by distribution = 1\u00b7(A+B) = A + B."
+  },
+  {
+    "id": "DL012",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "Apply DeMorgan's theorem to (AB)'.",
+    "choices": [
+      "A. A'B'",
+      "B. A' + B'",
+      "C. AB",
+      "D. A + B"
+    ],
+    "correctAnswer": "B",
+    "explanation": "DeMorgan's: (AB)' = A' + B'. Complement of AND = OR of complements."
+  },
+  {
+    "id": "DL013",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "Apply DeMorgan's theorem to (A + B)'.",
+    "choices": [
+      "A. A' + B'",
+      "B. A'B'",
+      "C. AB",
+      "D. A + B"
+    ],
+    "correctAnswer": "B",
+    "explanation": "DeMorgan's: (A+B)' = A'B'. Complement of OR = AND of complements."
+  },
+  {
+    "id": "DL014",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Simplify: AB + AB'",
+    "choices": [
+      "A. AB",
+      "B. B",
+      "C. A",
+      "D. A + B"
+    ],
+    "correctAnswer": "C",
+    "explanation": "AB + AB' = A(B + B') = A\u00b71 = A."
+  },
+  {
+    "id": "DL015",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Simplify: A + AB",
+    "choices": [
+      "A. AB",
+      "B. B",
+      "C. A + B",
+      "D. A"
+    ],
+    "correctAnswer": "D",
+    "explanation": "A + AB = A(1 + B) = A\u00b71 = A. (Absorption law)"
+  },
+  {
+    "id": "DL016",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "The Boolean expression A'B + AB + A'B' simplifies to:",
+    "choices": [
+      "A. A + B",
+      "B. A'+ B",
+      "C. B + A'",
+      "D. A + B'"
+    ],
+    "correctAnswer": "C",
+    "explanation": "A'B + AB + A'B' = B(A' + A) + A'B' = B + A'B' = B + A' (by absorption: A' + A'B' = A')."
+  },
+  {
+    "id": "DL017",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "easy",
+    "question": "Which gate outputs 1 only when all inputs are 1?",
+    "choices": [
+      "A. OR",
+      "B. NAND",
+      "C. AND",
+      "D. XOR"
+    ],
+    "correctAnswer": "C",
+    "explanation": "AND gate: output is 1 only when ALL inputs are 1. A single 0 input forces output to 0."
+  },
+  {
+    "id": "DL018",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "easy",
+    "question": "Which gate outputs 1 when any input is 1?",
+    "choices": [
+      "A. AND",
+      "B. NOR",
+      "C. XNOR",
+      "D. OR"
+    ],
+    "correctAnswer": "D",
+    "explanation": "OR gate: output is 1 when AT LEAST ONE input is 1. Output is 0 only when all inputs are 0."
+  },
+  {
+    "id": "DL019",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "The NAND gate is called a 'universal gate' because:",
+    "choices": [
+      "A. It has more inputs than other gates",
+      "B. Any Boolean function can be implemented using only NAND gates",
+      "C. It operates at universal voltage levels",
+      "D. It was invented first"
+    ],
+    "correctAnswer": "B",
+    "explanation": "NAND (and NOR) are universal \u2014 NOT, AND, OR can all be constructed from NAND gates alone, enabling any Boolean function."
+  },
+  {
+    "id": "DL020",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "An XOR gate outputs 1 when:",
+    "choices": [
+      "A. All inputs are 1",
+      "B. All inputs are 0",
+      "C. An odd number of inputs are 1",
+      "D. Any input is 1"
+    ],
+    "correctAnswer": "C",
+    "explanation": "XOR (exclusive OR): output is 1 when an odd number of inputs are 1. For 2 inputs: output is 1 when inputs differ (one 0, one 1)."
+  },
+  {
+    "id": "DL021",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "XNOR gate output is 1 when:",
+    "choices": [
+      "A. Inputs are different",
+      "B. Inputs are the same",
+      "C. Only one input is 1",
+      "D. All inputs are 0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "XNOR (exclusive NOR) is the complement of XOR \u2014 output is 1 when inputs are equal (both 0 or both 1). Used as equality detector."
+  },
+  {
+    "id": "DL022",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "Implement the NOT function using only a NAND gate (single input).",
+    "choices": [
+      "A. Connect both inputs to the same signal",
+      "B. Connect one input to VCC",
+      "C. Connect one input to GND",
+      "D. Connect outputs in feedback"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Single-input NAND (tie both inputs to A): output = (A\u00b7A)' = A' = NOT A. This is the basic way to make NOT from NAND."
+  },
+  {
+    "id": "DL023",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "medium",
+    "question": "A K-map group of 4 cells (quad) eliminates how many variables?",
+    "choices": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "correctAnswer": "B",
+    "explanation": "K-map grouping rule: a group of 2^n cells eliminates n variables. Group of 4 (2\u00b2) eliminates 2 variables, leaving 2 literals."
+  },
+  {
+    "id": "DL024",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "For a 4-variable K-map with minterms {0,1,2,3,4,5,6,7}, the minimal SOP is:",
+    "choices": [
+      "A. A'B'",
+      "B. A'",
+      "C. B'",
+      "D. A' + B'"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Minterms 0-7 cover the entire A=0 half of the K-map (all 8 cells where A=0). The entire top half groups as A' (all 8 minterms where A=0)."
+  },
+  {
+    "id": "DL025",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "What is a 'don't care' condition in a K-map?",
+    "choices": [
+      "A. Input combination that never occurs or whose output is irrelevant",
+      "B. Output that should always be 0",
+      "C. Input that must be 1",
+      "D. A prime implicant"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Don't care (X) conditions are input combinations that either can't occur or whose output doesn't matter. They can be treated as 0 or 1 to create larger K-map groups and simplify the expression."
+  },
+  {
+    "id": "DL026",
+    "subject": "Digital Logic Design",
+    "topic": "SOP/POS",
+    "difficulty": "medium",
+    "question": "Sum of Products (SOP) form consists of:",
+    "choices": [
+      "A. OR of AND terms (minterms)",
+      "B. AND of OR terms (maxterms)",
+      "C. AND of AND terms",
+      "D. OR of OR terms"
+    ],
+    "correctAnswer": "A",
+    "explanation": "SOP: each product term (AND of literals) is a minterm; the complete expression ORs these terms. Example: AB + A'C + BC'."
+  },
+  {
+    "id": "DL027",
+    "subject": "Digital Logic Design",
+    "topic": "SOP/POS",
+    "difficulty": "medium",
+    "question": "Product of Sums (POS) form is the:",
+    "choices": [
+      "A. OR of AND terms",
+      "B. AND of OR terms (maxterms)",
+      "C. Complement of SOP",
+      "D. Both B and C"
+    ],
+    "correctAnswer": "D",
+    "explanation": "POS: AND of sum terms (OR of literals), each term being a maxterm. POS is also the dual of SOP, and the complement of one can give the other."
+  },
+  {
+    "id": "DL028",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "medium",
+    "question": "A half adder has:",
+    "choices": [
+      "A. 2 inputs, 1 output",
+      "B. 2 inputs (A, B) and 2 outputs (Sum, Carry)",
+      "C. 3 inputs and 2 outputs",
+      "D. 1 input and 2 outputs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Half adder: inputs A and B. Sum = A XOR B. Carry = A AND B. Cannot handle carry input \u2014 use full adder for cascading."
+  },
+  {
+    "id": "DL029",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "medium",
+    "question": "A full adder has:",
+    "choices": [
+      "A. 2 inputs, 2 outputs",
+      "B. 3 inputs (A, B, Cin) and 2 outputs (Sum, Cout)",
+      "C. 3 inputs and 3 outputs",
+      "D. 2 inputs and 1 output"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Full adder: A + B + Cin. Sum = A XOR B XOR Cin. Cout = AB + ACin + BCin (majority function). Full adders chain to build multi-bit adders."
+  },
+  {
+    "id": "DL030",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "In a ripple carry adder, the critical path delay is proportional to:",
+    "choices": [
+      "A. log n",
+      "B. n (number of bits)",
+      "C. n\u00b2",
+      "D. constant"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Ripple carry adder: each stage waits for carry from previous stage. n-bit adder: delay = n \u00d7 (single stage delay) \u2192 O(n) linear delay."
+  },
+  {
+    "id": "DL031",
+    "subject": "Digital Logic Design",
+    "topic": "Multiplexers",
+    "difficulty": "medium",
+    "question": "A 4-to-1 multiplexer has:",
+    "choices": [
+      "A. 4 data inputs, 1 select line, 1 output",
+      "B. 4 data inputs, 2 select lines, 1 output",
+      "C. 4 data inputs, 4 select lines, 1 output",
+      "D. 2 data inputs, 2 select lines, 4 outputs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "4:1 MUX: 4 data inputs require 2 select lines (2\u00b2 = 4 combinations) to choose one of the 4 inputs to route to the single output."
+  },
+  {
+    "id": "DL032",
+    "subject": "Digital Logic Design",
+    "topic": "Multiplexers",
+    "difficulty": "hard",
+    "question": "A 2-to-1 MUX can implement any Boolean function of:",
+    "choices": [
+      "A. 1 variable",
+      "B. 2 variables using the Shannon expansion",
+      "C. 3 variables",
+      "D. It cannot implement functions"
+    ],
+    "correctAnswer": "B",
+    "explanation": "2:1 MUX with select=A, inputs=f(A=0) and f(A=1) implements any 2-variable function via Shannon expansion. Larger MUXes implement larger functions."
+  },
+  {
+    "id": "DL033",
+    "subject": "Digital Logic Design",
+    "topic": "Demultiplexers",
+    "difficulty": "medium",
+    "question": "A 1-to-4 demultiplexer has:",
+    "choices": [
+      "A. 1 input, 2 select lines, 4 outputs",
+      "B. 4 inputs, 2 select lines, 1 output",
+      "C. 1 input, 4 select lines, 4 outputs",
+      "D. 4 inputs, 4 select lines, 4 outputs"
+    ],
+    "correctAnswer": "A",
+    "explanation": "1:4 DEMUX: 1 data input routed to 1 of 4 outputs based on 2 select lines (2\u00b2 = 4). Inverse of MUX."
+  },
+  {
+    "id": "DL034",
+    "subject": "Digital Logic Design",
+    "topic": "Encoders",
+    "difficulty": "medium",
+    "question": "An 8-to-3 priority encoder:",
+    "choices": [
+      "A. Takes 3 inputs and gives 8 outputs",
+      "B. Takes 8 inputs and outputs 3-bit binary code of the highest-priority active input",
+      "C. Encodes 8 bits to 3 bits randomly",
+      "D. Takes 3 inputs and selects 1 of 8 outputs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Priority encoder: when multiple inputs are active, outputs binary code of the highest-priority (usually highest-numbered) active input. 8:3 encoder: 8 inputs \u2192 3-bit output."
+  },
+  {
+    "id": "DL035",
+    "subject": "Digital Logic Design",
+    "topic": "Decoders",
+    "difficulty": "medium",
+    "question": "A 2-to-4 decoder has:",
+    "choices": [
+      "A. 2 inputs, 2 outputs",
+      "B. 2 inputs, 4 outputs (exactly one active at a time)",
+      "C. 4 inputs, 2 outputs",
+      "D. 4 inputs, 4 outputs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "2:4 decoder: 2-bit input selects exactly one of 4 output lines (which goes HIGH). Used to select one of 4 memory locations or create minterms."
+  },
+  {
+    "id": "DL036",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "medium",
+    "question": "What is the characteristic equation of a D flip-flop?",
+    "choices": [
+      "A. Q(t+1) = D",
+      "B. Q(t+1) = J + K'Q",
+      "C. Q(t+1) = Q XOR T",
+      "D. Q(t+1) = SR"
+    ],
+    "correctAnswer": "A",
+    "explanation": "D flip-flop: on clock edge, output Q takes the value of D input. Q(t+1) = D. Simplest flip-flop \u2014 eliminates the forbidden state of SR FF."
+  },
+  {
+    "id": "DL037",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "medium",
+    "question": "What is the characteristic equation of a JK flip-flop?",
+    "choices": [
+      "A. Q(t+1) = D",
+      "B. Q(t+1) = JQ' + K'Q",
+      "C. Q(t+1) = Q XOR T",
+      "D. Q(t+1) = S + R'Q"
+    ],
+    "correctAnswer": "B",
+    "explanation": "JK FF: J=1,K=0 \u2192 Set; J=0,K=1 \u2192 Reset; J=0,K=0 \u2192 Hold; J=1,K=1 \u2192 Toggle. Q(t+1) = JQ' + K'Q."
+  },
+  {
+    "id": "DL038",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "medium",
+    "question": "A T flip-flop toggles its output when:",
+    "choices": [
+      "A. T = 0",
+      "B. T = 1 at clock edge",
+      "C. T = Q",
+      "D. Always on clock edge"
+    ],
+    "correctAnswer": "B",
+    "explanation": "T (Toggle) FF: when T=1 at clock edge, Q toggles. When T=0, Q holds. Q(t+1) = T XOR Q. Used in counters."
+  },
+  {
+    "id": "DL039",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "hard",
+    "question": "What is the forbidden/invalid state in an SR latch?",
+    "choices": [
+      "A. S=0, R=0",
+      "B. S=1, R=0",
+      "C. S=1, R=1",
+      "D. S=0, R=1"
+    ],
+    "correctAnswer": "C",
+    "explanation": "SR latch: S=1,R=0 \u2192 Set (Q=1); S=0,R=1 \u2192 Reset (Q=0); S=0,R=0 \u2192 Hold. S=1,R=1 is forbidden \u2014 it forces both Q and Q' to 1 (contradiction), and output is unpredictable on release."
+  },
+  {
+    "id": "DL040",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "hard",
+    "question": "Edge-triggered flip-flops sample inputs on:",
+    "choices": [
+      "A. The entire duration the clock is HIGH",
+      "B. Only the rising or falling edge of the clock",
+      "C. Both edges of the clock",
+      "D. When clock is LOW"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Edge-triggered FFs sample input only at the clock edge (positive or negative), making them immune to input changes during the clock HIGH period. More predictable than level-triggered latches."
+  },
+  {
+    "id": "DL041",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "medium",
+    "question": "A shift register shifts data in what direction?",
+    "choices": [
+      "A. Only left",
+      "B. Only right",
+      "C. Left, right, or both depending on type",
+      "D. Circular only"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Shift registers can shift left (SISO-left), right (SISO-right), or bidirectional (PISO/SIPO). Universal shift registers support all directions and parallel load."
+  },
+  {
+    "id": "DL042",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "medium",
+    "question": "A SIPO (Serial In Parallel Out) shift register is used for:",
+    "choices": [
+      "A. Parallel to serial conversion",
+      "B. Serial to parallel conversion (deserializer)",
+      "C. Data storage only",
+      "D. Frequency division"
+    ],
+    "correctAnswer": "B",
+    "explanation": "SIPO: data enters one bit at a time (serial in) and after n clock cycles, all n bits are available simultaneously on parallel outputs. Deserializer \u2014 converts serial communication to parallel bus."
+  },
+  {
+    "id": "DL043",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "medium",
+    "question": "A 3-bit binary ripple counter counts from:",
+    "choices": [
+      "A. 0 to 7",
+      "B. 0 to 6",
+      "C. 1 to 8",
+      "D. 0 to 15"
+    ],
+    "correctAnswer": "A",
+    "explanation": "3-bit counter has 2\u00b3 = 8 states: 000 to 111 (0 to 7), then wraps to 000. A 3-bit counter can be built from 3 T or JK flip-flops."
+  },
+  {
+    "id": "DL044",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "hard",
+    "question": "A ripple counter experiences glitches (spikes) because:",
+    "choices": [
+      "A. Flip-flops toggle simultaneously",
+      "B. Each FF propagates its output to the next with propagation delay \u2014 intermediate invalid states occur",
+      "C. The clock frequency is too high",
+      "D. The reset signal is not synchronized"
+    ],
+    "correctAnswer": "B",
+    "explanation": "In ripple counters, each FF's output is the next FF's clock. During transition (e.g., 0111\u21921000), FFs toggle one at a time, causing momentary invalid intermediate states that appear as glitches."
+  },
+  {
+    "id": "DL045",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "hard",
+    "question": "A synchronous counter differs from a ripple counter in that:",
+    "choices": [
+      "A. It counts faster",
+      "B. All flip-flops are clocked simultaneously, eliminating propagation delay accumulation",
+      "C. It uses fewer flip-flops",
+      "D. It can only count up"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Synchronous counter: all FFs share the same clock \u2014 they all change state at the same time. Eliminates cumulative propagation delay and glitches. Preferred for high-speed designs."
+  },
+  {
+    "id": "DL046",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "hard",
+    "question": "A MOD-6 counter has how many valid states?",
+    "choices": [
+      "A. 4",
+      "B. 6",
+      "C. 8",
+      "D. 16"
+    ],
+    "correctAnswer": "B",
+    "explanation": "MOD-N counter cycles through N states (0 to N-1). MOD-6: states 0,1,2,3,4,5 \u2014 resets to 0 after state 5. Requires 3 flip-flops (2\u00b3=8, but only 6 used)."
+  },
+  {
+    "id": "DL047",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "medium",
+    "question": "A Mealy machine output depends on:",
+    "choices": [
+      "A. Current state only",
+      "B. Current state and current inputs",
+      "C. Next state only",
+      "D. Clock signal only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mealy machine: outputs are a function of both current state AND inputs. Outputs can change immediately when inputs change (asynchronous outputs). Moore outputs depend only on state."
+  },
+  {
+    "id": "DL048",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "medium",
+    "question": "A Moore machine output depends on:",
+    "choices": [
+      "A. Current state only",
+      "B. Current state and inputs",
+      "C. Next state",
+      "D. Previous inputs"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Moore machine: outputs are functions of current state ONLY. Outputs change only on state transitions (synchronous with clock). Simpler to design than Mealy but may need more states."
+  },
+  {
+    "id": "DL049",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "A sequence detector for '101' using a Moore FSM requires minimum how many states?",
+    "choices": [
+      "A. 2",
+      "B. 3",
+      "C. 4",
+      "D. 5"
+    ],
+    "correctAnswer": "C",
+    "explanation": "'101' detector needs states: S0 (start/reset), S1 (received '1'), S2 (received '10'), S3 (received '101'/accept). Minimum 4 states for non-overlapping detection."
+  },
+  {
+    "id": "DL050",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "State minimization in FSMs removes:",
+    "choices": [
+      "A. Unreachable states and equivalent states",
+      "B. All states with identical next states",
+      "C. States that cause hazards",
+      "D. States with more than 2 transitions"
+    ],
+    "correctAnswer": "A",
+    "explanation": "State minimization: (1) remove unreachable states (never entered from initial state), (2) merge equivalent states (identical output and same next states for all inputs). Reduces hardware cost."
+  },
+  {
+    "id": "DL051",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "The dual of a Boolean expression is obtained by:",
+    "choices": [
+      "A. Complementing all literals",
+      "B. Swapping AND with OR and 0 with 1",
+      "C. Applying DeMorgan's theorem",
+      "D. Negating the output"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Duality principle: swap AND\u2194OR and 0\u21941 (but do NOT complement literals). If F is valid, its dual F^D is also valid. Useful for deriving paired theorems."
+  },
+  {
+    "id": "DL052",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Setup time in a flip-flop is:",
+    "choices": [
+      "A. Time output takes to stabilize after clock",
+      "B. Minimum time input D must be stable BEFORE the clock edge",
+      "C. Time between two clock edges",
+      "D. Propagation delay through the FF"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Setup time: D must be stable for at least t_setup before the clock edge for the FF to correctly latch D. Violation causes metastability \u2014 output becomes undefined."
+  },
+  {
+    "id": "DL053",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Hold time in a flip-flop is:",
+    "choices": [
+      "A. Duration the clock is HIGH",
+      "B. Time D must remain stable AFTER the clock edge",
+      "C. Clock period",
+      "D. Propagation delay from D to Q"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Hold time: D must remain stable for t_hold after the clock edge. If D changes too soon after the edge, the FF may not correctly capture the data."
+  },
+  {
+    "id": "DL054",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Maximum clock frequency of a synchronous circuit is limited by:",
+    "choices": [
+      "A. Power supply voltage",
+      "B. The critical path delay: t_clk > t_propagation + t_setup + t_skew",
+      "C. Number of flip-flops",
+      "D. Fan-out of gates"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Max frequency: f_max = 1/T_min where T_min = t_CLK\u2192Q + t_comb + t_setup + t_skew. The critical path (longest combinational path) determines maximum speed."
+  },
+  {
+    "id": "DL055",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "medium",
+    "question": "What is the difference between SRAM and DRAM?",
+    "choices": [
+      "A. SRAM needs refresh; DRAM does not",
+      "B. SRAM uses flip-flops (faster, no refresh); DRAM uses capacitors (slower, needs periodic refresh)",
+      "C. DRAM is faster but more expensive",
+      "D. SRAM uses capacitors; DRAM uses flip-flops"
+    ],
+    "correctAnswer": "B",
+    "explanation": "SRAM: 6-transistor cells with FF \u2014 no refresh, fast, expensive, used in cache. DRAM: 1-transistor + capacitor \u2014 leaks charge, needs refresh every ~64ms, slower, cheap, used for main memory."
+  },
+  {
+    "id": "DL056",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "medium",
+    "question": "ROM (Read-Only Memory) is:",
+    "choices": [
+      "A. Volatile \u2014 loses data when powered off",
+      "B. Non-volatile \u2014 retains data when powered off",
+      "C. Faster than SRAM",
+      "D. Used only for video memory"
+    ],
+    "correctAnswer": "B",
+    "explanation": "ROM is non-volatile \u2014 data persists without power. Used for firmware/BIOS. Types: Mask ROM, PROM (one-time), EPROM (UV-erasable), EEPROM/Flash (electrically erasable)."
+  },
+  {
+    "id": "DL057",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A carry-lookahead adder (CLA) is faster than ripple carry because:",
+    "choices": [
+      "A. It uses fewer gates",
+      "B. It computes all carries simultaneously using generate (G) and propagate (P) signals",
+      "C. It skips unnecessary additions",
+      "D. It uses parallel processing hardware"
+    ],
+    "correctAnswer": "B",
+    "explanation": "CLA: G_i = A_i\u00b7B_i (carry generated), P_i = A_i XOR B_i (carry propagated). All carries computed in parallel: C_i = G_i + P_i\u00b7C_(i-1). O(log n) delay instead of O(n) for ripple carry."
+  },
+  {
+    "id": "DL058",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "In IEEE 754 single-precision floating point, the exponent field is 8 bits with a bias of:",
+    "choices": [
+      "A. 64",
+      "B. 127",
+      "C. 128",
+      "D. 255"
+    ],
+    "correctAnswer": "B",
+    "explanation": "IEEE 754 single precision: 1 sign bit, 8 exponent bits (biased-127), 23 mantissa bits. Stored exponent = actual exponent + 127. Range: ~\u00b13.4\u00d710\u00b3\u2078."
+  },
+  {
+    "id": "DL059",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Consensus theorem states: AB + A'C + BC =",
+    "choices": [
+      "A. AB + A'C",
+      "B. ABC",
+      "C. A + BC",
+      "D. AB + C"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Consensus theorem: AB + A'C + BC = AB + A'C. The term BC is redundant (consensus term) and can be removed. Proof: BC = BC(A+A') = ABC + A'BC, which is already covered."
+  },
+  {
+    "id": "DL060",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "An essential prime implicant in a K-map is:",
+    "choices": [
+      "A. The largest group in the K-map",
+      "B. A prime implicant that covers at least one minterm not covered by any other prime implicant",
+      "C. Any group of 4 cells",
+      "D. A group that includes all don't cares"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Essential prime implicants cover at least one minterm uniquely \u2014 they MUST be included in the minimal cover. Non-essential PIs cover minterms already covered by EPIs."
+  },
+  {
+    "id": "DL061",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "A 2-input NOR gate produces 1 only when:",
+    "choices": [
+      "A. Both inputs are 1",
+      "B. One input is 1",
+      "C. Both inputs are 0",
+      "D. Inputs differ"
+    ],
+    "correctAnswer": "C",
+    "explanation": "NOR = NOT OR. Output is 1 only when OR output is 0, which occurs only when both inputs are 0. Truth table: 00\u21921, 01\u21920, 10\u21920, 11\u21920."
+  },
+  {
+    "id": "DL062",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "hard",
+    "question": "Metastability in flip-flops occurs when:",
+    "choices": [
+      "A. Clock frequency is too low",
+      "B. Setup or hold time is violated \u2014 FF enters an undefined intermediate voltage that resolves unpredictably",
+      "C. VCC is too high",
+      "D. Two outputs are connected together"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Metastability: when setup/hold times are violated, FF enters a high-gain analog region. Output voltage settles to 0 or 1 after a random delay \u2014 can propagate undefined values in synchronous circuits."
+  },
+  {
+    "id": "DL063",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "medium",
+    "question": "A 4-bit magnitude comparator compares two 4-bit numbers and outputs:",
+    "choices": [
+      "A. Their sum",
+      "B. Three signals: A>B, A=B, A<B",
+      "C. The larger number",
+      "D. Their difference"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Magnitude comparators output three comparison flags: A>B, A=B, A<B. Can be cascaded for larger numbers by connecting cascade inputs."
+  },
+  {
+    "id": "DL064",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A binary decoder can be used to implement:",
+    "choices": [
+      "A. Any Boolean function as a sum of minterms",
+      "B. Multiplexing only",
+      "C. Flip-flop state machines",
+      "D. Only 2-variable functions"
+    ],
+    "correctAnswer": "A",
+    "explanation": "An n-to-2^n decoder generates all minterms of n variables. With an OR gate connected to selected decoder outputs, any Boolean function in canonical SOP form can be implemented."
+  },
+  {
+    "id": "DL065",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Glitches (hazards) in combinational circuits occur due to:",
+    "choices": [
+      "A. Power supply noise",
+      "B. Unequal propagation delays along different paths to the output",
+      "C. Too many gate levels",
+      "D. Insufficient fan-in"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Static hazards: when input changes, two paths with unequal delays cause a momentary unwanted output glitch before the final stable value. K-maps can identify and eliminate static hazards by adding consensus terms."
+  },
+  {
+    "id": "DL066",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "The number of flip-flops needed for a state machine with 12 states is:",
+    "choices": [
+      "A. 3",
+      "B. 4",
+      "C. 6",
+      "D. 12"
+    ],
+    "correctAnswer": "B",
+    "explanation": "n flip-flops encode 2^n states. 12 states: need 2^n \u2265 12 \u2192 n=4 (2\u2074=16 \u2265 12). 3 bits only gives 8 states \u2014 insufficient."
+  },
+  {
+    "id": "DL067",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "Idempotent law in Boolean algebra states:",
+    "choices": [
+      "A. A + 0 = A",
+      "B. A \u00b7 A = A and A + A = A",
+      "C. A \u00b7 1 = A",
+      "D. A \u00b7 0 = 0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Idempotent: A\u00b7A = A and A+A = A. Unlike regular algebra where A\u00b7A = A\u00b2 or A+A = 2A, Boolean variables can only be 0 or 1."
+  },
+  {
+    "id": "DL068",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "The 1's complement of binary 01101001 is:",
+    "choices": [
+      "A. 10010110",
+      "B. 10010111",
+      "C. 01101001",
+      "D. 11111111"
+    ],
+    "correctAnswer": "A",
+    "explanation": "1's complement: invert every bit. 01101001 \u2192 10010110."
+  },
+  {
+    "id": "DL069",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "hard",
+    "question": "A 4-bit PISO (Parallel In Serial Out) register is used for:",
+    "choices": [
+      "A. Serial to parallel conversion",
+      "B. Parallel to serial conversion (serializer) \u2014 loads 4 bits in parallel, shifts them out serially",
+      "C. Bidirectional counting",
+      "D. Data storage without shifting"
+    ],
+    "correctAnswer": "B",
+    "explanation": "PISO: loads all bits simultaneously (parallel in), then shifts them out one at a time (serial out). Serializer \u2014 converts parallel bus to serial communication stream."
+  },
+  {
+    "id": "DL070",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 4-bit carry-save adder computes the sum of three n-bit numbers in:",
+    "choices": [
+      "A. O(n) time",
+      "B. O(1) time (constant delay regardless of n)",
+      "C. O(log n) time",
+      "D. O(n\u00b2) time"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Carry-save adder treats three numbers as two (sum + carry vectors) in O(1) using n full adders in parallel. Final conversion to binary needs one CPA. Used in multipliers."
+  },
+  {
+    "id": "DL071",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "A Johnson counter (twisted ring counter) with n flip-flops has how many states?",
+    "choices": [
+      "A. n",
+      "B. 2n",
+      "C. 2^n",
+      "D. n\u00b2"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Johnson counter: feedback is complemented output connected to serial input. Creates a sequence of 2n unique states (compared to n for ring counter). 4-bit Johnson: 8 states, used in divide-by-2n frequency division."
+  },
+  {
+    "id": "DL072",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "medium",
+    "question": "A ring counter with n flip-flops has how many valid states?",
+    "choices": [
+      "A. 2^n",
+      "B. 2n",
+      "C. n",
+      "D. n-1"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Ring counter: shift register with direct (non-inverted) feedback. Only n states are valid (circulating 1 among n FFs). More states are illegal. Used in sequencers and timers."
+  },
+  {
+    "id": "DL073",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "An n-bit barrel shifter can shift data by any amount 0 to n-1 in:",
+    "choices": [
+      "A. O(n) clock cycles",
+      "B. O(log n) levels of multiplexers, O(1) clock cycle",
+      "C. n clock cycles using shift register",
+      "D. O(n\u00b2) gate delays"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Barrel shifter uses log\u2082(n) stages of 2:1 MUXes to shift any amount in one clock cycle. Stage k shifts by 0 or 2^k positions based on shift-amount bit k."
+  },
+  {
+    "id": "DL074",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "In a memory system with 16-bit address bus and byte-addressable memory, the maximum addressable memory is:",
+    "choices": [
+      "A. 16 KB",
+      "B. 32 KB",
+      "C. 64 KB",
+      "D. 128 KB"
+    ],
+    "correctAnswer": "C",
+    "explanation": "16-bit address: 2\u00b9\u2076 = 65,536 = 64K unique addresses. Byte-addressable: each address points to 1 byte \u2192 64KB maximum."
+  },
+  {
+    "id": "DL075",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Shannon's expansion theorem decomposes F(A, B, ...) as:",
+    "choices": [
+      "A. F = A\u00b7F(A=1) + A'\u00b7F(A=0)",
+      "B. F = A + F(A=0)",
+      "C. F = A\u00b7B + A'\u00b7B'",
+      "D. F = F(A=1) XOR F(A=0)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Shannon expansion: F(A,...) = A\u00b7F_A + A'\u00b7F_A' where F_A = F(A=1,...) and F_A' = F(A=0,...). Basis for MUX-based logic implementation and BDD (Binary Decision Diagrams)."
+  },
+  {
+    "id": "DL076",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "Fan-out in digital circuits refers to:",
+    "choices": [
+      "A. Heat dissipation of a gate",
+      "B. Number of gate inputs that a single gate output can drive reliably",
+      "C. Maximum frequency of operation",
+      "D. Number of inputs to a gate"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Fan-out: maximum number of standard loads (gate inputs) that a gate's output can drive while maintaining valid logic levels. Exceeding fan-out degrades voltage levels and causes errors."
+  },
+  {
+    "id": "DL077",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "Propagation delay (t_pd) of a gate is:",
+    "choices": [
+      "A. Time for input to reach the gate",
+      "B. Time from input change to output reaching 50% of final value",
+      "C. Setup time of the gate",
+      "D. Time for the gate to power up"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Propagation delay: measured from 50% of input transition to 50% of output transition. t_pHL (high-to-low) and t_pLH (low-to-high) may differ. Limits maximum clock frequency."
+  },
+  {
+    "id": "DL078",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "Gray code differs from standard binary in that:",
+    "choices": [
+      "A. Only the MSB changes at each count step",
+      "B. Only one bit changes between consecutive code words",
+      "C. It is the same as BCD",
+      "D. It uses 5 bits per digit"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Gray code (reflected binary): only one bit changes per step, minimizing switching transitions. Used in shaft encoders, K-maps, and reducing glitches in digital systems."
+  },
+  {
+    "id": "DL079",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "A 3-variable K-map has how many cells?",
+    "choices": [
+      "A. 6",
+      "B. 8",
+      "C. 12",
+      "D. 16"
+    ],
+    "correctAnswer": "B",
+    "explanation": "n-variable K-map has 2^n cells. 3-variable: 2\u00b3 = 8 cells (arranged in 2\u00d74 grid with Gray code ordering on axes)."
+  },
+  {
+    "id": "DL080",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A priority encoder resolves the conflict when multiple inputs are active by:",
+    "choices": [
+      "A. Ignoring all inputs",
+      "B. Outputting the binary code of the highest-priority (usually highest-indexed) active input",
+      "C. Outputting all active inputs simultaneously",
+      "D. Generating an error signal"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Priority encoder: assigns priority to inputs; when multiple are active, the highest-priority active input's binary code is output. An EO (Enable Output) or GS (Group Select) indicates at least one input is active."
+  },
+  {
+    "id": "DL081",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "Involution law states:",
+    "choices": [
+      "A. A'' = A",
+      "B. A + A' = 1",
+      "C. A \u00b7 A' = 0",
+      "D. A + 0 = A"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Involution (double complementation): complementing twice returns original value. (A')' = A. Similar to double negation in logic."
+  },
+  {
+    "id": "DL082",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "In state assignment for a Moore FSM, the one-hot encoding uses:",
+    "choices": [
+      "A. Minimum number of bits (log\u2082N)",
+      "B. N flip-flops for N states \u2014 exactly one FF is '1' at a time",
+      "C. Gray code ordering",
+      "D. Binary encoding starting from 0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "One-hot encoding: each state gets its own FF. For N states, N FFs. Only one FF is '1' at any time. Simpler next-state logic but uses more FFs \u2014 favored in FPGAs."
+  },
+  {
+    "id": "DL083",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Clock skew is:",
+    "choices": [
+      "A. Clock frequency variation",
+      "B. Time difference between when the clock signal arrives at different flip-flops",
+      "C. Phase difference between clock and data",
+      "D. Duty cycle deviation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Clock skew: variation in clock arrival time at different FFs due to different wire lengths, buffers, or loads. Positive skew can relax setup time but tighten hold time. Must be accounted for in timing analysis."
+  },
+  {
+    "id": "DL084",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "hard",
+    "question": "A master-slave JK flip-flop uses two latches connected in series. The master captures on:",
+    "choices": [
+      "A. Falling clock edge",
+      "B. Rising clock edge (or clock=1), slave updates on falling edge",
+      "C. Both edges simultaneously",
+      "D. When J=K=1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Master-slave FF: master (positive level triggered) captures when CLK=1; slave (negative level triggered) transfers to output when CLK=0. Net effect: output changes on falling edge of clock."
+  },
+  {
+    "id": "DL085",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "Express decimal 127 in hexadecimal.",
+    "choices": [
+      "A. 0x7F",
+      "B. 0x7E",
+      "C. 0x80",
+      "D. 0xFF"
+    ],
+    "correctAnswer": "A",
+    "explanation": "127 = 7\u00d716 + 15 = 7F hex. Also: 127 = 01111111 in binary = 7F hex."
+  },
+  {
+    "id": "DL086",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "medium",
+    "question": "An n-to-2^n decoder with enable can be used as:",
+    "choices": [
+      "A. Multiplexer",
+      "B. Demultiplexer when enable is used as data input",
+      "C. Priority encoder",
+      "D. Adder"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A decoder with enable functions as a DEMUX: use enable as the data input and address lines as select. The active output receives the data signal while all others stay inactive."
+  },
+  {
+    "id": "DL087",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Simplify F = A'BC + ABC + AB'C + ABC'",
+    "choices": [
+      "A. AB + BC",
+      "B. AC + AB + BC",
+      "C. A'BC + ABC + AB",
+      "D. AB + AC + BC"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Group in K-map: A'BC + ABC = BC; AB'C + ABC = AC; ABC + ABC' = AB. Result: BC + AC + AB. Note these overlap, so cover is AB + AC + BC."
+  },
+  {
+    "id": "DL088",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "A state table for a sequential circuit shows:",
+    "choices": [
+      "A. Next state and output for each combination of current state and input",
+      "B. Power consumption in each state",
+      "C. Timing constraints for each transition",
+      "D. Physical layout of flip-flops"
+    ],
+    "correctAnswer": "A",
+    "explanation": "State table: rows = current states, columns = inputs, cells = (next state, output). Completely describes FSM behavior. Used to derive excitation equations for flip-flops."
+  },
+  {
+    "id": "DL089",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "medium",
+    "question": "What is the purpose of a parallel load capability in a shift register?",
+    "choices": [
+      "A. Increases shift speed",
+      "B. Allows loading all bits simultaneously rather than serially shifting in data",
+      "C. Enables bidirectional shifting",
+      "D. Provides synchronous reset"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Parallel load: all n bits loaded in one clock cycle instead of n cycles. With MODE control: MODE=1 \u2192 shift, MODE=0 \u2192 parallel load. Enables PISO and universal shift register operations."
+  },
+  {
+    "id": "DL090",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "A cache hit ratio of 90% and hit time of 2ns, miss penalty of 100ns gives average access time of:",
+    "choices": [
+      "A. 12ns",
+      "B. 11ns",
+      "C. 10ns",
+      "D. 20ns"
+    ],
+    "correctAnswer": "A",
+    "explanation": "AMAT = h\u00d7t_hit + (1-h)\u00d7t_miss = 0.9\u00d72 + 0.1\u00d7100 = 1.8 + 10 = 11.8 \u2248 12ns."
+  },
+  {
+    "id": "DL091",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "In a K-map, cells are arranged so adjacent cells differ by:",
+    "choices": [
+      "A. Two bit positions",
+      "B. Exactly one bit (Gray code adjacency)",
+      "C. All bit positions",
+      "D. No bits"
+    ],
+    "correctAnswer": "B",
+    "explanation": "K-map adjacency: adjacent cells (horizontally, vertically, and wrap-around) differ in exactly one variable (Gray code). This is what makes grouping valid \u2014 one variable cancels when you group adjacent cells."
+  },
+  {
+    "id": "DL092",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "Wired-AND (wire-OR) logic requires what type of output stage?",
+    "choices": [
+      "A. Totem-pole output",
+      "B. Open-collector (open-drain) output",
+      "C. Tri-state output",
+      "D. Push-pull output"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Open-collector/drain outputs can be wire-ANDed: connect multiple open-collector outputs to one resistor. If any output pulls low, the line is low (wired-AND for positive logic). Totem-pole cannot be wire-ored."
+  },
+  {
+    "id": "DL093",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "medium",
+    "question": "An asynchronous counter (ripple counter) with 4 flip-flops can count up to:",
+    "choices": [
+      "A. 4",
+      "B. 8",
+      "C. 15",
+      "D. 16"
+    ],
+    "correctAnswer": "C",
+    "explanation": "4 FFs: 2\u2074 = 16 states (0 to 15). Maximum count = 15 before rolling over to 0. The counter counts 0 through 15."
+  },
+  {
+    "id": "DL094",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "The minimal SOP for F(A,B,C) = \u03a3m(1,3,5,7) is:",
+    "choices": [
+      "A. C",
+      "B. ABC",
+      "C. A + B + C",
+      "D. A'B'C + A'BC + AB'C + ABC"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Minterms 1,3,5,7 = m(001,011,101,111). These are all minterms where C=1 \u2014 a single group of 4 in the K-map. Minimal SOP = C."
+  },
+  {
+    "id": "DL095",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "medium",
+    "question": "Converting a JK FF to a D FF requires connecting:",
+    "choices": [
+      "A. J = K = D",
+      "B. J = D and K = D'",
+      "C. J = D' and K = D",
+      "D. J = 1 and K = 0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "D FF characteristic: Q(t+1) = D. JK characteristic: Q(t+1) = JQ' + K'Q. Setting J=D, K=D' (complement): JQ' + K'Q = DQ' + D\u00b7Q = D(Q'+Q) = D. So J=D, K=D' makes JK behave as D FF."
+  },
+  {
+    "id": "DL096",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 2's complement subtractor (A - B) can be built from an adder by:",
+    "choices": [
+      "A. Adding A and B directly",
+      "B. Inverting B (XOR with 1s) and adding 1 via carry-in Cin=1",
+      "C. Subtracting each bit separately",
+      "D. Using only NAND gates"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Two's complement subtraction A-B: negate B by inverting all bits (XOR with 1111...1) and adding 1 (set Cin=1). Full adder with XOR gates on B inputs and Cin=1 performs A + (-B) = A - B."
+  },
+  {
+    "id": "DL097",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "medium",
+    "question": "EEPROM differs from EPROM in that EEPROM:",
+    "choices": [
+      "A. Is volatile",
+      "B. Can be erased electrically (byte by byte) without UV light",
+      "C. Uses UV light for programming",
+      "D. Has higher density than Flash"
+    ],
+    "correctAnswer": "B",
+    "explanation": "EPROM: erased with UV light through quartz window (erase entire chip). EEPROM: electrically erasable in-system, byte by byte. Flash is a type of EEPROM erased in blocks."
+  },
+  {
+    "id": "DL098",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Clock jitter is:",
+    "choices": [
+      "A. Variation in clock amplitude",
+      "B. Random variation in clock period or edge placement from one cycle to the next",
+      "C. DC offset in clock signal",
+      "D. Duty cycle error"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Jitter: short-term variation in clock edge timing. Unlike skew (spatial variation between points), jitter is temporal variation cycle-to-cycle. Limits maximum frequency and causes timing margin reduction."
+  },
+  {
+    "id": "DL099",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "Tri-state buffers have three output states. What is the third state besides 0 and 1?",
+    "choices": [
+      "A. Undefined (X)",
+      "B. High-impedance (Z) \u2014 effectively disconnected from the bus",
+      "C. High voltage beyond VCC",
+      "D. Oscillating"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Tri-state: outputs 0, 1, or Z (high-impedance = disconnected). When disabled, the output doesn't drive the bus \u2014 allows bus sharing with multiple devices without conflict."
+  },
+  {
+    "id": "DL100",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "What is the function of a synchronous reset in flip-flops vs. asynchronous reset?",
+    "choices": [
+      "A. They are identical",
+      "B. Synchronous reset only takes effect on the clock edge; asynchronous reset takes effect immediately regardless of clock",
+      "C. Asynchronous reset requires two clock cycles",
+      "D. Synchronous reset is faster"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Asynchronous reset: overrides state immediately when asserted (independent of clock). Synchronous reset: only resets on next clock edge. Synchronous reset results in cleaner timing; asynchronous provides faster emergency reset."
+  },
+  {
+    "id": "DL101",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "Boolean expression A XOR B can be written in basic gates as:",
+    "choices": [
+      "A. AB + A'B'",
+      "B. A'B + AB'",
+      "C. A + B",
+      "D. A\u00b7B"
+    ],
+    "correctAnswer": "B",
+    "explanation": "XOR: output is 1 when inputs differ. A\u2295B = A'B + AB'. XNOR = AB + A'B' = (A\u2295B)'."
+  },
+  {
+    "id": "DL102",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "For F(A,B,C,D) = \u03a3m(0,1,2,4,5,6), the minimal SOP expression is:",
+    "choices": [
+      "A. A'C' + A'B'",
+      "B. A'B' + A'C' + B'C'",
+      "C. A'",
+      "D. A'(B' + C')"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Minterms 0,1,2,4,5,6 in 4-var K-map: all in A=0 half. Group of 4: {0,1,4,5} = A'C'. Group of 4: {0,2,4,6} = A'B'. These overlap to cover all minterms. Min SOP: A'B' + A'C' = A'(B'+C')."
+  },
+  {
+    "id": "DL103",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "The sign-magnitude representation of -25 in 8 bits is:",
+    "choices": [
+      "A. 11100111",
+      "B. 10011001",
+      "C. 10011000",
+      "D. 11100110"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Sign-magnitude: MSB=1 for negative. 25 = 00011001. -25 in sign-magnitude: set MSB to 1 \u2192 10011001."
+  },
+  {
+    "id": "DL104",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "medium",
+    "question": "A code converter changes data from one code to another. An example is:",
+    "choices": [
+      "A. Flip-flop",
+      "B. BCD to 7-segment display decoder",
+      "C. Shift register",
+      "D. Counter"
+    ],
+    "correctAnswer": "B",
+    "explanation": "BCD to 7-segment converter is a combinational code converter \u2014 it takes 4-bit BCD input (0-9) and activates the appropriate segments (a-g) to display the digit on an LED display."
+  },
+  {
+    "id": "DL105",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "What is the advantage of Mealy machines over Moore machines?",
+    "choices": [
+      "A. Mealy machines are easier to design",
+      "B. Mealy machines generally need fewer states for the same function",
+      "C. Mealy outputs are synchronous with clock",
+      "D. Mealy machines cannot have glitches"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mealy machines: outputs depend on state AND inputs, so they can produce output during transitions rather than requiring a new state. Result: fewer states needed for equivalent functions."
+  },
+  {
+    "id": "DL106",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "What is the output of a 3-input AND gate when inputs are A=1, B=1, C=0?",
+    "choices": [
+      "A. 1",
+      "B. 0",
+      "C. Undefined",
+      "D. Depends on gate type"
+    ],
+    "correctAnswer": "B",
+    "explanation": "AND gate: output is 1 ONLY when ALL inputs are 1. With C=0, output = 0 regardless of other inputs."
+  },
+  {
+    "id": "DL107",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "What Boolean law allows writing A + 1 = 1?",
+    "choices": [
+      "A. Identity law",
+      "B. Null (annulment) law",
+      "C. Complement law",
+      "D. Idempotent law"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Null/annulment law: A + 1 = 1 and A \u00b7 0 = 0. The dominant element (1 for OR, 0 for AND) forces the output regardless of other inputs."
+  },
+  {
+    "id": "DL108",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "What is 0xC0 + 0x3F in hexadecimal?",
+    "choices": [
+      "A. 0xFF",
+      "B. 0xFE",
+      "C. 0x100",
+      "D. 0xEF"
+    ],
+    "correctAnswer": "A",
+    "explanation": "0xC0 = 192, 0x3F = 63. Sum = 255 = 0xFF. Or: C0 + 3F: 0+F=F, C+3=F \u2192 0xFF."
+  },
+  {
+    "id": "DL109",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "medium",
+    "question": "A modulo-10 (decade) counter counts from:",
+    "choices": [
+      "A. 0 to 9 (10 states)",
+      "B. 1 to 10",
+      "C. 0 to 7",
+      "D. 0 to 15"
+    ],
+    "correctAnswer": "A",
+    "explanation": "MOD-10 (decade) counter: 10 states (0000 to 1001 = 0-9), resets to 0 after 9. Commonly built with 4 FFs, detecting state 1010 to force reset. Used in BCD counting."
+  },
+  {
+    "id": "DL110",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "The minimum clock period in a synchronous circuit must satisfy:",
+    "choices": [
+      "A. T > t_propagation only",
+      "B. T > t_CLK-to-Q + t_comb(max) + t_setup",
+      "C. T > t_setup + t_hold",
+      "D. T > t_propagation - t_setup"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Minimum period: T_min = t_CLK\u2192Q (FF output delay) + t_comb_max (longest combinational path) + t_setup (next FF). This ensures data is stable before next clock edge."
+  },
+  {
+    "id": "DL111",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Simplify using K-map: F(A,B,C) = \u03a3m(0,2,4,6)",
+    "choices": [
+      "A. C",
+      "B. C'",
+      "C. A'C'",
+      "D. B'"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Minterms 0,2,4,6: all even numbers = all minterms where C=0. K-map: 8-cell group where C=0. Minimal SOP = C'."
+  },
+  {
+    "id": "DL112",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "What is the decimal value of the 2's complement 8-bit number 10000000?",
+    "choices": [
+      "A. -127",
+      "B. -128",
+      "C. 128",
+      "D. -0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "10000000 in 2's complement: MSB=1 (negative). Invert: 01111111. Add 1: 10000000 = 128. So value = -128. Note: -128 has no positive counterpart in 8-bit 2's complement."
+  },
+  {
+    "id": "DL113",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "Implement F = A'B + AB' using only NAND gates.",
+    "choices": [
+      "A. NAND(NAND(A',B), NAND(A,B'))",
+      "B. NAND(NAND(A,B), NAND(A',B'))",
+      "C. NAND(NAND(NAND(A,A), B), NAND(A, NAND(B,B)))",
+      "D. Both A and C"
+    ],
+    "correctAnswer": "C",
+    "explanation": "XOR from NAND: A'=NAND(A,A), B'=NAND(B,B). Then A'B = NAND(NAND(A,A),B) inverted... Full NAND-only XOR needs 4 NAND gates: N1=NAND(A,B), N2=NAND(A,N1), N3=NAND(B,N1), out=NAND(N2,N3)."
+  },
+  {
+    "id": "DL114",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 4-bit adder/subtractor circuit uses a control line M where M=0 adds and M=1 subtracts. The B inputs are XORed with M because:",
+    "choices": [
+      "A. XOR with 0 passes B unchanged; XOR with 1 inverts B (1's complement), and Cin=M=1 completes 2's complement",
+      "B. XOR always inverts signals",
+      "C. M controls the carry chain",
+      "D. XOR replaces the subtraction operation directly"
+    ],
+    "correctAnswer": "A",
+    "explanation": "When M=1: B XOR 1 = B' (invert all B bits) and Cin=1 via M. So we compute A + B' + 1 = A + (-B) = A - B. When M=0: B XOR 0 = B, Cin=0 \u2192 A + B."
+  },
+  {
+    "id": "DL115",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "Derive the next state for a JK FF where Q=0 and we want Q+1=1 (Set transition). The required J,K values are:",
+    "choices": [
+      "A. J=0, K=0",
+      "B. J=1, K=X (don't care)",
+      "C. J=0, K=1",
+      "D. J=X, K=1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "JK FF excitation table: to go from Q=0 to Q+=1 (set), need J=1 (K can be 0 or 1, so K=X). Excitation table: 0\u21920: J=0,K=X; 0\u21921: J=1,K=X; 1\u21920: J=X,K=1; 1\u21921: J=X,K=0."
+  },
+  {
+    "id": "DL116",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "Direct-mapped cache maps each main memory block to exactly one cache location. The cache location for block b with C cache lines is:",
+    "choices": [
+      "A. b \u00d7 C",
+      "B. b mod C",
+      "C. b / C",
+      "D. b + C"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Direct-mapped: cache line = memory_block mod C. Simple hardware (just use low-order bits of block address). Disadvantage: conflict misses when frequently accessed blocks map to same line."
+  },
+  {
+    "id": "DL117",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "A minterm m_i and maxterm M_i are related by:",
+    "choices": [
+      "A. m_i = M_i",
+      "B. m_i = M_i' (complement of each other)",
+      "C. m_i + M_i = 0",
+      "D. m_i \u00b7 M_i = 1"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Minterm m_i and maxterm M_i for the same index i are complements: m_i = M_i'. If F = \u03a3m(i,j,...) then F' = \u03a0M(i,j,...) \u2014 minterms of F become maxterms of F'."
+  },
+  {
+    "id": "DL118",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "A linear feedback shift register (LFSR) generates pseudorandom sequences. Its maximum length sequence for n bits has how many non-zero states?",
+    "choices": [
+      "A. 2^n",
+      "B. 2^n - 1",
+      "C. n",
+      "D. 2n"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Maximum-length LFSR: with a primitive feedback polynomial, cycles through all 2^n - 1 non-zero states before repeating. The all-zero state is a fixed point and must be excluded."
+  },
+  {
+    "id": "DL119",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A Wallace tree multiplier reduces n partial products to 2 using:",
+    "choices": [
+      "A. Sequential shifting",
+      "B. Tree of carry-save adders to reduce partial products in O(log n) stages",
+      "C. Long multiplication",
+      "D. Booth's encoding only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Wallace tree: uses carry-save adders (CSA) in a tree structure to reduce n partial products to just 2 (final sum and carry vectors) in O(log n) time, then one CPA for final addition."
+  },
+  {
+    "id": "DL120",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "What is hold time violation and how does it differ from setup time violation?",
+    "choices": [
+      "A. They are the same violation",
+      "B. Setup: data not stable BEFORE clock edge; Hold: data changes too soon AFTER clock edge",
+      "C. Hold violation occurs during power-up only",
+      "D. Setup violation is for outputs; hold for inputs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Setup violation: D not stable long enough before clock \u2192 FF may latch wrong value. Hold violation: D changes too soon after clock edge \u2192 FF may latch transitioning value. Hold violations cause immediate failures; setup determines max frequency."
+  },
+  {
+    "id": "DL121",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "Excess-3 (XS-3) code is obtained from BCD by:",
+    "choices": [
+      "A. Adding 2 to each BCD digit",
+      "B. Adding 3 to each BCD digit (0\u21920011, 1\u21920100, ..., 9\u21921100)",
+      "C. Subtracting 3 from binary",
+      "D. Reflecting BCD about center"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Excess-3 code: BCD + 3. 0=0011, 1=0100, 2=0101, ..., 9=1100. Self-complementing: 9's complement obtained by inverting all bits. Simplifies BCD subtraction."
+  },
+  {
+    "id": "DL122",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "In CMOS logic, a NAND gate is constructed using:",
+    "choices": [
+      "A. Series NMOS + parallel PMOS",
+      "B. Parallel NMOS + series PMOS",
+      "C. Only NMOS transistors",
+      "D. Only PMOS transistors"
+    ],
+    "correctAnswer": "A",
+    "explanation": "CMOS NAND: pull-down network = NMOS in series (both must be ON to pull output low). Pull-up network = PMOS in parallel (either OFF to allow pull-up). CMOS NOR: NMOS parallel + PMOS series."
+  },
+  {
+    "id": "DL123",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "In a synchronous sequential circuit, the state register is updated:",
+    "choices": [
+      "A. Asynchronously when inputs change",
+      "B. Synchronously on clock edge \u2014 all FFs sample next-state simultaneously",
+      "C. On the falling edge only",
+      "D. Continuously"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Synchronous design: all state FFs share one clock. Next-state logic computes combinationally; all FFs capture simultaneously on clock edge. Eliminates glitch propagation between stages."
+  },
+  {
+    "id": "DL124",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "A prime implicant (PI) in a K-map is:",
+    "choices": [
+      "A. Any group of 1s",
+      "B. A maximal group of 1s that cannot be combined with any adjacent group to form a larger valid group",
+      "C. The smallest possible group",
+      "D. Any group containing a don't care"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Prime implicant: a group of 1s (power of 2 size, rectangular in K-map) that cannot be expanded further by combining with adjacent cells. All essential PIs must be in the final cover."
+  },
+  {
+    "id": "DL125",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "Booth's algorithm for multiplication handles negative numbers in 2's complement by:",
+    "choices": [
+      "A. Converting to sign-magnitude first",
+      "B. Encoding multiplier pairs (current+previous bit) to determine add/subtract/shift operations",
+      "C. Inverting all bits of the multiplier",
+      "D. Treating negative numbers as positive"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Booth's algorithm examines pairs of multiplier bits (current bit and previous bit) to determine: 00/11\u2192shift, 01\u2192add multiplicand, 10\u2192subtract multiplicand. Handles 2's complement natively, reduces partial products."
+  },
+  {
+    "id": "DL126",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "Which theorem states that a Boolean function can be uniquely expressed in canonical minterm (or maxterm) form?",
+    "choices": [
+      "A. Consensus theorem",
+      "B. Shannon's theorem",
+      "C. Uniqueness theorem of canonical forms",
+      "D. DeMorgan's theorem"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Every Boolean function has a unique canonical SOP (sum of minterms) and canonical POS (product of maxterms) representation. This enables standard comparison and minimization of Boolean functions."
+  },
+  {
+    "id": "DL127",
+    "subject": "Digital Logic Design",
+    "topic": "Flip-Flops",
+    "difficulty": "hard",
+    "question": "The excitation table of a D flip-flop for transition Q=1 \u2192 Q+=0 requires:",
+    "choices": [
+      "A. D = 1",
+      "B. D = 0",
+      "C. D = X",
+      "D. D = Q"
+    ],
+    "correctAnswer": "B",
+    "explanation": "D FF: Q(t+1) = D. To go from Q=1 to Q+=0, need D=0. D FF excitation is trivial: D = desired next state Q+."
+  },
+  {
+    "id": "DL128",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "medium",
+    "question": "What is the purpose of address decoding in memory systems?",
+    "choices": [
+      "A. Encrypt memory addresses",
+      "B. Select the appropriate memory chip or location from the address bus",
+      "C. Convert binary addresses to decimal",
+      "D. Cache frequently used addresses"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Address decoding: uses the high-order address bits to enable (select) the correct memory chip via chip select (CS) signal. Decoders split the address space among multiple memory chips."
+  },
+  {
+    "id": "DL129",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "An up/down counter controlled by a direction signal D counts up when D=1 and down when D=0. At state 3 (011) with D=0, next state is:",
+    "choices": [
+      "A. 100 (4)",
+      "B. 010 (2)",
+      "C. 011 (3)",
+      "D. 000 (0)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "D=0 \u2192 count down. 3-1=2=010."
+  },
+  {
+    "id": "DL130",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A magnitude comparator comparing two n-bit numbers A and B checks equality by:",
+    "choices": [
+      "A. Subtracting and checking for zero",
+      "B. XNORing each bit pair and ANDing all results: (A_n XNOR B_n) \u00b7 ... \u00b7 (A_0 XNOR B_0)",
+      "C. ORing all bit differences",
+      "D. Using a subtractor circuit"
+    ],
+    "correctAnswer": "B",
+    "explanation": "XNOR detects bit equality (1 when equal). ANDing all n XNOR outputs: result is 1 only when ALL bit pairs match (A=B). The A>B and A<B outputs use cascaded comparisons of MSB pairs."
+  },
+  {
+    "id": "DL131",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "Convert the BCD number 0011 0111 to decimal.",
+    "choices": [
+      "A. 55",
+      "B. 37",
+      "C. 73",
+      "D. 35"
+    ],
+    "correctAnswer": "B",
+    "explanation": "BCD: each 4-bit group is one decimal digit. 0011 = 3, 0111 = 7. BCD 0011 0111 = decimal 37."
+  },
+  {
+    "id": "DL132",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "What is noise margin in digital logic?",
+    "choices": [
+      "A. Acceptable power supply variation",
+      "B. Difference between guaranteed output level and required input level \u2014 how much noise the circuit can tolerate",
+      "C. Maximum frequency before errors occur",
+      "D. Thermal noise of transistors"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Noise margin HIGH (NM_H) = V_OH(min) - V_IH(min). Noise margin LOW (NM_L) = V_IL(max) - V_OL(max). Represents how much noise can be added before logic levels are misinterpreted."
+  },
+  {
+    "id": "DL133",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "hard",
+    "question": "What is the output sequence of a 4-bit right-shift register initialized to 1000 over 4 clock cycles?",
+    "choices": [
+      "A. 1000, 0100, 0010, 0001, 0000",
+      "B. 1000, 1100, 1110, 1111",
+      "C. 1000, 0001, 0010, 0100",
+      "D. Depends on serial input"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Right shift with serial input=0: each clock shifts right and inserts 0 at MSB. 1000\u21920100\u21920010\u21920001\u21920000."
+  },
+  {
+    "id": "DL134",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "When implementing a Moore FSM with JK flip-flops, the excitation equations are derived from:",
+    "choices": [
+      "A. Output K-maps only",
+      "B. State transition table mapped to JK excitation table \u2014 J and K for each FF derived by K-map",
+      "C. The Mealy state table",
+      "D. Boolean algebra without K-maps"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Moore FSM with JK FFs: (1) Create state transition table. (2) Map transitions to JK excitation table (which J,K values produce each Q\u2192Q+ transition). (3) Use K-maps to minimize J and K expressions for each FF."
+  },
+  {
+    "id": "DL135",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "The expression F = AB + BC + CA is known as the:",
+    "choices": [
+      "A. XOR function",
+      "B. Majority function \u2014 F=1 when majority (2 or more) of inputs are 1",
+      "C. Minority function",
+      "D. Parity function"
+    ],
+    "correctAnswer": "B",
+    "explanation": "AB + BC + CA is the 3-input majority function \u2014 output is 1 when 2 or more of the 3 inputs are 1. Used in error correction and voter circuits."
+  },
+  {
+    "id": "DL136",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 4-to-1 MUX can implement any 3-variable Boolean function using:",
+    "choices": [
+      "A. 3-bit select and fixed inputs",
+      "B. 2-bit select with two variables, and the third variable (or its complement, or 0/1) on data inputs",
+      "C. Only when function is SOP form",
+      "D. Cannot implement 3-variable functions"
+    ],
+    "correctAnswer": "B",
+    "explanation": "4:1 MUX with 2 select lines = 2 variables. Connect third variable to appropriate data inputs using Shannon expansion on the first two variables. Can implement any 3-variable function."
+  },
+  {
+    "id": "DL137",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "The hexadecimal number 0x1A4 in decimal is:",
+    "choices": [
+      "A. 420",
+      "B. 422",
+      "C. 418",
+      "D. 424"
+    ],
+    "correctAnswer": "A",
+    "explanation": "0x1A4 = 1\u00d7256 + 10\u00d716 + 4 = 256 + 160 + 4 = 420."
+  },
+  {
+    "id": "DL138",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "What is the purpose of state encoding in FSM implementation?",
+    "choices": [
+      "A. Encrypt state information for security",
+      "B. Assign binary codes to states \u2014 choice affects gate complexity, speed, and power",
+      "C. Convert Moore to Mealy",
+      "D. Remove unused states"
+    ],
+    "correctAnswer": "B",
+    "explanation": "State encoding assigns binary patterns to states. Binary: log\u2082N bits, complex logic. One-hot: N bits, simpler logic (FPGA-friendly). Gray code: fewer transitions per step. Choice impacts implementation cost."
+  },
+  {
+    "id": "DL139",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "The AOI (AND-OR-INVERT) gate structure is preferred in CMOS because:",
+    "choices": [
+      "A. It requires more transistors than separate gates",
+      "B. It implements F = (AB + CD)' in a single complementary CMOS stage, more efficient than cascaded gates",
+      "C. It reduces voltage levels",
+      "D. It eliminates the need for PMOS transistors"
+    ],
+    "correctAnswer": "B",
+    "explanation": "AOI gate: one CMOS stage with NMOS pull-down (series-parallel for AND-OR) and PMOS pull-up (parallel-series, dual network). Avoids stacking inverters \u2014 faster, fewer transistors than separate AND, OR, NOT gates."
+  },
+  {
+    "id": "DL140",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "To find a minimal POS using a K-map, you group:",
+    "choices": [
+      "A. Adjacent 1s",
+      "B. Adjacent 0s (maxterm groupings) and form sum terms",
+      "C. All cells",
+      "D. Prime implicants of 1s"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Minimal POS: group 0s in K-map (instead of 1s). Each group of 0s gives a maxterm (sum of literals). Variables constant=0 contribute uncomplemented; constant=1 contribute complemented. AND these sum terms."
+  },
+  {
+    "id": "DL141",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "What is the critical path in a combinational circuit?",
+    "choices": [
+      "A. Path with the most gates",
+      "B. Longest delay path from input to output that determines the circuit's maximum propagation delay",
+      "C. Path through the carry chain only",
+      "D. Any path that contains an inverter"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Critical path: the signal path with the maximum total propagation delay. Determines worst-case timing and limits the maximum clock frequency of the system. Must be minimized in high-speed design."
+  },
+  {
+    "id": "DL142",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "In a set-associative cache, a 4-way set-associative cache means:",
+    "choices": [
+      "A. Cache has 4 sets",
+      "B. Each set contains 4 cache lines \u2014 a block can map to any of 4 lines within its set",
+      "C. 4 caches operate in parallel",
+      "D. Cache has 4 levels"
+    ],
+    "correctAnswer": "B",
+    "explanation": "4-way set-associative: memory block maps to one set (via address bits), but can occupy any of 4 ways (lines) within that set. Compromise between direct-mapped (1-way) and fully associative (N-way)."
+  },
+  {
+    "id": "DL143",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "The Boolean expression for a half-subtractor's difference output is:",
+    "choices": [
+      "A. A AND B",
+      "B. A XOR B",
+      "C. A OR B",
+      "D. A XNOR B"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Half subtractor: Difference = A XOR B (same as half adder sum). Borrow = A'B (borrow when A=0, B=1). Compare: half adder uses XOR for sum and AND for carry."
+  },
+  {
+    "id": "DL144",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "medium",
+    "question": "A synchronous decade counter resets after counting to:",
+    "choices": [
+      "A. 1010 (10)",
+      "B. 1001 (9) \u2014 next count wraps to 0000",
+      "C. 1111 (15)",
+      "D. 1000 (8)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Decade (MOD-10) counter: counts 0-9 (0000 to 1001). After state 9 (1001), next clock returns to 0000. State 1010 is never entered in a synchronous design (synchronous reset on reaching 1001+1=1010)."
+  },
+  {
+    "id": "DL145",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "What does the bubble notation on a gate input or output represent?",
+    "choices": [
+      "A. Amplification",
+      "B. Inversion (complement) at that point",
+      "C. Connection to power supply",
+      "D. Tri-state capability"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Bubble (small circle) on a gate pin indicates inversion. Output bubble = inverted output (e.g., NAND vs AND). Input bubble = active-low input (signal is asserted when LOW). Simplifies schematic reading."
+  },
+  {
+    "id": "DL146",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "What are 'safe' state assignments in FSMs that prevent lock-up in unused states?",
+    "choices": [
+      "A. Assignments that avoid Gray code",
+      "B. Every unused state has defined transitions to valid states (or default state)",
+      "C. Using binary encoding only",
+      "D. Assigning all states to 0 initially"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Safe FSM: ensure unused/illegal states (common in one-hot or 3-bit encoding with 5 states of 8) have defined next-state transitions to a valid state. Prevents the FSM from getting 'stuck' if power glitch causes illegal state."
+  },
+  {
+    "id": "DL147",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "Floating point addition of 1.0 \u00d7 2\u00b2 and 1.1 \u00d7 2\u2070 (binary, 3-bit mantissa):",
+    "choices": [
+      "A. 1.01 \u00d7 2\u00b2",
+      "B. 1.001 \u00d7 2\u00b2",
+      "C. 1.001 \u00d7 2\u00b3",
+      "D. 1.01 \u00d7 2\u00b9"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Step 1: align exponents. 1.1 \u00d7 2\u2070 = 0.011 \u00d7 2\u00b2. Step 2: add mantissas: 1.000 + 0.011 = 1.011 \u00d7 2\u00b2. With 3-bit mantissa (rounding): 1.01 \u00d7 2\u00b2."
+  },
+  {
+    "id": "DL148",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "medium",
+    "question": "The output of a 4-bit adder when both inputs are 0111 (7) is:",
+    "choices": [
+      "A. 1110 with no carry",
+      "B. 1110 with no carry (14 in 4 bits)",
+      "C. 1110, carry=0",
+      "D. All of above"
+    ],
+    "correctAnswer": "C",
+    "explanation": "7 + 7 = 14. 0111 + 0111 = 1110. No carry out (14 < 16). Sum = 1110 = 14, Cout = 0."
+  },
+  {
+    "id": "DL149",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Which Boolean theorem is used to detect and eliminate hazards by adding redundant terms?",
+    "choices": [
+      "A. DeMorgan's theorem",
+      "B. Consensus theorem",
+      "C. Absorption theorem",
+      "D. Complement theorem"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Static-1 hazard elimination: add the consensus term AB + A'C \u2192 AB + A'C + BC. The term BC bridges the gap during A's transition, preventing glitch when one term turns off before the other turns on."
+  },
+  {
+    "id": "DL150",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "hard",
+    "question": "A universal shift register can perform which operations?",
+    "choices": [
+      "A. Shift right only",
+      "B. Shift left only",
+      "C. Shift right, shift left, parallel load, and hold (all 4 operations controlled by 2-bit mode select)",
+      "D. Only load and clear"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Universal shift register: 2-bit mode: 00=Hold, 01=Shift right, 10=Shift left, 11=Parallel load. Implemented with 4:1 MUXes at each FF input selecting the appropriate data source."
+  },
+  {
+    "id": "DL151",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "What is the purpose of pipelining in digital design?",
+    "choices": [
+      "A. Reduce total latency",
+      "B. Increase throughput by overlapping execution of multiple operations using registers between stages",
+      "C. Reduce power consumption",
+      "D. Simplify combinational logic"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Pipelining: insert registers between combinational stages. While stage 1 processes input N+1, stage 2 processes N \u2014 multiple data flow concurrently. Increases throughput (operations/second) but not latency of individual operation."
+  },
+  {
+    "id": "DL152",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "DRAM refresh is needed because:",
+    "choices": [
+      "A. DRAM uses flip-flops that drift",
+      "B. Capacitor charges leak away \u2014 data must be periodically read and rewritten to maintain 1s",
+      "C. DRAM addresses change over time",
+      "D. Clock synchronization requires periodic refresh"
+    ],
+    "correctAnswer": "B",
+    "explanation": "DRAM stores 1-bit in a capacitor which leaks charge over time (~64ms before significant loss). Refresh circuits periodically read each row and rewrite the data. SRAM uses bistable FFs \u2014 no refresh needed."
+  },
+  {
+    "id": "DL153",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "The propagation delay of a CMOS gate is affected by:",
+    "choices": [
+      "A. Only transistor channel length",
+      "B. Load capacitance, transistor sizing (W/L ratio), and supply voltage",
+      "C. Only supply voltage",
+      "D. Only temperature"
+    ],
+    "correctAnswer": "B",
+    "explanation": "CMOS propagation delay: t_pd \u221d C_load / (I_drive). Larger transistors (wider W) \u2192 more current, faster. Higher V_DD \u2192 more overdrive, faster. More load capacitance \u2192 slower. Temperature affects mobility."
+  },
+  {
+    "id": "DL154",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "A Gray code counter is preferred over binary counter in applications like:",
+    "choices": [
+      "A. Arithmetic operations",
+      "B. Shaft encoders and ADC \u2014 only one bit changes per step, preventing false intermediate readings",
+      "C. Memory addressing",
+      "D. High-speed counting"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Gray code: only one bit changes per step. In mechanical encoders, if multiple bits change simultaneously, misalignment causes false readings. Gray code prevents this. Binary counter: multiple bits may change (0111\u21921000 changes 4 bits)."
+  },
+  {
+    "id": "DL155",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "hard",
+    "question": "A 5-variable K-map can be visualized as:",
+    "choices": [
+      "A. A 5\u00d75 grid",
+      "B. Two 4-variable K-maps stacked, one for each value of the 5th variable",
+      "C. A 8\u00d74 grid",
+      "D. A single 32-cell linear array"
+    ],
+    "correctAnswer": "B",
+    "explanation": "5-variable K-map: 2\u2075=32 cells. Organized as two 4-variable K-maps (each 4\u00d74=16 cells) side by side or stacked. Adjacent cells between the two maps (same position, different 5th variable) are also adjacent in the 5-variable space."
+  },
+  {
+    "id": "DL156",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 2's complement overflow occurs in addition when:",
+    "choices": [
+      "A. Carry out is 1",
+      "B. Carry into MSB \u2260 Carry out of MSB (sum of two positives is negative or sum of two negatives is positive)",
+      "C. Result exceeds 256",
+      "D. Any carry is generated"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Overflow in 2's complement: V = Cin_MSB XOR Cout_MSB. Alternatively: two positive operands give negative result, or two negative operands give positive result. No overflow when adding numbers with different signs."
+  },
+  {
+    "id": "DL157",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "A vending machine controller is best modeled as:",
+    "choices": [
+      "A. A combinational circuit",
+      "B. A Moore FSM \u2014 outputs depend on state (dispensing, change, waiting) not directly on coin inputs",
+      "C. A shift register",
+      "D. A counter only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vending machine: states represent amount collected so far; transitions triggered by coin inputs; outputs (dispense product, return change) depend on state. Classic Moore FSM example."
+  },
+  {
+    "id": "DL158",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "The canonical SOP of F(A,B) = A XOR B is:",
+    "choices": [
+      "A. AB",
+      "B. A'B' + AB",
+      "C. A'B + AB'",
+      "D. A + B"
+    ],
+    "correctAnswer": "C",
+    "explanation": "XOR truth table: 00\u21920, 01\u21921, 10\u21921, 11\u21920. Canonical SOP: include minterms where output=1: m1(01)=A'B and m2(10)=AB'. So F = A'B + AB'."
+  },
+  {
+    "id": "DL159",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "In IEEE 754 single precision, the number 0 01111110 10000000000000000000000 represents:",
+    "choices": [
+      "A. 0.75",
+      "B. 1.5",
+      "C. 0.5",
+      "D. 1.0"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Sign=0(+), Exponent=01111110=126, bias-127=-1. Mantissa=1.1000...=1.5. Value = 1.5 \u00d7 2^(-1) = 0.75."
+  },
+  {
+    "id": "DL160",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A carry-skip adder improves on ripple carry by:",
+    "choices": [
+      "A. Skipping carries when no generate occurs",
+      "B. When all bits in a group propagate (P=1 for all), the carry skips over the group directly to the next",
+      "C. Precomputing all partial sums",
+      "D. Using lookup tables"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Carry-skip adder: if all bits in a k-bit group have P_i=1 (all propagate), incoming carry skips the entire group. Reduces worst-case delay from O(n) to O(\u221an) with optimal group size \u221an."
+  },
+  {
+    "id": "DL161",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "Dynamic CMOS logic (precharge-evaluate) achieves higher speed than static CMOS because:",
+    "choices": [
+      "A. Uses more transistors",
+      "B. Eliminates PMOS pull-up during evaluation \u2014 only NMOS pull-down network active, reducing capacitive load",
+      "C. Operates at higher voltage",
+      "D. Uses positive feedback"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Dynamic CMOS: precharge output HIGH (PMOS on), then evaluate with NMOS pull-down network only. No short-circuit current, smaller transistors, faster. Drawback: needs clock, charge sharing, not static."
+  },
+  {
+    "id": "DL162",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "What is the problem of 'state explosion' in FSM design?",
+    "choices": [
+      "A. Physical overheating of flip-flops",
+      "B. Number of states grows exponentially with system complexity, making design/verification intractable",
+      "C. States consuming too much power",
+      "D. Too many state transitions per clock"
+    ],
+    "correctAnswer": "B",
+    "explanation": "State explosion: as systems become more complex (more concurrent behaviors, more variables), FSM state count grows exponentially. Solutions: hierarchical FSMs, state charts, hardware description languages with synthesis."
+  },
+  {
+    "id": "DL163",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "The principle of locality in memory hierarchy design states:",
+    "choices": [
+      "A. Cache should be physically close to processor",
+      "B. Programs tend to access recently used (temporal) and nearby (spatial) memory locations repeatedly",
+      "C. Memory should be uniformly distributed",
+      "D. All data should be in cache"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Temporal locality: recently accessed data likely reaccessed soon (loops, variables). Spatial locality: data near recently accessed data likely accessed (arrays, sequential code). These principles make caching effective."
+  },
+  {
+    "id": "DL164",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "The Petrick's method is used to:",
+    "choices": [
+      "A. Detect static hazards",
+      "B. Find all minimal covers from the prime implicant table when multiple solutions exist",
+      "C. Simplify sequential circuits",
+      "D. Verify boolean equivalence"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Petrick's method: converts the PI covering problem to a product-of-sums Boolean expression, then expands to SOP. Each SOP minterm represents a valid cover; minimum cost term is the optimal minimal expression."
+  },
+  {
+    "id": "DL165",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "hard",
+    "question": "A presettable counter can:",
+    "choices": [
+      "A. Only count up",
+      "B. Load an arbitrary count value in parallel, enabling countdown from any value or custom count sequences",
+      "C. Change its modulus dynamically without redesign",
+      "D. Count in both binary and Gray code"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Presettable counter: has parallel load inputs and load enable. Can start counting from any preset value (e.g., countdown timer from 9). Combined with terminal count detection, enables variable-modulus counting."
+  },
+  {
+    "id": "DL166",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "BCD addition of 5 (0101) + 8 (1000) requires correction because:",
+    "choices": [
+      "A. Sum exceeds 9 or has carry out \u2014 add 0110 (6) correction",
+      "B. BCD doesn't support addition",
+      "C. Both numbers are odd",
+      "D. Carry is always required"
+    ],
+    "correctAnswer": "A",
+    "explanation": "BCD sum: 0101+1000=1101 (13 in binary). Since 1101 > 1001 (9) or carry occurred, add 0110: 1101+0110=10011. Result: 0001 0011 = BCD 13. Correction adds 6 to skip invalid codes A-F."
+  },
+  {
+    "id": "DL167",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "medium",
+    "question": "Draw a state diagram for a circuit that detects two consecutive 1s in a serial bit stream. How many states are needed?",
+    "choices": [
+      "A. 2 states",
+      "B. 3 states",
+      "C. 4 states",
+      "D. 5 states"
+    ],
+    "correctAnswer": "B",
+    "explanation": "3 states: S0=start/reset (last bit was not 1), S1=one 1 received, S2=two consecutive 1s detected (output=1). From S2: input=1 stays in S2; input=0 goes to S0."
+  },
+  {
+    "id": "DL168",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "Binary multiplication 1011 \u00d7 1010 equals:",
+    "choices": [
+      "A. 1101110",
+      "B. 1100110",
+      "C. 1110010",
+      "D. 1101010"
+    ],
+    "correctAnswer": "A",
+    "explanation": "1011\u00d71010: partial products: 0000 (\u00d70), 1011 (\u00d71 shifted 1), 0000 (\u00d70 shifted 2), 1011 (\u00d71 shifted 3). Sum: 0000+10110+000000+1011000=1101110. Decimal check: 11\u00d710=110. 1101110=110 \u2713."
+  },
+  {
+    "id": "DL169",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "What is a transmission gate (pass gate) in CMOS?",
+    "choices": [
+      "A. A gate with three outputs",
+      "B. Parallel NMOS + PMOS controlled by complementary signals \u2014 passes analog or digital signals bidirectionally",
+      "C. An AND gate with additional pass-through",
+      "D. A tri-state driver"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Transmission gate: NMOS and PMOS in parallel, controlled by CLK and CLK'. When CLK=1: both transistors ON, signal passes. When CLK=0: both OFF. Bidirectional, passes full voltage swing unlike single NMOS."
+  },
+  {
+    "id": "DL170",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "Which flip-flop type eliminates the race condition present in the SR latch?",
+    "choices": [
+      "A. T flip-flop",
+      "B. D flip-flop",
+      "C. Both edge-triggered D and JK flip-flops eliminate latch race conditions",
+      "D. Asynchronous SR FF"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Edge-triggered FFs sample only at clock edge \u2014 inputs are ignored at all other times, preventing race conditions (SR latch can oscillate when S=R=1 and circuit propagation creates feedback loop). Master-slave and edge-triggered designs both solve this."
+  },
+  {
+    "id": "DL171",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 4-bit multiplier using the array method requires:",
+    "choices": [
+      "A. 4 half adders",
+      "B. 4\u00d74=16 AND gates for partial products and an adder array to sum them",
+      "C. 4 full adders only",
+      "D. 1 ripple carry adder"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Array multiplier: n\u00d7n bits needs n\u00b2 AND gates (one per product bit), and (n-1) n-bit adder rows to sum partial products. 4\u00d74: 16 ANDs + 3 rows of 4-bit adders. Total: n\u00b2 AND + (n-1) n-bit adder."
+  },
+  {
+    "id": "DL172",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "Quine-McCluskey method is equivalent to K-map minimization but:",
+    "choices": [
+      "A. Less accurate than K-maps",
+      "B. Algorithmic and scalable to any number of variables \u2014 unlike K-maps limited to 4-5 variables by human visual ability",
+      "C. Only works for SOP",
+      "D. Requires more manual computation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Quine-McCluskey (QM): tabular minimization that systematically finds all prime implicants and minimal covers. Works for any number of variables (unlike K-map which becomes impractical beyond 5-6). Implementable as algorithm."
+  },
+  {
+    "id": "DL173",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "medium",
+    "question": "A write-back cache policy means:",
+    "choices": [
+      "A. Data written directly to main memory on every write",
+      "B. Data written only to cache; written to memory later when the cache line is evicted",
+      "C. Writes go to both cache and memory simultaneously",
+      "D. Cache ignores write operations"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Write-back: write to cache only; dirty bit marks modified lines. Memory updated only on eviction. Faster writes, reduces memory bandwidth. Write-through: every write goes to both cache AND memory \u2014 simpler but more bandwidth."
+  },
+  {
+    "id": "DL174",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Retiming is a transformation that:",
+    "choices": [
+      "A. Changes the clock frequency",
+      "B. Moves flip-flops across combinational logic to balance pipeline stage delays without changing circuit function",
+      "C. Resets flip-flops to initial state",
+      "D. Changes the encoding of states"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Retiming: moves FFs across gates (forward or backward) to balance pipeline stages. Can reduce critical path and increase max frequency. Preserves input/output behavior of the circuit."
+  },
+  {
+    "id": "DL175",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "medium",
+    "question": "Which type of counter eliminates propagation glitches by using common clock for all flip-flops?",
+    "choices": [
+      "A. Ripple (asynchronous) counter",
+      "B. Ring counter",
+      "C. Synchronous counter",
+      "D. Johnson counter"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Synchronous counter: all FFs clocked simultaneously \u2014 no ripple delay. Combinational logic determines next state. Eliminates propagation glitches inherent in ripple (asynchronous) counters."
+  },
+  {
+    "id": "DL176",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "Fan-in of a logic gate refers to:",
+    "choices": [
+      "A. Maximum gates driven by one output",
+      "B. Number of inputs the gate has",
+      "C. Gate propagation delay",
+      "D. Output current capacity"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Fan-in: number of gate inputs. High fan-in increases input capacitance and transistor stacking (CMOS), increasing delay. Large fan-in gates may be decomposed into smaller cascaded gates."
+  },
+  {
+    "id": "DL177",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "The Boolean expression for the carry out of a full adder is:",
+    "choices": [
+      "A. A XOR B XOR Cin",
+      "B. AB + ACin + BCin",
+      "C. A + B + Cin",
+      "D. A XNOR B"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Full adder carry: Cout = AB + ACin + BCin = AB + Cin(A+B). This is the majority function of three inputs \u2014 output is 1 when 2 or more inputs are 1."
+  },
+  {
+    "id": "DL178",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "A pulse synchronizer circuit converts an asynchronous pulse to a synchronous one using:",
+    "choices": [
+      "A. A simple wire connection",
+      "B. Cascade of two D flip-flops clocked by the system clock to reduce metastability probability",
+      "C. A PLL circuit",
+      "D. A monostable multivibrator"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Two-FF synchronizer: first FF may become metastable when sampling async signal, but has a full clock period to resolve. Second FF samples resolved output. Probability of metastability after 2 FFs is negligible for typical frequencies."
+  },
+  {
+    "id": "DL179",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "Which number representation allows the same hardware to be used for both addition and subtraction without special cases?",
+    "choices": [
+      "A. Sign-magnitude",
+      "B. 1's complement",
+      "C. 2's complement",
+      "D. Excess-3"
+    ],
+    "correctAnswer": "C",
+    "explanation": "2's complement: subtraction A-B = A + (-B), where -B is 2's complement of B. Regular addition hardware works for both. No special +0/-0 ambiguity. Sign-magnitude and 1's complement require special handling."
+  },
+  {
+    "id": "DL180",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "Implement F = AB + CD using NOR gates only.",
+    "choices": [
+      "A. Requires conversion: F = ((A'+B')(C'+D'))' then NOR structure",
+      "B. Cannot be done with NOR only",
+      "C. F = NOR(NOR(A,B), NOR(C,D)) after appropriate arrangement",
+      "D. F = NOR(NOR(NOR(A,A), NOR(B,B)), NOR(NOR(C,C), NOR(D,D)))"
+    ],
+    "correctAnswer": "D",
+    "explanation": "NOR universal: NOT A = NOR(A,A). OR of A,B = NOR(NOR(A,B)) = NOR(A,B) inverted. AND A,B = NOR(NOR(A,A), NOR(B,B)). So AB+CD: AND each pair then OR results using NOR-NOR structure."
+  },
+  {
+    "id": "DL181",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "A traffic light controller cycling Green(30s)\u2192Yellow(5s)\u2192Red(30s) is best implemented as:",
+    "choices": [
+      "A. Combinational circuit",
+      "B. Moore FSM with timer/counter \u2014 state determines light color",
+      "C. Ripple counter only",
+      "D. Shift register"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Traffic light: Moore FSM where output (light color) depends on state (G/Y/R). Each state has a counter for duration. Transitions triggered when counter expires. Classic Moore FSM with datapath (counter) example."
+  },
+  {
+    "id": "DL182",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "medium",
+    "question": "What is a shift register's primary advantage for serial data transmission?",
+    "choices": [
+      "A. Parallel to serial conversion \u2014 transmits n-bit parallel data over one wire using n clock cycles",
+      "B. Higher bandwidth than parallel",
+      "C. Requires fewer clock cycles",
+      "D. Does not require a clock"
+    ],
+    "correctAnswer": "A",
+    "explanation": "PISO shift register: load n bits in parallel, shift out serially one bit per clock cycle. Converts parallel bus to serial stream for transmission. Receiver uses SIPO to reconstruct parallel data."
+  },
+  {
+    "id": "DL183",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "Power dissipation in CMOS is primarily:",
+    "choices": [
+      "A. DC leakage only",
+      "B. Dynamic (switching) power = \u03b1\u00b7C\u00b7V\u00b2\u00b7f (activity \u00d7 capacitance \u00d7 voltage\u00b2 \u00d7 frequency)",
+      "C. Resistive losses in transistors",
+      "D. Short-circuit current only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "CMOS dynamic power: P = \u03b1CVDD\u00b2f. \u03b1=activity factor (fraction of cycles with 0\u21921 transition), C=total switched capacitance, VDD=supply voltage, f=frequency. Reducing VDD (squared effect) or frequency most effective."
+  },
+  {
+    "id": "DL184",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "An iterative combinational circuit applies the same combinational module repeatedly to process each bit. An example is:",
+    "choices": [
+      "A. Ring counter",
+      "B. Ripple carry adder \u2014 each bit stage is identical, carry ripples through",
+      "C. Decoder",
+      "D. Priority encoder"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Iterative circuit: replicate the same cell structure for each bit. Ripple carry adder: n identical full adder cells, each receiving carry from previous stage. Simple regular structure but linear delay."
+  },
+  {
+    "id": "DL185",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "question": "ASCII code for letter 'A' is 65 decimal = 0x41 = 0100 0001 binary. What is ASCII for 'a'?",
+    "choices": [
+      "A. 0x60",
+      "B. 0x61",
+      "C. 0x41",
+      "D. 0x81"
+    ],
+    "correctAnswer": "B",
+    "explanation": "ASCII uppercase A-Z: 0x41-0x5A. Lowercase a-z: 0x61-0x7A. Difference = 0x20 (bit 5 set for lowercase). 'a' = 'A' + 32 = 65 + 32 = 97 = 0x61."
+  },
+  {
+    "id": "DL186",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "What is absorption in Boolean algebra?",
+    "choices": [
+      "A. A + AB = A (A absorbs AB)",
+      "B. A + 0 = A",
+      "C. A \u00b7 1 = A",
+      "D. A + A = A"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Absorption: A + AB = A(1+B) = A (since 1+B=1). Also A(A+B) = A. The term AB is absorbed into A \u2014 redundant when A is already present."
+  },
+  {
+    "id": "DL187",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "medium",
+    "question": "A 3-input NAND gate with inputs A=1, B=1, C=0 outputs:",
+    "choices": [
+      "A. 0",
+      "B. 1",
+      "C. Undefined",
+      "D. 0.5"
+    ],
+    "correctAnswer": "B",
+    "explanation": "3-input NAND = NOT(A AND B AND C) = NOT(1 AND 1 AND 0) = NOT(0) = 1. Any 0 input to AND makes AND output 0, so NAND outputs 1."
+  },
+  {
+    "id": "DL188",
+    "subject": "Digital Logic Design",
+    "topic": "Karnaugh Maps",
+    "difficulty": "medium",
+    "question": "The minimal SOP for F(A,B,C,D) = \u03a3m(3,7,11,15) is:",
+    "choices": [
+      "A. ABCD",
+      "B. BCD",
+      "C. CD",
+      "D. D"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Minterms 3,7,11,15 in binary: 0011,0111,1011,1111. All have C=1 and D=1. K-map: vertical column where C=1,D=1. This is a group of 4 covering all A,B combinations. Minimal SOP = CD."
+  },
+  {
+    "id": "DL189",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "In FPGA implementation, lookup tables (LUTs) implement combinational logic by:",
+    "choices": [
+      "A. Computing logic on-the-fly using transistor arrays",
+      "B. Storing truth table outputs in SRAM \u2014 any n-input function implemented in one n-input LUT",
+      "C. Using NAND arrays",
+      "D. Hardwired connections only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "FPGA LUT: typically 4-6 input LUT with SRAM cells storing the 2^n truth table entries. Any Boolean function of n inputs can be stored and looked up. FFs alongside LUTs form CLBs (Configurable Logic Blocks)."
+  },
+  {
+    "id": "DL190",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A Wallace tree for 4-bit \u00d7 4-bit multiplication has how many partial products?",
+    "choices": [
+      "A. 4",
+      "B. 8",
+      "C. 16",
+      "D. 4"
+    ],
+    "correctAnswer": "A",
+    "explanation": "4-bit \u00d7 4-bit: 4 partial products (one per multiplier bit, each being a shifted 4-bit value). Wallace tree reduces 4 \u2192 2 using one CSA level, then one CPA for final sum. N-bit \u00d7 N-bit has N partial products."
+  },
+  {
+    "id": "DL191",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "medium",
+    "question": "What is the duty cycle of a clock signal?",
+    "choices": [
+      "A. Number of clock cycles per second",
+      "B. Ratio of HIGH time to total period \u2014 ideally 50% for most digital circuits",
+      "C. Propagation delay of clock network",
+      "D. Time from rising to falling edge"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Duty cycle = t_HIGH / T_period \u00d7 100%. Ideal: 50% (equal HIGH and LOW times). Non-50% duty cycle reduces timing margins for either setup (if HIGH too short) or hold (if LOW too short)."
+  },
+  {
+    "id": "DL192",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "F(A,B,C) = \u03a3m(1,2,3,5,6,7) in minimal SOP is:",
+    "choices": [
+      "A. A + B + C",
+      "B. AB + BC + AC",
+      "C. A + BC + B'C",
+      "D. B + C + A'B"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Minterms 1,2,3,5,6,7 = all minterms except 0 and 4. Missing: 000 and 100 (when A=B=C=0, or A=1,B=0,C=0). K-map: cover with A(all A=1), B(all B=1), C(all C=1) \u2014 groups of 4. Min SOP = A + B + C."
+  },
+  {
+    "id": "DL193",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "hard",
+    "question": "A BCD counter using 4 JK flip-flops detects the reset condition by monitoring:",
+    "choices": [
+      "A. Q3 (MSB) going high",
+      "B. The state 1010 (10) \u2014 AND Q3 and Q1 to force synchronous or asynchronous reset to 0000",
+      "C. Overflow carry from stage 4",
+      "D. All four FFs high (1111)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "BCD counter: counts 0-9, resets at 10 (1010). Detect 1010 by AND-ing Q3=1 and Q1=1 (the two 1-bits in 1010). This signal clears all FFs back to 0000, skipping states 10-15."
+  },
+  {
+    "id": "DL194",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "The threshold voltage (Vth) of a CMOS transistor determines:",
+    "choices": [
+      "A. Maximum operating temperature",
+      "B. Minimum gate-source voltage required to create an inversion channel and turn the transistor ON",
+      "C. Maximum supply voltage",
+      "D. Propagation delay only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "V_th (threshold voltage): gate voltage below which MOSFET is OFF (subthreshold region). NMOS ON when V_GS > V_th. PMOS ON when V_GS < -|V_tp|. V_th determines noise margins and power/speed tradeoffs."
+  },
+  {
+    "id": "DL195",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 2-bit by 2-bit combinational multiplier can be implemented without a full adder because:",
+    "choices": [
+      "A. 2-bit multiplication is too simple",
+      "B. Product is at most 4 bits (1\u00d73=3, max=9) and partial products can be summed with just half adders",
+      "C. Results are always less than 4",
+      "D. Only AND gates are needed for 2-bit multiplication"
+    ],
+    "correctAnswer": "B",
+    "explanation": "2\u00d72 multiplication: P = AB\u00d7CD. Partial products: A0B0, A0B1<<1, A1B0<<1, A1B1<<2. Some bit positions have only 2 partial products \u2014 half adders suffice without carry input. Simplest multiplier structure."
+  },
+  {
+    "id": "DL196",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "Clock gating is a power reduction technique that:",
+    "choices": [
+      "A. Slows down the clock frequency",
+      "B. Disables the clock to inactive modules, eliminating dynamic switching power when those blocks are idle",
+      "C. Reduces clock supply voltage",
+      "D. Eliminates clock skew"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Clock gating: insert AND gate between clock and FF's clock input. When module is inactive (enable=0), clock is gated off \u2014 no switching, no dynamic power. Common in mobile processors: can save 20-40% power."
+  },
+  {
+    "id": "DL197",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "The Boolean complement of F = AB + C is:",
+    "choices": [
+      "A. A'B' + C'",
+      "B. (A' + B') \u00b7 C'",
+      "C. A'B'C'",
+      "D. AB + C"
+    ],
+    "correctAnswer": "B",
+    "explanation": "F' = (AB + C)' = (AB)'\u00b7C' = (A'+B')\u00b7C' by DeMorgan's. Apply DeMorgan's twice: complement of OR = AND of complements; complement of AND = OR of complements."
+  },
+  {
+    "id": "DL198",
+    "subject": "Digital Logic Design",
+    "topic": "Registers",
+    "difficulty": "hard",
+    "question": "What happens to the contents of a shift register when it is circularly connected (ring counter) and shifted?",
+    "choices": [
+      "A. Data is lost as it shifts out",
+      "B. Data rotates \u2014 the output bit feeds back to the input, preserving all bits cyclically",
+      "C. Data doubles each cycle",
+      "D. Register resets to 0"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Ring counter: serial output of last FF connected back to serial input of first FF. Data circulates \u2014 a 1 loaded in one position rotates through all n positions over n clock cycles, then repeats."
+  },
+  {
+    "id": "DL199",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "What is the difference between signed overflow and carry out in binary addition?",
+    "choices": [
+      "A. They are the same",
+      "B. Carry out indicates unsigned overflow (result too large for bit width); signed overflow indicates 2's complement result changed sign incorrectly",
+      "C. Only carry out matters for signed numbers",
+      "D. Signed overflow uses the carry chain differently"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Carry out: result exceeds 2^n for unsigned. Signed overflow (V): detected by Cin_MSB XOR Cout_MSB. Both can occur independently: 0111+0001 has signed overflow (7+1=-8 in 4-bit) but no carry out."
+  },
+  {
+    "id": "DL200",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A priority encoder with inputs I7-I0 and outputs A2-A0 has what value when I5=1 and I3=1 (all others=0)?",
+    "choices": [
+      "A. 011 (3)",
+      "B. 101 (5)",
+      "C. 111 (7)",
+      "D. 000"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Priority encoder: when multiple inputs are active, highest-index input wins. I5=1 and I3=1: I5 has higher priority (index 5 > 3). Output A2A1A0 = 101 (5 in binary)."
+  },
+  {
+    "id": "DL201",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "Converting a Mealy FSM to a Moore FSM may require:",
+    "choices": [
+      "A. Fewer states",
+      "B. Additional states \u2014 Mealy output during transition becomes Moore output in a new state",
+      "C. Fewer flip-flops",
+      "D. The conversion is impossible"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mealy\u2192Moore: each Mealy transition with output may require a new Moore state whose output matches the Mealy output. Moore FSMs can require more states than equivalent Mealy FSMs."
+  },
+  {
+    "id": "DL202",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "Pass transistor logic (PTL) reduces transistor count compared to CMOS by:",
+    "choices": [
+      "A. Using only one type of transistor",
+      "B. Using transistors as switches rather than in complementary pull-up/pull-down networks",
+      "C. Eliminating all PMOS transistors",
+      "D. Running at lower voltage"
+    ],
+    "correctAnswer": "B",
+    "explanation": "PTL: NMOS transistors act as switches controlled by input signals. XOR in PTL: 4 transistors vs 12 in static CMOS. Tradeoff: threshold voltage drop across NMOS degrades logic HIGH, requires restoration."
+  },
+  {
+    "id": "DL203",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "Virtual memory allows programs to use more memory than physically available by:",
+    "choices": [
+      "A. Compressing memory contents",
+      "B. Mapping virtual addresses to physical addresses, swapping pages between RAM and disk as needed",
+      "C. Sharing physical memory between programs",
+      "D. Using cache as extended memory"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Virtual memory: each process has its own virtual address space mapped to physical pages via page table. When a page is not in RAM (page fault), it's loaded from disk. Provides isolation, large address space, easier programming."
+  },
+  {
+    "id": "DL204",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "The self-dual function is a Boolean function that equals its own dual. Which 2-variable function is self-dual?",
+    "choices": [
+      "A. F = A AND B",
+      "B. F = A XOR B",
+      "C. F = A (one variable function)",
+      "D. F = A OR B"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Self-dual: F(A,B) = F_dual(A,B). F_dual is obtained by swapping 0\u21941 outputs and 0\u21941 inputs. For XOR: dual swaps AND\u2194OR giving XNOR, then complement variables... XOR is one of few self-dual functions."
+  },
+  {
+    "id": "DL205",
+    "subject": "Digital Logic Design",
+    "topic": "Counters",
+    "difficulty": "medium",
+    "question": "A 4-bit binary down-counter starts at 15 (1111). After 5 clock pulses, the count is:",
+    "choices": [
+      "A. 1010 (10)",
+      "B. 1011 (11)",
+      "C. 1001 (9)",
+      "D. 0101 (5)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Down counter from 15: 15\u219214\u219213\u219212\u219211\u219210. After 5 pulses: 15-5 = 10 = 1010."
+  },
+  {
+    "id": "DL206",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "A 32-bit ALU (Arithmetic Logic Unit) typically supports which operations?",
+    "choices": [
+      "A. Addition only",
+      "B. Arithmetic (add, subtract, increment, decrement) and logical (AND, OR, XOR, NOT, shift) operations",
+      "C. Multiplication and division only",
+      "D. Comparison only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "ALU: core computational unit performing arithmetic (ADD, SUB, INC, DEC, compare) and logical (AND, OR, XOR, NOT) operations, plus shifts. Operation selected by function code bits. Central component of datapath."
+  },
+  {
+    "id": "DL207",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "The setup time of a flip-flop defines the minimum:",
+    "choices": [
+      "A. Clock period",
+      "B. Time data must be stable before clock active edge",
+      "C. Time between consecutive clock edges",
+      "D. Output delay after clock edge"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Setup time (t_su): data input must be stable for at least t_su before the clock's active edge for correct latching. If violated, FF may enter metastability. Determines maximum flip-flop input rate."
+  },
+  {
+    "id": "DL208",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "What is the ON-set, OFF-set, and DC-set of a Boolean function?",
+    "choices": [
+      "A. Sets of input combinations where output is 1, 0, and don't care respectively",
+      "B. Power states of the circuit",
+      "C. Timing constraints for inputs",
+      "D. Different modes of the circuit"
+    ],
+    "correctAnswer": "A",
+    "explanation": "ON-set: input combinations where F=1 (minterms). OFF-set: where F=0 (maxterms). DC-set: don't care conditions (can be 0 or 1 \u2014 used to simplify expression). Standard terms in two-level logic minimization."
+  },
+  {
+    "id": "DL209",
+    "subject": "Digital Logic Design",
+    "topic": "Logic Gates",
+    "difficulty": "hard",
+    "question": "What is the advantage of using CMOS over TTL logic in modern designs?",
+    "choices": [
+      "A. CMOS is always faster",
+      "B. CMOS: lower static power (near zero when not switching), higher noise margins, compatible with lower supply voltages",
+      "C. CMOS has higher fan-out",
+      "D. CMOS uses fewer transistors"
+    ],
+    "correctAnswer": "B",
+    "explanation": "CMOS advantages over TTL: almost no static power (both transistors rarely ON simultaneously), higher noise margins (swing from 0 to VDD), scales to lower VDD (1V in modern), higher integration density."
+  },
+  {
+    "id": "DL210",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "What is the purpose of clock tree synthesis (CTS) in digital design?",
+    "choices": [
+      "A. Synthesize the clock circuit from behavioral description",
+      "B. Build a balanced distribution network that delivers clock to all FFs with minimal skew",
+      "C. Reduce clock frequency",
+      "D. Generate multiple clock domains"
+    ],
+    "correctAnswer": "B",
+    "explanation": "CTS builds a H-tree or balanced buffer tree to distribute the clock signal to all FFs with equal delay (minimal skew). Unequal delays create skew, causing potential timing violations in setup/hold."
+  },
+  {
+    "id": "DL211",
+    "subject": "Digital Logic Design",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "question": "Convert decimal -53 to 8-bit 2's complement.",
+    "choices": [
+      "A. 11001010",
+      "B. 11001011",
+      "C. 10110101",
+      "D. 11010011"
+    ],
+    "correctAnswer": "B",
+    "explanation": "53 = 00110101. 1's complement: 11001010. 2's complement: 11001010 + 1 = 11001011. Verify: 11001011 inverted = 00110100, +1 = 00110101 = 53 \u2713."
+  },
+  {
+    "id": "DL212",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "What distinguishes a combinational circuit from a sequential circuit?",
+    "choices": [
+      "A. Combinational uses NAND gates; sequential uses NOR gates",
+      "B. Combinational output depends only on current inputs; sequential output depends on current inputs AND past history (state)",
+      "C. Sequential circuits are faster",
+      "D. Combinational circuits need a clock"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Combinational: output = f(inputs only) \u2014 no memory, no feedback. Sequential: output = f(inputs, state) \u2014 has memory elements (FFs). FSMs, counters, registers are sequential. Adders, MUXes, decoders are combinational."
+  },
+  {
+    "id": "DL213",
+    "subject": "Digital Logic Design",
+    "topic": "FSM",
+    "difficulty": "hard",
+    "question": "The state reduction table method identifies equivalent states by checking:",
+    "choices": [
+      "A. States with same binary encoding",
+      "B. States with identical outputs AND identical next states for all inputs",
+      "C. States visited in the same order",
+      "D. States with same number of transitions"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Two states S_i and S_j are equivalent if: (1) they have the same output (Moore) or same output for all inputs (Mealy), AND (2) for every input, their next states are equivalent. Iterative refinement separates non-equivalent states."
+  },
+  {
+    "id": "DL214",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "medium",
+    "question": "The associative law of Boolean algebra states:",
+    "choices": [
+      "A. A(B+C) = AB + AC",
+      "B. A+(B+C) = (A+B)+C and A(BC) = (AB)C",
+      "C. A+B = B+A",
+      "D. A+AB = A"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Associativity: grouping doesn't matter. A+(B+C)=(A+B)+C and A(BC)=(AB)C. Allows reordering of operations for optimization. Commutative: A+B=B+A. Distributive: A(B+C)=AB+AC."
+  },
+  {
+    "id": "DL215",
+    "subject": "Digital Logic Design",
+    "topic": "Combinational Circuits",
+    "difficulty": "hard",
+    "question": "What is a PLA (Programmable Logic Array) and how does it differ from a PAL?",
+    "choices": [
+      "A. PLA: both AND and OR arrays programmable; PAL: only AND array programmable, OR is fixed",
+      "B. PAL: both programmable; PLA: only OR programmable",
+      "C. They are identical",
+      "D. PLA uses NAND; PAL uses NOR"
+    ],
+    "correctAnswer": "A",
+    "explanation": "PLA: both AND plane and OR plane are programmable \u2014 maximum flexibility. PAL: only AND plane programmable; OR connections fixed \u2014 simpler, faster. ROM: both fixed (pre-programmed). CPLD/FPGA are modern successors."
+  },
+  {
+    "id": "DL216",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "What is the purpose of a scan chain in digital testing?",
+    "choices": [
+      "A. Scan the memory for errors",
+      "B. Connect all flip-flops in a shift register chain during test mode to enable serial loading/reading of internal state",
+      "C. Perform boundary scan of PCB connections",
+      "D. Monitor clock signals"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Scan chain: each FF has a 2:1 MUX (scan MUX) selecting between normal D input and scan-in. In test mode, all FFs form a shift register \u2014 test patterns shift in, circuit computes, outputs shift out for comparison."
+  },
+  {
+    "id": "DL217",
+    "subject": "Digital Logic Design",
+    "topic": "Memory Systems",
+    "difficulty": "hard",
+    "question": "In a pipelined processor, a data hazard occurs when:",
+    "choices": [
+      "A. The pipeline has too many stages",
+      "B. An instruction needs data not yet written back by a previous instruction in the pipeline",
+      "C. Two instructions use the same register",
+      "D. The cache miss rate is too high"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Data hazard: RAW (Read After Write) \u2014 instruction reads register before previous instruction writes it. Solutions: stall (NOPs), data forwarding (bypass result to next stage input), or out-of-order execution."
+  },
+  {
+    "id": "DL218",
+    "subject": "Digital Logic Design",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "question": "A Boolean function F with n inputs has how many possible distinct functions?",
+    "choices": [
+      "A. 2^n",
+      "B. n\u00b2",
+      "C. 2^(2^n)",
+      "D. n!"
+    ],
+    "correctAnswer": "C",
+    "explanation": "For n inputs, there are 2^n input combinations. Each can independently be 0 or 1 in the truth table \u2014 2^(2^n) possible distinct Boolean functions. For n=2: 2^4=16 functions. For n=3: 2^8=256."
+  },
+  {
+    "id": "DL219",
+    "subject": "Digital Logic Design",
+    "topic": "Timing Analysis",
+    "difficulty": "hard",
+    "question": "A two-phase non-overlapping clock is used in some designs to:",
+    "choices": [
+      "A. Double the effective clock frequency",
+      "B. Ensure data settles between phases \u2014 Phase 1 enables certain latches, Phase 2 enables others, with gaps preventing races",
+      "C. Generate differential clock signals",
+      "D. Reduce power by half"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Two-phase non-overlapping clocks (\u03a61, \u03a62 with dead time between): \u03a61-latches capture, combinational block settles, \u03a62-latches capture result. Non-overlap gap ensures no data races. Used in some asynchronous and dynamic logic designs."
+  },
+  {
+    "id": "DL220",
+    "subject": "Digital Logic Design",
+    "topic": "Sequential Circuits",
+    "difficulty": "hard",
+    "question": "An FSM is considered completely specified when:",
+    "choices": [
+      "A. All states use binary encoding",
+      "B. Every state has defined next state and output for every possible input combination",
+      "C. The FSM has reached minimum state count",
+      "D. All transitions are synchronous"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Completely specified FSM: state table has no blanks \u2014 every (state, input) pair has a defined next state and output. Incompletely specified FSMs have don't-care entries, allowing additional minimization opportunities."
+  }
+]
